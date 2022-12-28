@@ -1,0 +1,85 @@
+@import "kizmich-framework/index.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  //background-color: $color-bg;
+  //color: $color-black;
+  //font-family: 'Nunito', sans-serif;
+  //font-family: "Roboto", sans-serif;
+  //font-weight: 200;
+  //height: 100vh;
+  //margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  height: 100%;
+}
+
+#__nuxt, #__layout {
+  height: 100%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.c-primary {
+  color: #4024D6;
+}
+
+.c-secondary-grey {
+  color: #D9D9D9;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pl-4 {
+  padding-left: 1.5rem;
+}
+
+//@font-face {
+  //font-family: 'rent-ico';
+  //src: url('~assets/font/fonts/rent-ico.eot?hpuf1p');
+  //src: url('~assets/font/fonts/rent-ico.eot?hpuf1p#iefix') format('embedded-opentype'),
+  //url('~assets/font/fonts/rent-ico.ttf?hpuf1p') format('truetype'),
+  //url('~assets/font/fonts/rent-ico.woff?hpuf1p') format('woff'),
+  //url('~assets/font/fonts/rent-ico.svg?hpuf1p#rent-ico') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//  font-display: block;
+//}
+

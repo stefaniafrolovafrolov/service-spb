@@ -1,0 +1,36 @@
+$borders: 1 #000000,
+  2 #FF0000,
+  3 #000080,
+  4 #0000FF,
+  5 #FFFF00,
+  6 #C71585,
+  7 #FF4500,
+  8 #FF1493,
+  9 #DA70D6,
+  10 #FF00FF,
+  11 #800080,
+  12 #00FF00,
+  13 #006400,
+  14 #00FFFF,
+  15 #4682B4,
+  16 #FF69B4,
+  17 #8B0000,
+  18 #2F4F4F,
+  19 #CD5C5C,
+  20 #C0C0C0,
+  21 #696969,
+  22 #4024D6,
+  23 #D9D9D9;
+
+@each $bNum,
+$bColor in $borders {
+  .b-#{$bNum} {
+    border: 1px solid $bColor;
+  }
+  .b-3-#{$bNum} {
+    border: 3px solid $bColor;
+  }
+  .b-b-3-#{$bNum} {
+    border-bottom: 3px solid $bColor;
+  }
+}

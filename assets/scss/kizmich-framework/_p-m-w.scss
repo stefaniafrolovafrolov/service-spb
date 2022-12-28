@@ -1,0 +1,85 @@
+$pm: 0 0,
+1 0.25rem,
+2 0.5rem,
+3 1rem,
+4 1.5rem,
+5 3rem,
+6 4rem,
+7 5rem,
+8 6rem;
+
+.m-auto {
+  margin: 0 auto;
+}
+
+@each $num, $value in $pm {
+  .m {
+    &-#{$num} {
+      margin: $value;
+    }
+
+    &r-#{$num} {
+      margin-right: $value;
+    }
+
+    &l-#{$num} {
+      margin-left: $value;
+    }
+
+    &t-#{$num} {
+      margin-top: $value;
+    }
+
+    &b-#{$num} {
+      margin-bottom: $value;
+    }
+
+    &x-#{$num} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+
+    &y-#{$num} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  .p {
+
+    &-#{$num} {
+      padding: $value;
+    }
+
+    &x-#{$num} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+
+    &y-#{$num} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+
+    &r-#{$num} {
+      padding-right: $value;
+    }
+
+    &l-#{$num} {
+      padding-left: $value;
+    }
+
+    &t-#{$num} {
+      padding-top: $value;
+    }
+
+    &b-#{$num} {
+      padding-bottom: $value;
+    }
+  }
+}
+
+.w-100 {
+  width: 100% !important;
+}
+

@@ -1,0 +1,8 @@
+$colors: 'grey-1' #8C8C8C,
+'grey-2' #C3C3C3;
+
+@each $name, $value in $colors {
+  .c-#{$name} {
+    color: $value;
+  }
+}
