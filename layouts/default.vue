@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import vHeader from "@/components/page/v-header"
-import vFooter from "@/components/page/v-footer"
+import vHeader from "../components/page/v-header";
+import vFooter from "../components/page/v-footer";
 export default {
   name: "default",
   components: {

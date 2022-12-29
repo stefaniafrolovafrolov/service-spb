@@ -2,12 +2,8 @@
 <header class="v-header">
   <img class="v-header__header-logo" src="/logo-header.svg" alt="логотип автосервиса">
 <nav class="v-header__navigation">
-  <ul class="v-header__navigation-list">
-    <li class="v-header__navigation-list-item">О нас</li>
-    <li class="v-header__navigation-list-item">Услуги</li>
-    <li class="v-header__navigation-list-item">Цены</li>
-    <li class="v-header__navigation-list-item">Отзывы</li>
-    <li class="v-header__navigation-list-item">Контакты</li>
+  <ul class="v-header__list" v-for="item in items" :key="item.id">
+    <li class="v-header__list-item">{{item.title}}</li>
   </ul>
 </nav>
   <div class="v-header__contacts">
@@ -19,7 +15,16 @@
 
 <script>
 export default {
-  name: "v-header"
+  name: "v-header",
+  data: () => ({
+    items: [
+      {id: 1, title: "О нас" },
+      {id: 2, title: "Услуги" },
+      {id: 3, title: "Цены" },
+      {id: 4, title: "Отзывы" },
+      {id: 5, title: "Контакты" },
+    ],
+  })
 }
 </script>
 
@@ -38,25 +43,23 @@ export default {
   }
 
   &__navigation {
+    width: 614px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
-  &__navigation-list {
-    display: flex;
-    width: 614px;
-    justify-content: space-between;
+  &__list {
 
-  }
-
-  &__navigation-list-item {
-    list-style: none;
-    font-family: 'Inter', "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
+    &-item {
+      list-style: none;
+      font-family: 'Inter', "Arial", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
     }
+  }
 
   &__contacts {
     width: 208px;
@@ -68,7 +71,7 @@ export default {
   }
 
   &__phone {
-text-decoration: none;
+    text-decoration: none;
     max-width: 208px;
     font-family: 'Inter', "Arial", sans-serif;
     font-weight: 400;
