@@ -1,24 +1,45 @@
 <template>
   <section class="services">
 
-      <h2 class="services__title">Виды ремонтных работ, которые предоставляет наш сервис</h2>
-      <p class="services__subtitle">В нашем сервисе, вы всегда найдете выгодные цены на профессиональый
-        ремонт коробок передач DSG6, DSG7, S-Tronic в Санкт - Петербурге.
-      </p>
-      <div class="services__gallery">
-        <div class="services__sliders-container">
-
-        </div>
+    <h2 class="services__title">Виды ремонтных работ, которые предоставляет наш сервис</h2>
+    <p class="services__subtitle">В нашем сервисе, вы всегда найдете выгодные цены на профессиональый
+      ремонт коробок передач DSG6, DSG7, S-Tronic в Санкт - Петербурге.
+    </p>
+    <div class="services__gallery">
+      <div class="services__sliders-container">
+        <carousel style="width: 1000px; " slider-id="slider-one"
+                  :items="items"
+                  component-slide="slide-services"
+                  component-nav-ext="nav-ext-slide-services"
+                  :options='{ grabCursor: true,
+          slidesPerView: 4,
+          loop: true,
+          spaceBetween: 36, }'/>
       </div>
-      <p class="services__text">Звоните, спрашивайте, интересуйтесь доступными для вас привелегиями и ценами.
-      </p>
+    </div>
+    <p class="services__text">Звоните, спрашивайте, интересуйтесь доступными для вас привелегиями и ценами.
+    </p>
 
   </section>
 </template>
 
 <script>
+import carousel from "../carousel/carousel";
+
 export default {
-  name: "services"
+  name: "services",
+  components: {
+    carousel
+  },
+  data: () => ({
+    items: [
+      {id: 1, title: "ffffff"},
+      {id: 2, title: "ffffff"},
+      {id: 3, title: "ffffff"},
+      {id: 4, title: "ffffff"},
+      {id: 5, title: "ffffff"},
+    ]
+  })
 }
 </script>
 
@@ -63,7 +84,7 @@ export default {
   &__sliders-container {
     min-height: 260px;
     width: 1384px;
-    outline: 5px solid red;
+
 
   }
 

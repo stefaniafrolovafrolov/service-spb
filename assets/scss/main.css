@@ -9,7 +9,7 @@
 
 html,
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Inter', "Arial", sans-serif;
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {

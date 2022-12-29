@@ -49,5 +49,24 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: null,
+    // extractCSS: isProd,
+    // extend(config, ctx) {
+    //   config.module.rules.push(globSassLoader);
+    // },
+
+
+    // analyze: false,
+    // extractCSS: true,
+    // babel: {
+    //   plugins: [
+    //     ['@babel/plugin-proposal-private-methods', {loose: true}]
+    //   ]
+    // },
+    // hotMiddleware: false
+    // extend(config) {
+    //   const hmrIndex = config.plugins.findIndex(p => p.constructor.name === 'HotModuleReplacementPlugin')
+    //   config.plugins.splice(hmrIndex, 1)
+    // }
   }
 }

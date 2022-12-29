@@ -5,8 +5,8 @@
       <h2 class="advantage__title">Клиенты выбирают нас,
         потому что:</h2>
       <div class="advantage__container-list">
-        <ul class="advantage__list" v-for="item in items" :key="item.id">
-          <li class="advantage__list-item">
+        <ul class="advantage__list"  >
+          <li class="advantage__list-item" v-for="item in items" :key="item.id">
             <img class="advantage__logos" :src="item.src" alt="изображение логотипов на тематику автомастерских">
             <p class="advantage__paragraph" v-html="item.title"/>
           </li>

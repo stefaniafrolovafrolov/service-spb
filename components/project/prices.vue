@@ -5,6 +5,7 @@
       <div class="prices__container">
         <ul class="prices__list" v-for="item in items" :key="item.id">
           <li class="prices__list-item" v-html="item.title"></li>
+          <strong>{{item.sum}}</strong>
         </ul>
 
       </div>
@@ -22,7 +23,7 @@ export default {
   name: "prices",
   data: () => ({
     items: [
-      {id: 1, title: "Ремонт АКПП <strong>DSG S-Tronic Powershift</strong>", sum: "<strong>от 10 000</strong>"},
+      {id: 1, title: "Ремонт АКПП <strong>DSG S-Tronic Powershift</strong>", sum: "от 10 000"},
       {id: 2, title: "Замена сцепления DSG 6*", sum: "42 000"},
       {id: 3, title: "Замена сцепления DSG 7*", sum: "28 000"},
       {id: 4, title: "Замена сцепления DSG S Tronic 0B5*", sum: "98 000"},
@@ -69,7 +70,7 @@ export default {
 
   &__title {
     max-width: 612px;
-    font-family: 'Inter', "Arial", sans-serif;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
