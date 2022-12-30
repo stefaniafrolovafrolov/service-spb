@@ -83,8 +83,10 @@ import Swiper from 'swiper/swiper-bundle.esm.js'
 import 'swiper/swiper-bundle.min.css'
 // ----
 import slideServices from "../carousel/slide/slide-services"
+import slideReviews from "../carousel/slide/slide-reviews"
 // ----
 import navExtSlideServices from "../carousel/nav/nav-ext-slide-services"
+import navExtSliderReviews from "../carousel/nav/nav-ext-slide-reviews"
 // ----
 
 
@@ -94,8 +96,10 @@ export default {
   // todo-max: сделать динамическую подгрузку компонентов
   components: {
     slideServices,
+    slideReviews,
     // ----
-    navExtSlideServices
+    navExtSlideServices,
+    navExtSliderReviews
     // ----
 
   },

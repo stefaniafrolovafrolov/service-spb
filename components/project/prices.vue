@@ -3,9 +3,12 @@
     <div class="prices__card">
       <h2 class="prices__title">Вас порадуют цены на наши услуги</h2>
       <div class="prices__container">
-        <ul class="prices__list" v-for="item in items" :key="item.id">
-          <li class="prices__list-item" v-html="item.title"></li>
-          <strong>{{item.sum}}</strong>
+        <ul class="prices__list">
+          <li class="prices__list-item" v-for="item in items" :key="item.id">
+            <p v-html="item.title"></p>
+            <strong style="font-weight: 900">{{ item.sum }}</strong>
+
+          </li>
         </ul>
 
       </div>
@@ -24,20 +27,20 @@ export default {
   data: () => ({
     items: [
       {id: 1, title: "Ремонт АКПП <strong>DSG S-Tronic Powershift</strong>", sum: "от 10 000"},
-      {id: 2, title: "Замена сцепления DSG 6*", sum: "42 000"},
-      {id: 3, title: "Замена сцепления DSG 7*", sum: "28 000"},
-      {id: 4, title: "Замена сцепления DSG S Tronic 0B5*", sum: "98 000"},
-      {id: 5, title: "Замена сцепления Powershift DCT250*", sum: "56 000"},
-      {id: 6, title: "Замена сцепления  Powershift DCT450*", sum: "70 000"},
-      {id: 7, title: "Замена маховика АКПП DSG S-Tronic Powershift*", sum: "12 000"},
-      {id: 8, title: "Ремонт мехатроника DQ200", sum: "18 000"},
-      {id: 9, title: "Ремонт мехатроника DQ500", sum: "18 000"},
-      {id: 10, title: "Ремонт мехатроника DL501 0B5", sum: "20 000"},
-      {id: 11, title: "Ремонт мехатроника DCT450", sum: "35 000"},
+      {id: 2, title: "Замена сцепления <strong>DSG 6</strong>*", sum: "42 000"},
+      {id: 3, title: "Замена сцепления <strong>DSG 7</strong>*", sum: "28 000"},
+      {id: 4, title: "Замена сцепления <strong>DSG S Tronic 0B5</strong>*", sum: "98 000"},
+      {id: 5, title: "Замена сцепления <strong>Powershift DCT250</strong>*", sum: "56 000"},
+      {id: 6, title: "Замена сцепления  <strong>Powershift DCT450</strong>*", sum: "70 000"},
+      {id: 7, title: "Замена маховика <strong>АКПП DSG S-Tronic Powershift</strong>*", sum: "12 000"},
+      {id: 8, title: "Ремонт мехатроника <strong>DQ200</strong>", sum: "18 000"},
+      {id: 9, title: "Ремонт мехатроника <strong>DQ500</strong>", sum: "18 000"},
+      {id: 10, title: "Ремонт мехатроника <strong>DL501 0B5</strong>", sum: "20 000"},
+      {id: 11, title: "Ремонт мехатроника <strong>DCT450</strong>", sum: "35 000"},
       {id: 12, title: "Снятие/установка АКПП", sum: "от 8000"},
       {id: 13, title: "Снятие/установка мехатроника(гидроблока)", sum: "от 4000"},
       {id: 14, title: "Переборка мехатроника", sum: "от 6000"},
-      {id: 15, title: "Переборка АКПП ", sum: "Переборка АКПП"},
+      {id: 15, title: "Переборка АКПП ", sum: "от 8000"},
     ]
   })
 }
@@ -83,15 +86,17 @@ export default {
 
   &__container {
     width: 1400px;
-    min-height: 400px;
+    /* min-height: 400px;*/
     align-items: center;
     outline: 5px solid red;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+
   }
 
   &__list {
-
+    /* display: grid;
+     grid-template-columns: repeat(2, 2fr);*/
+    column-count: 2;
+    column-gap: 50px;
 
     &-item {
       padding-bottom: 24px;
@@ -101,7 +106,9 @@ export default {
       line-height: 29px;
       color: #000000;
       list-style: none;
-      margin-left: 60px;
+      display: flex;
+      justify-content: space-between;
+
     }
   }
 

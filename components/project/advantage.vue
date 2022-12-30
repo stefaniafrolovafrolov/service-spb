@@ -5,7 +5,7 @@
       <h2 class="advantage__title">Клиенты выбирают нас,
         потому что:</h2>
       <div class="advantage__container-list">
-        <ul class="advantage__list"  >
+        <ul class="advantage__list">
           <li class="advantage__list-item" v-for="item in items" :key="item.id">
             <img class="advantage__logos" :src="item.src" alt="изображение логотипов на тематику автомастерских">
             <p class="advantage__paragraph" v-html="item.title"/>
@@ -21,12 +21,36 @@ export default {
   name: "advantage",
   data: () => ({
     items: [
-      { id: 1, src: "/advantage-logo1.svg", title: "Диагностика DSG S-Tronic Powershift - <span style='font-weight: bold'>бесплатно</span>" },
-      { id: 2, src:  "/advantage-logo4.svg", title: "У нас работают только <span style='font-weight: bold'>опытные механики и слесаря</span>" },
-      { id: 3, src: "/advantage-logo2.svg", title:  "Мы производим <span style='font-weight: bold'>быстрый и качественный ремонт АКПП</span>"},
-      { id: 4, src: "/advantage-logo5.svg",  title: "Адаптация коробки передач <span style='font-weight: bold'>DSG S-Tronic Powershift - бесплатно</span>" },
-      { id: 5, src: "/advantage-logo3.svg",  title: "В нашем сервисе <span style='font-weight: bold'>адекватные цены на услуги</span>" },
-      { id: 6, src: "/advantage-logo6.svg",  title: "Мы работаем на рынке уже <span style='font-weight: bold'>более 10 лет</span>" },
+      {
+        id: 1,
+        src: "/advantage-logo1.svg",
+        title: "Диагностика DSG S-Tronic Powershift - <span style='font-weight: bold'>бесплатно</span>"
+      },
+      {
+        id: 2,
+        src: "/advantage-logo4.svg",
+        title: "У нас работают только <span style='font-weight: bold'>опытные механики и слесаря</span>"
+      },
+      {
+        id: 3,
+        src: "/advantage-logo2.svg",
+        title: "Мы производим <span style='font-weight: bold'>быстрый и качественный ремонт АКПП</span>"
+      },
+      {
+        id: 4,
+        src: "/advantage-logo5.svg",
+        title: "Адаптация коробки передач <span style='font-weight: bold'>DSG S-Tronic Powershift - бесплатно</span>"
+      },
+      {
+        id: 5,
+        src: "/advantage-logo3.svg",
+        title: "В нашем сервисе <span style='font-weight: bold'>адекватные цены на услуги</span>"
+      },
+      {
+        id: 6,
+        src: "/advantage-logo6.svg",
+        title: "Мы работаем на рынке уже <span style='font-weight: bold'>более 10 лет</span>"
+      },
     ],
   })
 
@@ -42,6 +66,7 @@ export default {
   outline: green solid 5px;
 
   margin-top: -210px;
+
   &__image {
     display: block;
     max-width: 100%;
@@ -62,8 +87,6 @@ export default {
     position: absolute;
     top: 0px;
     right: 0;
-
-
   }
 
 
@@ -78,14 +101,15 @@ export default {
     margin-top: 35px;
     align-self: center;
   }
+
   &__container-list {
     margin-top: 72px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-self: center;
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     &-item {
       width: 360px;
@@ -93,8 +117,6 @@ export default {
       margin-bottom: 48px;
     }
   }
-
-
 
   &__logos {
     width: 64px;

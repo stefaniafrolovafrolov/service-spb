@@ -1,20 +1,24 @@
 <template>
   <section class="services">
-
     <h2 class="services__title">Виды ремонтных работ, которые предоставляет наш сервис</h2>
     <p class="services__subtitle">В нашем сервисе, вы всегда найдете выгодные цены на профессиональый
       ремонт коробок передач DSG6, DSG7, S-Tronic в Санкт - Петербурге.
     </p>
     <div class="services__gallery">
       <div class="services__sliders-container">
-        <carousel style="width: 1000px; " slider-id="slider-one"
+        <carousel slider-id="slider-one"
                   :items="items"
                   component-slide="slide-services"
                   component-nav-ext="nav-ext-slide-services"
                   :options='{ grabCursor: true,
           slidesPerView: 4,
           loop: true,
-          spaceBetween: 36, }'/>
+          spaceBetween: 28,
+           autoplay: {
+      delay: 4000,   // пауза между перелистыванием
+      disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
+    },}
+'/>
       </div>
     </div>
     <p class="services__text">Звоните, спрашивайте, интересуйтесь доступными для вас привелегиями и ценами.
@@ -33,11 +37,20 @@ export default {
   },
   data: () => ({
     items: [
-      {id: 1, title: "ffffff"},
-      {id: 2, title: "ffffff"},
-      {id: 3, title: "ffffff"},
-      {id: 4, title: "ffffff"},
-      {id: 5, title: "ffffff"},
+      {id: 1, src: "/slide-one-image1.jpg", title: "Замена сцепления <strong>Powershift DCT250</strong>"},
+      {
+        id: 2, src: "/slide-one-image2.jpg", title: "Замена сцепления \n" +
+          "<strong>DSG S Tronic 0B5</strong>"
+      },
+      {
+        id: 3, src: "/slide-one-image3.jpg", title: "Замена сцепления \n" +
+          "<strong>DSG 7</strong>"
+      },
+      {
+        id: 4, src: "/slide-one-image4.jpg", title: "Замена сцепления\n" +
+          "<strong>DSG 6</strong>"
+      },
+
     ]
   })
 }
@@ -62,7 +75,7 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin: 96px 0 48px 0;
+    margin: 76px 0 48px 0;
 
   }
 
@@ -78,12 +91,13 @@ export default {
   }
 
   &__gallery {
+    height: 100%;
+    max-width: 1384px;
 
   }
 
   &__sliders-container {
-    min-height: 260px;
-    width: 1384px;
+    max-width: 1148px;
 
 
   }

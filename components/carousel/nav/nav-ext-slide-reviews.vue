@@ -1,18 +1,17 @@
 <template>
-  <div class="nav-ext-slide-services-slider nav-ext-slide-services-slider__nav">
-    <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')">
-      <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">
+  <div class="nav-ext-slide-reviews-slider nav-ext-slide-reviews-slider__nav">
+    <div v-bind="{'id':prevEl}" class="nav-ext-slide-reviews-slider__nav__prev" @click="$emit('prevClick')">
+      <img src="/slide-two-left-1920.svg" alt="левая кнопка для прокрутки слайдера">
     </div>
-    <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next" @click="$emit('nextClick')">
-      <img src="/slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">
-
+    <div v-bind="{'id':nextEl}" class="nav-ext-slide-reviews-slider__nav__next" @click="$emit('nextClick')">
+      <img src="/slide-two-right-1920.svg" alt="правая кнопка для прокрутки слайдера">
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'nav-ext-slide-services',
+  name: "nav-ext-slide-reviews",
   props: {
     sliderId: {
       type: String,
@@ -38,10 +37,11 @@ export default {
     },
   },
 }
+
 </script>
 
-<style lang='scss'>
-.nav-ext-slide-services-slider {
+<style lang="scss">
+.nav-ext-slide-reviews-slider {
   position: relative;
   right: 0;
   left: auto;
@@ -56,8 +56,8 @@ export default {
       border: none;
       background: #FF0000;
       border-radius: 10px;
-      width: 60px;
-      height: 60px;
+      width: 78px;
+      height: 78px;
       display: flex;
       justify-content: center;
       cursor: pointer;
@@ -75,8 +75,8 @@ export default {
       position: absolute;
       background: #FF0000;
       border-radius: 10px;
-      width: 60px;
-      height: 60px;
+      width: 78px;
+      height: 78px;
       right: 0;
       display: flex;
       justify-content: center;
@@ -91,5 +91,3 @@ export default {
   }
 }
 </style>
-
-
