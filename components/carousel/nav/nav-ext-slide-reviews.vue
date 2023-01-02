@@ -62,7 +62,7 @@ export default {
       justify-content: center;
       cursor: pointer;
       bottom: 110px;
-      left: -10%;
+      left: -13%;
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);
@@ -82,7 +82,7 @@ export default {
       justify-content: center;
       cursor: pointer;
       bottom: 110px;
-      right: -10%;
+      right: -13%;
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);

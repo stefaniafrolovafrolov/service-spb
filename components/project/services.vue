@@ -63,25 +63,21 @@ export default {
   align-items: center;
   justify-content: center;
   background: #070A2A;
-  min-height: 948px;
-
+  height: 100%;
 
   &__title {
     max-width: 1006px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin: 76px 0 48px 0;
-
+    margin: 116px 0 28px 0;
   }
 
   &__subtitle {
     max-width: 959px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -93,25 +89,20 @@ export default {
   &__gallery {
     height: 100%;
     max-width: 1384px;
-
   }
 
   &__sliders-container {
     max-width: 1148px;
-
-
   }
 
   &__text {
     max-width: 640px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: #FFFFFF;
     margin: 64px 0 192px 0;
-
   }
 
 }

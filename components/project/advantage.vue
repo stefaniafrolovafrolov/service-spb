@@ -59,13 +59,12 @@ export default {
 
 <style scoped lang="scss">
 .advantage {
-  width: 1645px;
+  max-width: 1645px;
   min-height: 750px;
   margin-left: 76px;
   position: relative;
   outline: green solid 5px;
-
-  margin-top: -210px;
+  margin-top: -300px;
 
   &__image {
     display: block;
@@ -73,32 +72,30 @@ export default {
     height: 100%;
     object-fit: cover;
     background-size: contain;
-
   }
 
   &__information-card {
     display: flex;
     flex-direction: column;
     width: 770px;
-    height: 600px;
+    min-height: 600px;
     background: #FFFFFF;
     border: 4px solid #FF0000;
     border-radius: 15px;
     position: absolute;
-    top: 0px;
+    top: 70px;
     right: 0;
   }
 
 
   &__title {
     max-width: 730px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
     letter-spacing: -0.02em;
     color: #000000;
-    margin-top: 35px;
+    margin-top: 47px;
     align-self: center;
   }
 
@@ -112,7 +109,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
 
     &-item {
-      width: 360px;
+      mzx-width: 360px;
       display: flex;
       margin-bottom: 48px;
     }
@@ -127,7 +124,6 @@ export default {
     margin-top: 14px;
     margin-left: 24px;
     max-width: 271px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;

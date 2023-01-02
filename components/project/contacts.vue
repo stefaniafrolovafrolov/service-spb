@@ -8,13 +8,13 @@
     1!3m3!1m2!1s0x469632f93e0db82d%3A0x29d5a9ef44282a13!2z0J
     _QuNGB0LrQsNGA0ZHQstGB0LrQuNC5INC_0YAuLCAxMTksINCh0LDQvdC60YIt0J
     _QtdGC0LXRgNCx0YPRgNCzLCAxOTUyNzM!5e0!3m2!1sru!2sru!4v1661424461414!5m2!1sru!2sru"
-                width="760" height="600" style="border:0;" allowfullscreen=""
+                width="100%" height="100%" style="border:0;" allowfullscreen=""
                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="contacts__address-container">
         <p class="contacts__address-text">Санкт-Петербург</p>
         <p class="contacts__address-text">Пискарёвский проспект 119</p>
-        <a class="contacts__address-link" href="remontdsg-spb.ru">remontdsg-spb@yandex.ru</a>
+        <a class="contacts__address-link" href="mailto:remontdsg-spb@yandex.ru">remontdsg-spb@yandex.ru</a>
         <a class="contacts__phone" href="tel:+79539979283">+7 (953) 997 92 83</a>
       </div>
     </div>
@@ -29,7 +29,7 @@ export default {
 
 <style scoped lang="scss">
 .contacts {
-  max-width: 1300px;
+  max-width: 1302px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,15 +39,13 @@ export default {
 
   &__title {
     max-width: 1006px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #000000;
-    margin-bottom: 96px;
-
+    margin-bottom: 86px;
   }
 
   &__maps-container {
@@ -58,50 +56,48 @@ export default {
   &__maps {
     border: 4px solid #FF0000;
     border-radius: 15px;
+    width: 760px;
+    min-height: 600px;
   }
 
   &__address-container {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-left: 59px;
+    margin-left: 60px;
   }
 
   &__address-text {
-    max-width: 312px;
-    font-family: 'Inter';
+    max-width: 483px;
     font-weight: 500;
     font-size: 36px;
     line-height: 51px;
     text-align: right;
     letter-spacing: -0.02em;
     color: #000000;
-
+    padding-bottom: 16px;
   }
 
   &__address-link {
     max-width: 457px;
-    font-family: 'Inter';
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
     text-align: right;
     letter-spacing: -0.02em;
     color: #000000;
-
+    padding-bottom: 16px;
   }
 
   &__phone {
     text-decoration: none;
     max-width: 337px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
     text-align: right;
     letter-spacing: -0.02em;
     color: #000000;
-
   }
 
 }

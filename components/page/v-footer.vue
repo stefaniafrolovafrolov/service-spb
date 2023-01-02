@@ -1,15 +1,16 @@
 <template>
-<footer class="v-footer">
-  <img class="v-footer__footer-logo" src="/footer-logo.svg" alt="логотип автосервиса">
-  <div class="v-footer__container-text">
-  <p class="v-footer__text">Цены на сайте не являются публичной офертой и носят информативный характер.</p>
-  <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
-  </div>
-  <button class="v-footer__button-up">
-    <p class="v-footer__button-up-text">Наверх</p>
-    <img class="v-footer__button-up-strelka" src="/footer-strelkaup.png" alt="на изображении стрелочка указывающая вверх">
-  </button>
-</footer>
+  <footer class="v-footer">
+    <img class="v-footer__footer-logo" src="/footer-logo.svg" alt="логотип автосервиса">
+    <div class="v-footer__container-text">
+      <p class="v-footer__text">Цены на сайте не являются публичной офертой и носят информативный характер.</p>
+      <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
+    </div>
+    <button class="v-footer__button-up">
+      <p class="v-footer__button-text">Наверх</p>
+      <img class="v-footer__button-up-strelka" src="/footer-strelkaup.png"
+           alt="на изображении стрелочка указывающая вверх">
+    </button>
+  </footer>
 </template>
 
 <script>
@@ -28,10 +29,11 @@ export default {
   align-items: center;
 
 
-&__footer-logo {
-  width: 146px;
-  height: 104px;
-}
+  &__footer-logo {
+    width: 146px;
+    height: 104px;
+    margin-left: 90px;
+  }
 
   &__container-text {
     max-width: 978px;
@@ -54,10 +56,11 @@ export default {
     border: none;
     box-sizing: border-box;
     display: flex;
-   align-items: center;
+    align-items: center;
+    margin-right: 90px;
   }
 
-  &__button-up-text {
+  &__button-text {
     font-family: 'Inter', "Arial", sans-serif;
     max-width: 86px;
     font-weight: 400;
@@ -69,9 +72,8 @@ export default {
   }
 
   &__button-up-strelka {
-object-fit: cover;
-background-size: cover;
-
+    object-fit: cover;
+    background-size: cover;
 
 
   }

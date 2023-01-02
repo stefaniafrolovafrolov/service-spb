@@ -86,7 +86,7 @@ import slideServices from "../carousel/slide/slide-services"
 import slideReviews from "../carousel/slide/slide-reviews"
 // ----
 import navExtSlideServices from "../carousel/nav/nav-ext-slide-services"
-import navExtSliderReviews from "../carousel/nav/nav-ext-slide-reviews"
+import navExtSlideReviews from "../carousel/nav/nav-ext-slide-reviews"
 // ----
 
 
@@ -99,7 +99,7 @@ export default {
     slideReviews,
     // ----
     navExtSlideServices,
-    navExtSliderReviews
+    navExtSlideReviews,
     // ----
 
   },

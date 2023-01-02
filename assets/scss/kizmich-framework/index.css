@@ -5,7 +5,25 @@
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1516px;
+  }
+}
+
+/*@media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
@@ -27,7 +45,7 @@
 }
 .m-auto {
   margin: 0 auto;
-}
+}*/
 
 .m-0 {
   margin: 0;

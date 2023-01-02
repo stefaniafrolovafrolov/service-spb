@@ -52,8 +52,7 @@ export default {
   justify-content: center;
   background-image: url("/prices-fon.png");
   background-size: cover;
-  min-height: 946px;
-
+  min-height: 850px;
   outline: 5px solid red;
 
   &__card {
@@ -73,34 +72,28 @@ export default {
 
   &__title {
     max-width: 612px;
-
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #000000;
+    margin-top: 20px;
     margin-bottom: 40px;
-
   }
 
   &__container {
     width: 1400px;
-    /* min-height: 400px;*/
     align-items: center;
     outline: 5px solid red;
-
   }
 
   &__list {
-    /* display: grid;
-     grid-template-columns: repeat(2, 2fr);*/
     column-count: 2;
     column-gap: 50px;
 
     &-item {
       padding-bottom: 24px;
-      font-family: 'Inter', "Arial", sans-serif;
       font-weight: 400;
       font-size: 24px;
       line-height: 29px;
@@ -108,13 +101,11 @@ export default {
       list-style: none;
       display: flex;
       justify-content: space-between;
-
     }
   }
 
   &__text {
     max-width: 830px;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
@@ -126,14 +117,12 @@ export default {
 
   &__button {
     border: none;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #FFFFFF;
-
     width: 360px;
     height: 71px;
     background: #FF0000;
@@ -143,7 +132,6 @@ export default {
   &__paragraph {
     width: 434px;
     white-space: nowrap;
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 900;
     font-size: 16px;
     line-height: 19px;
@@ -156,7 +144,6 @@ export default {
     color: #FF0000;
     opacity: 0.8;
   }
-
 
 }
 </style>
