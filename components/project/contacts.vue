@@ -36,6 +36,9 @@ export default {
   margin: 0 auto;
   padding: 96px 0 96px 0;
 
+  @media (max-width: 1440px) {
+    padding: 80px 0 80px 0;
+  }
 
   &__title {
     max-width: 1006px;
@@ -46,6 +49,13 @@ export default {
     letter-spacing: -0.02em;
     color: #000000;
     margin-bottom: 86px;
+
+    @media (max-width: 1440px) {
+      max-width: 815px;
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 64px;
+    }
   }
 
   &__maps-container {
@@ -58,6 +68,11 @@ export default {
     border-radius: 15px;
     width: 760px;
     min-height: 600px;
+
+    @media (max-width: 1440px) {
+     width: 616px;
+      min-height: 486px;
+    }
   }
 
   &__address-container {
@@ -76,6 +91,12 @@ export default {
     letter-spacing: -0.02em;
     color: #000000;
     padding-bottom: 16px;
+
+    @media (max-width: 1440px) {
+      max-width: 430px;
+      font-size: 32px;
+      line-height: 41px;
+    }
   }
 
   &__address-link {
@@ -87,6 +108,11 @@ export default {
     letter-spacing: -0.02em;
     color: #000000;
     padding-bottom: 16px;
+
+    @media (max-width: 1440px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
 
   &__phone {
@@ -98,6 +124,11 @@ export default {
     text-align: right;
     letter-spacing: -0.02em;
     color: #000000;
+
+    @media (max-width: 1440px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
 
 }

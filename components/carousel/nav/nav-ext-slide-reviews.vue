@@ -48,9 +48,6 @@ export default {
   &__nav {
     display: flex;
 
-
-
-
     &__prev {
       position: absolute;
       border: none;
@@ -63,6 +60,11 @@ export default {
       cursor: pointer;
       bottom: 110px;
       left: -13%;
+
+      @media (max-width: 1440px) {
+        bottom: 85px;
+        left: -15%;
+      }
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);
@@ -77,12 +79,16 @@ export default {
       border-radius: 10px;
       width: 78px;
       height: 78px;
-      right: 0;
       display: flex;
       justify-content: center;
       cursor: pointer;
       bottom: 110px;
       right: -13%;
+
+      @media (max-width: 1440px) {
+        bottom: 85px;
+        right: -15%;
+      }
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);

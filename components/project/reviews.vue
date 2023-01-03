@@ -1,6 +1,5 @@
 <template>
   <section class="reviews">
-
     <h2 class="reviews__title">Почему нам доверяют
       наши&nbsp;клиенты?</h2>
     <p class="reviews__subtitle">Мы заботимся о каждом клиенте и не навязываем лишние услуги
@@ -87,14 +86,15 @@ export default {
 
 <style scoped lang="scss">
 .reviews {
-  padding: 125px 144px;
+  width: 100%;
   height: 100%;
   background-image: url("/reviews-fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 
   &__title {
     max-width: 900px;
@@ -104,7 +104,16 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    margin-top: 144px;
     margin-bottom: 48px;
+
+    @media (max-width: 1440px) {
+      max-width: 537px;
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 18px;
+      margin-top: 116px;
+    }
   }
 
   &__subtitle {
@@ -115,17 +124,29 @@ export default {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 19px;
+
+    @media (max-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 18px;
+    }
   }
 
   &__gallery {
     width: 1136px;
-    min-height: 345px;
+    height: 345px;
+    margin-bottom: 144px;
+
+    @media (max-width: 1440px) {
+      width: 730px;
+      height: 280px;
+      margin-bottom: 116px;
+    }
   }
 
   &__sliders-container {
     margin: 0 auto;
     max-width: 900px;
-    height: 345px;
     background: #FFFFFF;
     border: 4px solid #FF0000;
     border-radius: 10px;

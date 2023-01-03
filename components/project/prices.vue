@@ -55,6 +55,10 @@ export default {
   min-height: 850px;
   outline: 5px solid red;
 
+  @media (max-width: 1440px) {
+    min-height: 692px;
+  }
+
   &__card {
     outline: 5px solid red;
     width: 1580px;
@@ -68,6 +72,12 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 1440px) {
+      width: 1280px;
+      height: 690px;
+      margin-top: -80px;
+    }
   }
 
   &__title {
@@ -80,17 +90,33 @@ export default {
     color: #000000;
     margin-top: 20px;
     margin-bottom: 40px;
+
+    @media (max-width: 1440px) {
+      max-width: 465px;
+      font-size: 48px;
+      line-height: 58px;
+      margin-top: 40px;
+      margin-bottom: 32px;
+    }
   }
 
   &__container {
     width: 1400px;
     align-items: center;
     outline: 5px solid red;
+
+    @media (max-width: 1440px) {
+      width: 90%;
+    }
   }
 
   &__list {
     column-count: 2;
     column-gap: 50px;
+
+    @media (max-width: 1440px) {
+      column-gap: 38px;
+    }
 
     &-item {
       padding-bottom: 24px;
@@ -101,6 +127,13 @@ export default {
       list-style: none;
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 1440px) {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 19px;
+
+      }
     }
   }
 
@@ -113,6 +146,12 @@ export default {
     letter-spacing: -0.02em;
     color: #000000;
     margin: 48px 0 18px 0;
+
+    @media (max-width: 1440px) {
+      margin: 40px 0 10px 0;
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
 
   &__button {
@@ -127,6 +166,13 @@ export default {
     height: 71px;
     background: #FF0000;
     border-radius: 10px;
+
+    @media (max-width: 1440px) {
+      width: 292px;
+      height: 58px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__paragraph {
@@ -138,6 +184,12 @@ export default {
     letter-spacing: -0.01em;
     margin: 9px 0 20px 83px;
     align-self: start;
+
+    @media (max-width: 1440px) {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0px 0 16px 60px;
+    }
   }
 
   span {

@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .services {
   display: flex;
   flex-direction: column;
@@ -74,6 +75,12 @@ export default {
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin: 116px 0 28px 0;
+
+    @media (max-width: 1440px) {
+      font-size: 48px;
+      line-height: 58px;
+      margin: 80px 0 38px 0;
+    }
   }
 
   &__subtitle {
@@ -84,11 +91,21 @@ export default {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 64px;
+
+    @media (max-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 52px;
+    }
   }
 
   &__gallery {
     height: 100%;
     max-width: 1384px;
+
+    @media (max-width: 1440px) {
+      max-width: 924px;
+    }
   }
 
   &__sliders-container {
@@ -103,9 +120,16 @@ export default {
     text-align: center;
     color: #FFFFFF;
     margin: 64px 0 192px 0;
+
+
+    @media (max-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 50px 0 150px 0;
+    }
+
   }
 
 }
-
 
 </style>

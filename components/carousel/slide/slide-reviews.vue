@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .slide-two {
   position: relative;
 
@@ -30,6 +31,10 @@ export default {
     margin-top: 40px;
     margin-left: 40px;
 
+    @media (max-width: 1440px) {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
   }
 
   &__container {
@@ -37,8 +42,12 @@ export default {
     flex-direction: column;
     margin-bottom: 40px;
     max-width: 250px;
-  }
 
+    @media (max-width: 1440px) {
+      max-width: 180px;
+      margin-bottom: 30px;
+    }
+  }
 
   &__number {
     max-width: 129px;
@@ -48,7 +57,10 @@ export default {
     letter-spacing: -0.04em;
     color: #000000;
 
-
+    @media (max-width: 1440px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   &__author {
@@ -60,8 +72,11 @@ export default {
     color: #000000;
     margin-bottom: 6px;
 
+    @media (max-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
-
 
   &__image {
     background-size: cover;
@@ -74,8 +89,15 @@ export default {
     line-height: 24px;
     color: #000000;
 
-  }
-}
+    @media (max-width: 1440px) {
+      max-width: 674px;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 30px;
+    }
 
+  }
+
+}
 
 </style>

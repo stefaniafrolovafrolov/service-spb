@@ -1,6 +1,6 @@
 <template>
   <section class="main-block">
-    <article class="main-block__container">
+    <article class="container main-block__container">
       <h1 class="main-block__title">Профессиональный ремонт DSG
         в&nbsp;Cанкт - Петербурге</h1>
       <p class="main-block__subtitle">Бесплатные бонусы при ремонте DSG: эвакуатор,
@@ -11,9 +11,11 @@
         <button class="main-block__button-information">Перейти к списку услуг</button>
       </div>
     </article>
-   <!-- <img class="whatsapp-button" src="/whatsapp%20(2)%201.svg" alt="кнопка ватсапа">-->
+    <!-- <img class="whatsapp-button" src="/whatsapp%20(2)%201.svg" alt="кнопка ватсапа">-->
     <a href="https://api.whatsapp.com/send?phone=79539979283" target="_blank"
-       rel="noopener noreferrer"><div class="whatsapp-button"><i class="fa fa-whatsapp"></i></div></a>
+       rel="noopener noreferrer">
+      <div class="whatsapp-button"><i class="fa fa-whatsapp"></i></div>
+    </a>
   </section>
 
 
@@ -29,20 +31,26 @@ export default {
 .main-block {
   min-height: 900px;
   background-image: url("static/main-block.png");
+  background-size: cover;
 
-  @keyframes animate
-  {
-    0%
-    {
+  @media (max-width: 1440px) {
+    min-height: 730px;
+  }
+
+  @media (max-width: 1280px) {
+    min-height: 657px;
+  }
+
+
+  @keyframes animate {
+    0% {
       transform: scale(0.5);
       opacity: 0;
     }
-    50%
-    {
+    50% {
       opacity: 1;
     }
-    100%
-    {
+    100% {
       transform: scale(1.2);
       opacity: 0;
     }
@@ -84,17 +92,28 @@ export default {
     backface-visibility: hidden;
   }
 
-  .whatsapp-button:after{
+  .whatsapp-button:after {
     animation-delay: .5s;
   }
 
 
-
   &__container {
+    padding: 0;
     display: flex;
     flex-direction: column;
     max-width: 1152px;
     margin-left: 199px;
+
+    @media (max-width: 1440px) {
+      margin-left: 100px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-left: 90px;
+    }
+
+
+
   }
 
   &__title {
@@ -107,6 +126,24 @@ export default {
     color: #FFFFFF;
     margin-bottom: 35px;
     margin-top: 152px;
+
+    @media (max-width: 1440px) {
+      margin-bottom: 25px;
+      margin-top: 124px;
+      font-size: 54px;
+      line-height: 65px;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 810px;
+      font-size: 48px;
+      line-height: 58px;
+      margin-top: 111px;
+    }
+
+
+
+
   }
 
   &__subtitle {
@@ -119,6 +156,21 @@ export default {
     color: #FFFFFF;
     align-self: start;
     margin-bottom: 77px;
+
+    @media (max-width: 1440px) {
+      margin-bottom: 67px;
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-bottom: 58px;
+      max-width: 625px;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+
   }
 
   &__wrapper-button {
@@ -138,6 +190,23 @@ export default {
     border-radius: 10px;
     align-self: start;
     margin-right: 24px;
+
+    @media (max-width: 1440px) {
+      width: 210px;
+      height: 56px;
+      font-size: 20px;
+      line-height: 24px;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 188px;
+      height: 52px;
+      margin-right: 17px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
   }
 
   &__button-information {
@@ -152,6 +221,21 @@ export default {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     align-self: start;
+
+    @media (max-width: 1440px) {
+      width: 263px;
+      height: 58px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 240px;
+      height: 52px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
   }
 
 }

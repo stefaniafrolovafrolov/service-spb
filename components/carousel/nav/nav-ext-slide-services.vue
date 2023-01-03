@@ -48,9 +48,6 @@ export default {
   &__nav {
     display: flex;
 
-
-
-
     &__prev {
       position: absolute;
       border: none;
@@ -64,9 +61,12 @@ export default {
       bottom: 110px;
       left: -10%;
 
+       @media (max-width: 1440px) {
+        bottom: 85px;
+      }
+
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);
-
       }
     }
 
@@ -83,6 +83,10 @@ export default {
       cursor: pointer;
       bottom: 110px;
       right: -10%;
+
+      @media (max-width: 1440px) {
+        bottom: 85px;
+      }
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);

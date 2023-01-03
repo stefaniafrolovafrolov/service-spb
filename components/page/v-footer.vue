@@ -1,6 +1,6 @@
 <template>
   <footer class="v-footer">
-    <img class="v-footer__footer-logo" src="/footer-logo.svg" alt="логотип автосервиса">
+    <div class="v-footer__footer-logo"></div>
     <div class="v-footer__container-text">
       <p class="v-footer__text">Цены на сайте не являются публичной офертой и носят информативный характер.</p>
       <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
@@ -10,6 +10,7 @@
       <img class="v-footer__button-up-strelka" src="/footer-strelkaup.png"
            alt="на изображении стрелочка указывающая вверх">
     </button>
+
   </footer>
 </template>
 
@@ -20,19 +21,43 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .v-footer {
-  max-width: 1920px;
-  min-height: 300px;
+  padding: 96px 100px;
   background: #070A2A;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
+  @media (max-width: 1440px) {
+    padding: 77px 96px;
+  }
+
+  @media (max-width: 1280px) {
+    padding: 68px 88px;
+  }
 
   &__footer-logo {
+    background-image: url("/footer-logo.svg");
     width: 146px;
     height: 104px;
-    margin-left: 90px;
+
+    @media (max-width: 1440px) {
+      width: 120px;
+      height: 69px;
+      background-image: url("/logo-header-1420.svg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 1280px) {
+      width: 106px;
+      height: 65px;
+      background-image: url("/logo-header-1280.svg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
   }
 
   &__container-text {
@@ -42,13 +67,25 @@ export default {
   }
 
   &__text {
-    font-family: 'Inter', "Arial", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     color: #FFFFFF;
     opacity: 0.5;
+
+    @media (max-width: 1440px) {
+      max-width: 815px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 734px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
   }
 
   &__button-up {
@@ -57,11 +94,10 @@ export default {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    margin-right: 90px;
+
   }
 
   &__button-text {
-    font-family: 'Inter', "Arial", sans-serif;
     max-width: 86px;
     font-weight: 400;
     font-size: 24px;
@@ -69,13 +105,18 @@ export default {
     color: #FFFFFF;
     padding-right: 9px;
     opacity: 0.8;
+
+    @media (max-width: 1440px) {
+      max-width: 72px;
+      font-size: 20px;
+      line-height: 24px;
+      padding-right: 5px;
+    }
   }
 
   &__button-up-strelka {
     object-fit: cover;
     background-size: cover;
-
-
   }
 
 }

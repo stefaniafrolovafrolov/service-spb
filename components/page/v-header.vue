@@ -1,17 +1,15 @@
 <template>
   <header class="v-header">
-    <div class="container">
-      <div style="display: flex; align-items: center; justify-content: space-between">
-    <img class="v-header__header-logo" src="/logo-header.svg" alt="логотип автосервиса">
-    <nav class="v-header__navigation">
-      <ul class="v-header__list">
-        <li class="v-header__list-item" v-for="item in items" :key="item.id">{{ item.title }}</li>
-      </ul>
-    </nav>
-    <div class="v-header__contacts">
-      <a class="v-header__phone" href="tel:+79539979283">+7 (953) 997 92 83</a>
-      <p class="v-header__paragraph">Заказать звонок</p>
-    </div>
+    <div class="container media-wrapper">
+      <div class="v-header__header-logo"></div>
+      <nav class="v-header__navigation">
+        <ul class="v-header__list">
+          <li class="v-header__list-item" v-for="item in items" :key="item.id">{{ item.title }}</li>
+        </ul>
+      </nav>
+      <div class="v-header__contacts">
+        <a class="v-header__phone" href="tel:+79539979283">+7 (953) 997 92 83</a>
+        <p class="v-header__paragraph">Заказать звонок</p>
       </div>
     </div>
   </header>
@@ -38,21 +36,64 @@ export default {
   justify-content: space-between;
   background: #070A2A;
 
+  .media-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+  }
 
   &__header-logo {
+    background-image: url("/logo-header.svg");
     width: 146px;
     height: 104px;
+
+    @media (max-width: 1440px) {
+      width: 120px;
+      height: 70px;
+      background-image: url("/logo-header-1420.svg");
+      background-size: 100% 100%;
+    }
+
+    @media (max-width: 1280px) {
+      width: 106px;
+      height: 65px;
+      background-image: url("/logo-header-1280.svg");
+    }
+
+    @media (max-width: 1024px) {
+      width: 96px;
+      height: 60px;
+      background-image: url("/logo-header-1024.svg");
+      background-size: 100% 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 96px;
+      height: 56px;
+      background-image: url("/logo-header-768.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 600px) {
+      width: 70px;
+      height: 42px;
+      background-image: url("/logo-header-320.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__navigation {
+
     align-items: center;
   }
 
   &__list {
+    width: 614px;
     display: flex;
     justify-content: space-between;
-
 
 
     &-item {
@@ -63,10 +104,34 @@ export default {
       color: #FFFFFF;
       padding-left: 30px;
 
-      @media (min-width: 1720px) {
-        font-size: 100px;
+      @media (max-width: 1440px) {
+        font-size: 20px;
+        line-height: 24px;
       }
+
+      @media (max-width: 1280px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 10px;
+      }
+
     }
+
   }
 
   &__contacts {
@@ -76,6 +141,10 @@ export default {
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__phone {
@@ -86,6 +155,32 @@ export default {
     line-height: 29px;
     color: #FFFFFF;
     align-self: end;
+
+    @media (max-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 1280px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 16.2px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16.2px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 14.2px;
+      line-height: 18px;
+    }
+
   }
 
   &__paragraph {
@@ -95,6 +190,34 @@ export default {
     line-height: 22px;
     color: #FFFFFF;
     align-self: end;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    @media (max-width: 1440px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    @media (max-width: 1280px) {
+      font-size: 14.4px;
+      line-height: 17px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 12.96px;
+      line-height: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12.96px;
+      line-height: 16px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 12.96px;
+      line-height: 16px;
+    }
+
   }
 
 }
