@@ -1,13 +1,9 @@
 <template>
   <div class="slide-one">
     <div class="slide-one__title" v-html="item.title">
-
     </div>
     <img class="slide-one__image" :src="item.src" alt="изображения запчастей коробок передач">
-
-
   </div>
-
 </template>
 
 <script>
@@ -43,6 +39,20 @@ export default {
       font-size: 14px;
       line-height: 17px;
     }
+
+    @media (max-width: 768px) {
+      max-width: 149px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+
+    @media (max-width: 320px) {
+      max-width: 224px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
   }
 
   &__image {
@@ -53,6 +63,26 @@ export default {
     @media (max-width: 1440px) {
       width: 210px;
       height: 210px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 188px;
+      height: 188px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 202px;
+      height: 202px;
+    }
+
+    @media (max-width: 768px) {
+      width: 180px;
+      height: 180px;
+    }
+
+    @media (max-width: 320px) {
+      width: 270px;
+      height: 270px;
     }
   }
 }

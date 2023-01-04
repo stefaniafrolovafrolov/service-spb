@@ -1,6 +1,6 @@
 <template>
   <section class="main-block">
-    <article class="container main-block__container">
+    <article class="main-block__container">
       <h1 class="main-block__title">Профессиональный ремонт DSG
         в&nbsp;Cанкт - Петербурге</h1>
       <p class="main-block__subtitle">Бесплатные бонусы при ремонте DSG: эвакуатор,
@@ -32,6 +32,7 @@ export default {
   min-height: 900px;
   background-image: url("static/main-block.png");
   background-size: cover;
+  background-position: center;
 
   @media (max-width: 1440px) {
     min-height: 730px;
@@ -41,6 +42,13 @@ export default {
     min-height: 657px;
   }
 
+  @media (max-width: 1024px) {
+    min-height: 519px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 584px;
+  }
 
   @keyframes animate {
     0% {
@@ -112,7 +120,11 @@ export default {
       margin-left: 90px;
     }
 
+    @media (max-width: 768px) {
+      margin: 0 auto;
+      max-width: 674px;
 
+    }
 
   }
 
@@ -141,8 +153,13 @@ export default {
       margin-top: 111px;
     }
 
-
-
+    @media (max-width: 1024px) {
+      max-width: 728px;
+      font-size: 43.2px;
+      line-height: 52px;
+      margin-top: 72px;
+      margin-bottom: 31px;
+    }
 
   }
 
@@ -170,6 +187,12 @@ export default {
       line-height: 34px;
     }
 
+    @media (max-width: 1024px) {
+      max-width: 563.13px;
+      font-size: 25px;
+      line-height: 31px;
+      margin-bottom: 51px;
+    }
 
   }
 
@@ -207,6 +230,13 @@ export default {
       line-height: 22px;
     }
 
+    @media (max-width: 1024px) {
+      width: 168px;
+      height: 46px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
   }
 
   &__button-information {
@@ -234,6 +264,13 @@ export default {
       height: 52px;
       font-size: 18px;
       line-height: 22px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 210px;
+      height: 46px;
+      font-size: 16px;
+      line-height: 19px;
     }
 
   }

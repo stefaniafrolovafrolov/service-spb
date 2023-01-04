@@ -64,6 +64,8 @@ export default {
     max-width: 978px;
     display: flex;
     flex-direction: column;
+
+
   }
 
   &__text {
@@ -84,6 +86,12 @@ export default {
       max-width: 734px;
       font-size: 18px;
       line-height: 22px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 657px;
+      font-size: 16px;
+      line-height: 19px;
     }
 
   }
@@ -111,6 +119,12 @@ export default {
       font-size: 20px;
       line-height: 24px;
       padding-right: 5px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 57.94px;
+      font-size: 16px;
+      line-height: 19px;
     }
   }
 

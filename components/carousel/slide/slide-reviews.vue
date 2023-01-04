@@ -35,6 +35,11 @@ export default {
       margin-top: 30px;
       margin-left: 30px;
     }
+
+    @media (max-width: 1024px) {
+      margin-top: 25px;
+      margin-left: 25px;
+    }
   }
 
   &__container {
@@ -46,6 +51,11 @@ export default {
     @media (max-width: 1440px) {
       max-width: 180px;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 160px;
+      margin-bottom: 25px;
     }
   }
 
@@ -61,6 +71,11 @@ export default {
       font-size: 16px;
       line-height: 19px;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 13px;
+      line-height: 15px;
+    }
   }
 
   &__author {
@@ -75,6 +90,12 @@ export default {
     @media (max-width: 1440px) {
       font-size: 20px;
       line-height: 24px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 4px;
     }
   }
 
@@ -94,6 +115,13 @@ export default {
       font-size: 16px;
       line-height: 19px;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 540px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 36px;
     }
 
   }

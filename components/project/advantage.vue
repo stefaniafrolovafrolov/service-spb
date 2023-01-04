@@ -8,7 +8,9 @@
         <div class="advantage__container-list">
           <ul class="advantage__list">
             <li class="advantage__list-item" v-for="item in items" :key="item.id">
-              <img class="advantage__logos" :src="item.src" alt="изображение логотипов на тематику автомастерских">
+              <div class="advantage__wrapper-logos">
+                <img class="advantage__logos" :src="item.src" alt="изображение логотипов на тематику автомастерских">
+              </div>
               <p class="advantage__paragraph" v-html="item.title"/>
             </li>
           </ul>
@@ -60,6 +62,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .advantage {
   max-width: 1645px;
   min-height: 750px;
@@ -67,6 +70,7 @@ export default {
   position: relative;
   outline: green solid 5px;
   margin-top: -300px;
+  overflow: hidden;
 
   @media (max-width: 1440px) {
     max-width: 1332px;
@@ -82,12 +86,26 @@ export default {
     margin-left: 57px;
   }
 
+  @media (max-width: 1024px) {
+    max-width: 975px;
+    min-height: 485px;
+    margin-top: -130px;
+    margin-left: 8px;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 768px;
+
+  }
+
   &__image {
     display: block;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     background-size: contain;
+
 
     @media (max-width: 1440px) {
       max-width: 60%;
@@ -97,6 +115,15 @@ export default {
     @media (max-width: 1280px) {
       max-width: 56%;
       height: 60%;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 65%;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 957px;
+
     }
 
   }
@@ -121,6 +148,19 @@ export default {
     @media (max-width: 1280px) {
       width: 610px;
       min-height: 437px;
+    }
+
+    @media (max-width: 1024px) {
+      top: 18px;
+      width: 600px;
+      min-height: 466px;
+    }
+
+    @media (max-width: 768px) {
+      top: 102px;
+      right: 54px;
+      width: 660px;
+      min-height: 513px;
     }
 
   }
@@ -148,6 +188,22 @@ export default {
       margin-top: 43px;
     }
 
+    @media (max-width: 1024px) {
+      font-size: 42px;
+      line-height: 51px;
+      margin-left: 22px;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 547px;
+      font-size: 46px;
+      line-height: 56px;
+      margin-top: 53px;
+      margin-left: 0;
+      margin-right: 45px;
+    }
+
   }
 
   &__container-list {
@@ -161,7 +217,6 @@ export default {
     @media (max-width: 1280px) {
       margin-top: 45px;
     }
-
 
   }
 
@@ -184,7 +239,22 @@ export default {
         margin-bottom: 35px;
       }
 
+      @media (max-width: 1024px) {
+        max-width: 270px;
+        margin-bottom: 42px;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 300px;
+        margin-bottom: 40px;
+
+      }
+
     }
+  }
+
+  &__wrapper-logos {
+    display: block;
   }
 
   &__logos {
@@ -199,6 +269,16 @@ export default {
     @media (max-width: 1280px) {
       width: 47px;
       height: 47px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media (max-width: 768px) {
+      width: 55px;
+      height: 55px;
     }
 
   }
@@ -219,10 +299,21 @@ export default {
     }
 
     @media (max-width: 1280px) {
-      font-size: 14px;
-      line-height: 17px;
       margin-left: 9px;
-      margin-top: 5px;
+
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 215px;
+      margin-left: 10px;
+
+    }
+
+    @media (max-width: 768px) {
+      max-width: 220px;
+      font-size: 15px;
+      line-height: 19px;
+
     }
 
   }

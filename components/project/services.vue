@@ -10,15 +10,7 @@
                   :items="items"
                   component-slide="slide-services"
                   component-nav-ext="nav-ext-slide-services"
-                  :options='{ grabCursor: true,
-          slidesPerView: 4,
-          loop: true,
-          spaceBetween: 28,
-           autoplay: {
-      delay: 4000,   // пауза между перелистыванием
-      disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
-    },}
-'/>
+                  :options='slider'/>
       </div>
     </div>
     <p class="services__text">Звоните, спрашивайте, интересуйтесь доступными для вас привелегиями и ценами.
@@ -36,6 +28,43 @@ export default {
     carousel
   },
   data: () => ({
+
+    slider: {
+ grabCursor: true,
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 28,
+  autoplay: {
+  delay: 4000,   // пауза между перелистыванием
+    disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
+  },
+      breakpoints: {
+   1920: {
+     slidesPerView: 4,
+     spaceBetween: 28,
+   },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 28,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1025: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      }
+    },
+
     items: [
       {id: 1, src: "/slide-one-image1.jpg", title: "Замена сцепления <strong>Powershift DCT250</strong>"},
       {
@@ -78,9 +107,18 @@ export default {
 
     @media (max-width: 1440px) {
       font-size: 48px;
-      line-height: 58px;
+      line-height: 51px;
       margin: 80px 0 38px 0;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 699px;
+      font-size: 42px;
+      line-height: 51px;
+      margin: 48px 0 16px 0;
+    }
+
+
   }
 
   &__subtitle {
@@ -97,6 +135,13 @@ export default {
       line-height: 24px;
       margin-bottom: 52px;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 690px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
   }
 
   &__gallery {
@@ -105,6 +150,18 @@ export default {
 
     @media (max-width: 1440px) {
       max-width: 924px;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 818px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 646px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 580px;
     }
   }
 
@@ -126,6 +183,13 @@ export default {
       font-size: 20px;
       line-height: 24px;
       margin: 50px 0 150px 0;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 400px;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 16px 0 110px 0;
     }
 
   }

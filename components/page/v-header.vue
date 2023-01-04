@@ -95,6 +95,10 @@ export default {
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1024px) {
+      width: 404px;
+    }
+
 
     &-item {
       list-style: none;
@@ -117,6 +121,7 @@ export default {
       @media (max-width: 1024px) {
         font-size: 16px;
         line-height: 19px;
+        padding-left: 0;
       }
 
       @media (max-width: 768px) {

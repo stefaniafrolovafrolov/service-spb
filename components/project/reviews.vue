@@ -34,6 +34,9 @@ export default {
     carousel
   },
   data: () => ({
+
+
+
     items: [
       {
         id: 1, number: "6 февраля 2021", author: "Екатерина К.", src: "/slide-two-image-star.svg", text: "Отличная" +
@@ -114,6 +117,14 @@ export default {
       margin-bottom: 18px;
       margin-top: 116px;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 429px;
+      font-size: 38px;
+      line-height: 46px;
+      margin-bottom: 17px;
+      margin-top: 72px;
+    }
   }
 
   &__subtitle {
@@ -130,6 +141,12 @@ export default {
       line-height: 24px;
       margin-bottom: 18px;
     }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 16px;
+    }
   }
 
   &__gallery {
@@ -141,6 +158,12 @@ export default {
       width: 730px;
       height: 280px;
       margin-bottom: 116px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 583px;
+      height: 260px;
+     margin-bottom: 72px;
     }
   }
 

@@ -40,6 +40,11 @@ export default {
     padding: 80px 0 80px 0;
   }
 
+  @media (max-width: 1024px) {
+    max-width: 854px;
+    padding: 48px 0 48px 0;
+  }
+
   &__title {
     max-width: 1006px;
     font-weight: 700;
@@ -55,6 +60,13 @@ export default {
       font-size: 48px;
       line-height: 58px;
       margin-bottom: 64px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 652px;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 51px;
     }
   }
 
@@ -73,6 +85,11 @@ export default {
      width: 616px;
       min-height: 486px;
     }
+
+    @media (max-width: 1024px) {
+      width: 492px;
+      min-height: 388px;
+    }
   }
 
   &__address-container {
@@ -80,6 +97,10 @@ export default {
     flex-direction: column;
     align-items: end;
     margin-left: 60px;
+
+    @media (max-width: 1024px) {
+      margin-left: 10px;
+    }
   }
 
   &__address-text {
@@ -97,6 +118,13 @@ export default {
       font-size: 32px;
       line-height: 41px;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 349px;
+      font-size: 26px;
+      line-height: 33px;
+      padding-bottom: 10px;
+    }
   }
 
   &__address-link {
@@ -113,6 +141,12 @@ export default {
       font-size: 32px;
       line-height: 39px;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 330px;
+      font-size: 26px;
+      line-height: 31px;
+    }
   }
 
   &__phone {
@@ -128,6 +162,11 @@ export default {
     @media (max-width: 1440px) {
       font-size: 32px;
       line-height: 39px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 26px;
+      line-height: 31px;
     }
   }
 

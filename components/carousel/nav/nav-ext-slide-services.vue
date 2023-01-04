@@ -1,10 +1,10 @@
 <template>
   <div class="nav-ext-slide-services-slider nav-ext-slide-services-slider__nav">
     <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')">
-      <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">
+     <!-- <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
     </div>
     <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next" @click="$emit('nextClick')">
-      <img src="/slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">
+      <!--<img src="/slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">-->
 
     </div>
   </div>
@@ -51,7 +51,10 @@ export default {
     &__prev {
       position: absolute;
       border: none;
-      background: #FF0000;
+      background-image: url("/slide-one-left-1920.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*background: #FF0000;*/
       border-radius: 10px;
       width: 60px;
       height: 60px;
@@ -73,7 +76,10 @@ export default {
     &__next {
       border: none;
       position: absolute;
-      background: #FF0000;
+      background-image: url("/slide-one-right-1920.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*background: #FF0000;*/
       border-radius: 10px;
       width: 60px;
       height: 60px;

@@ -59,6 +59,11 @@ export default {
     min-height: 692px;
   }
 
+  @media (max-width: 1024px) {
+    min-height: 538px;
+  }
+
+
   &__card {
     outline: 5px solid red;
     width: 1580px;
@@ -76,6 +81,12 @@ export default {
     @media (max-width: 1440px) {
       width: 1280px;
       height: 690px;
+      margin-top: -80px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 944px;
+      height: 552px;
       margin-top: -80px;
     }
   }
@@ -98,6 +109,12 @@ export default {
       margin-top: 40px;
       margin-bottom: 32px;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 424px;
+      font-size: 42px;
+      line-height: 51px;
+    }
   }
 
   &__container {
@@ -108,6 +125,11 @@ export default {
     @media (max-width: 1440px) {
       width: 90%;
     }
+
+    @media (max-width: 1024px) {
+      width: 96%;
+
+    }
   }
 
   &__list {
@@ -116,6 +138,10 @@ export default {
 
     @media (max-width: 1440px) {
       column-gap: 38px;
+    }
+
+    @media (max-width: 1024px) {
+      column-gap: 20px;
     }
 
     &-item {
@@ -132,7 +158,13 @@ export default {
         font-size: 20px;
         line-height: 24px;
         padding-bottom: 19px;
+      }
 
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 15px;
       }
     }
   }
@@ -151,6 +183,12 @@ export default {
       margin: 40px 0 10px 0;
       font-size: 32px;
       line-height: 39px;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 32px 0 10px 0;
+      font-size: 24px;
+      line-height: 29px;
     }
   }
 
@@ -173,6 +211,13 @@ export default {
       font-size: 20px;
       line-height: 24px;
     }
+
+    @media (max-width: 1024px) {
+      width: 233px;
+      height: 46px;
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   &__paragraph {
@@ -189,6 +234,12 @@ export default {
       font-size: 14px;
       line-height: 17px;
       margin: 0px 0 16px 60px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin: 0px 0 16px 9px;
     }
   }
 
