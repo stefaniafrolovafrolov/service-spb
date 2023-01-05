@@ -30,38 +30,54 @@ export default {
   data: () => ({
 
     slider: {
- grabCursor: true,
-  slidesPerView: 4,
-  loop: true,
-  spaceBetween: 28,
-  autoplay: {
-  delay: 4000,   // пауза между перелистыванием
-    disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
-  },
+      grabCursor: true,
+      slidesPerView: 4,
+      loop: true,
+      spaceBetween: 28,
+      autoplay: {
+        delay: 3000,   // пауза между перелистыванием
+        disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
+      },
       breakpoints: {
-   1920: {
-     slidesPerView: 4,
-     spaceBetween: 28,
-   },
+
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 28,
+        },
+
         1440: {
           slidesPerView: 4,
           spaceBetween: 28,
         },
+
         1280: {
           slidesPerView: 4,
           spaceBetween: 20,
         },
+
         1025: {
           slidesPerView: 4,
           spaceBetween: 20,
         },
+
         768: {
           slidesPerView: 3,
           spaceBetween: 20,
         },
+
+        738: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+
+        725: {
+          slidesPerView: 1,
+        },
+
         320: {
           slidesPerView: 1,
         },
+
       }
     },
 
@@ -118,6 +134,13 @@ export default {
       margin: 48px 0 16px 0;
     }
 
+    @media (max-width: 320px) {
+      max-width: 272px;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 36px 0 12px 0;
+    }
+
 
   }
 
@@ -142,6 +165,13 @@ export default {
       line-height: 22px;
       margin-bottom: 16px;
     }
+
+    @media (max-width: 320px) {
+      max-width: 252px;
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 12px;
+    }
   }
 
   &__gallery {
@@ -162,6 +192,16 @@ export default {
 
     @media (max-width: 768px) {
       max-width: 580px;
+    }
+
+    @media (max-width: 725px) {
+      max-width: 60%;
+      height: 280px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 270px;
+      height: 270px;
     }
   }
 
@@ -190,6 +230,13 @@ export default {
       font-size: 16px;
       line-height: 19px;
       margin: 16px 0 110px 0;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 252px;
+      font-size: 10px;
+      line-height: 12px;
+      margin: 53px 0 70px 0;
     }
 
   }

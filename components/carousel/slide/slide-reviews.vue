@@ -109,6 +109,7 @@ export default {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    margin-bottom: 40px;
 
     @media (max-width: 1440px) {
       max-width: 674px;

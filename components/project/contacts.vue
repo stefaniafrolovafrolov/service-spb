@@ -8,7 +8,7 @@
     1!3m3!1m2!1s0x469632f93e0db82d%3A0x29d5a9ef44282a13!2z0J
     _QuNGB0LrQsNGA0ZHQstGB0LrQuNC5INC_0YAuLCAxMTksINCh0LDQvdC60YIt0J
     _QtdGC0LXRgNCx0YPRgNCzLCAxOTUyNzM!5e0!3m2!1sru!2sru!4v1661424461414!5m2!1sru!2sru"
-                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                width="100%" height="100%" style="border-radius:10px;" allowfullscreen=""
                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="contacts__address-container">
@@ -45,6 +45,10 @@ export default {
     padding: 48px 0 48px 0;
   }
 
+  @media (max-width: 768px) {
+    max-width: 708px;
+  }
+
   &__title {
     max-width: 1006px;
     font-weight: 700;
@@ -73,6 +77,10 @@ export default {
   &__maps-container {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__maps {
@@ -90,6 +98,11 @@ export default {
       width: 492px;
       min-height: 388px;
     }
+
+    @media (max-width: 768px) {
+      width: 708px;
+    }
+
   }
 
   &__address-container {
@@ -101,6 +114,12 @@ export default {
     @media (max-width: 1024px) {
       margin-left: 10px;
     }
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+
   }
 
   &__address-text {

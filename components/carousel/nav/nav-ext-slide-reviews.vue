@@ -51,17 +51,17 @@ export default {
     &__prev {
       position: absolute;
       border: none;
-      background-image: url("/slide-two-left-1920.svg");
+      background-image: url("/slide-one-left-1920.svg");
       background-size: cover;
       background-repeat: no-repeat;
      /* background: #FF0000;*/
       border-radius: 10px;
-      width: 78px;
-      height: 78px;
+      width: 60px;
+      height: 60px;
       display: flex;
       justify-content: center;
       cursor: pointer;
-      bottom: 110px;
+      bottom: 140px;
       left: -13%;
 
       @media (max-width: 1440px) {
@@ -70,6 +70,25 @@ export default {
         left: -15%;
       }
 
+      @media (max-width: 1280px) {
+        background-image: url("/slide-one-left-1280.svg");
+        width: 54px;
+        height: 54px;
+        bottom: 110px;
+      }
+
+      @media (max-width: 1024px) {
+        background-image: url("/slide-one-left-1024.svg");
+        width: 48px;
+        height: 48px;
+      }
+
+      @media (max-width: 768px) {
+        background-image: url("/slide-one-left-768.svg");
+        width: 40px;
+        height: 40px;
+        left: -10%;
+      }
 
 
       &:hover {
@@ -81,23 +100,43 @@ export default {
     &__next {
       border: none;
       position: absolute;
-      background-image: url("/slide-two-right-1920.svg");
+      background-image: url("/slide-one-right-1920.svg");
       background-size: cover;
       background-repeat: no-repeat;
       /*background: #FF0000;*/
       border-radius: 10px;
-      width: 78px;
-      height: 78px;
+      width: 60px;
+      height: 60px;
       display: flex;
       justify-content: center;
       cursor: pointer;
-      bottom: 110px;
+      bottom: 140px;
       right: -13%;
 
       @media (max-width: 1440px) {
         background-image: url("/slide-two-right-1440.svg.svg");
         bottom: 85px;
         right: -15%;
+      }
+
+      @media (max-width: 1280px) {
+        background-image: url("/slide-one-right-1280.svg");
+        width: 54px;
+        height: 54px;
+        bottom: 110px;
+      }
+
+      @media (max-width: 1024px) {
+        background-image: url("/slide-one-right-1024.svg");
+        width: 48px;
+        height: 48px;
+      }
+
+      @media (max-width: 768px) {
+        background-image: url("/slide-one-right-768.svg");
+        width: 40px;
+        height: 40px;
+        right: -10%;
       }
 
       &:hover {

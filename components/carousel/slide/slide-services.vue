@@ -19,6 +19,7 @@ export default {
 .slide-one {
   position: relative;
 
+
   &__title {
     position: absolute;
     bottom: 12px;
@@ -48,7 +49,7 @@ export default {
 
 
     @media (max-width: 320px) {
-      max-width: 224px;
+      max-width: 164px;
       font-size: 14px;
       line-height: 17px;
     }
@@ -78,6 +79,16 @@ export default {
     @media (max-width: 768px) {
       width: 180px;
       height: 180px;
+    }
+
+    @media (max-width: 738px) {
+      width: 280px;
+      height: 280px;
+    }
+
+    @media (max-width: 725px) {
+      width: 100%;
+      height: 280px;
     }
 
     @media (max-width: 320px) {

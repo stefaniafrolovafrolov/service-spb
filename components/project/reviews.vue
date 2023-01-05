@@ -10,15 +10,7 @@
                   :items="items"
                   component-slide="slide-reviews"
                   component-nav-ext="nav-ext-slide-reviews"
-                  :options='{ grabCursor: true,
-          slidesPerView: 1,
-          loop: true,
-          spaceBetween: 28,
-           autoplay: {
-      delay: 4000,   // пауза между перелистыванием
-      disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
-    },}
-'/>
+                  :options='slider'/>
       </div>
     </div>
 
@@ -35,56 +27,69 @@ export default {
   },
   data: () => ({
 
+    slider: {
+      grabCursor: true,
+      slidesPerView: 1,
+      loop: true,
+      /*spaceBetween: 28,*/
+      autoplay: {
+        delay: 4000,   // пауза между перелистыванием
+        disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
+      },
+    },
+      items: [
+        {
+          id: 1, number: "6 февраля 2021", author: "Екатерина К.", src: "/slide-two-image-star.svg", text: "Отличная" +
+            " автомастерская. Благодарю мастера и по совместительству менеджера и&nbsp;владельца Андрея и его команду" +
+            " профессиональных автомехаников за помощь  и проделанную работу. Ребята отлично разбираются в вопросах" +
+            " АКПП, КПП, РКП    и&nbsp;связанных с ними агрегатов. В моем случае замена сцепления и масла коробки передач," +
+            " также прочистили дроссельную заслонку и поменяли свечи. В общем отличная&nbsp;мастерская, очень рекомендую\n"
+        },
+        {
+          id: 2,
+          number: "17 августа 2022",
+          author: "Александр Е.",
+          src: "/slide-two-image-star.svg",
+          text: "Честный и" +
+            " грамотный мастер. Рекомендую."
+        },
+        {
+          id: 3, number: "22 марта 2021", author: "DG", src: "/slide-two-image-star.svg", text: "Менял сцепление и" +
+            " маховик на DSG ! Быстро ! Качественно ! Бесплатный эвакуатор !! Рекомендую !!"
+        },
+        {
+          id: 4, number: "1 декабря 2021", author: "Головко Максим", src: "/slide-two-image-star.svg", text: "Ребята" +
+            " молодцы произошёл гарантийный случай отреагировали сразу,всё переделали"
+        },
+        {
+          id: 5,
+          number: "15 сентября 2021",
+          author: "Константин Волков",
+          src: "/slide-two-image-star.svg",
+          text: "Хороший" +
+            " сервис, одно из немногих мест где не разводят"
+        },
+        {
+          id: 6, number: "20 мая 2021", author: "Constantin L.", src: "/slide-two-image-star.svg", text: "Отличный" +
+            " сервис и грамотный мастер"
+        },
+        {
+          id: 7, number: "9 мая 2021", author: "Алексей У.", src: "/slide-two-image-star.svg", text: "Приезжал на" +
+            " диагностику 0B5\n" +
+            "Быстро, профессионально + сделали бесплатно адаптацию."
+        },
+        {
+          id: 8,
+          number: "29 апреля 2021",
+          author: "Тролеф Иван",
+          src: "/slide-two-image-star.svg",
+          text: "Хорошие специ" +
+            " без обмана"
+        },
+      ]
+    })
+  }
 
-
-    items: [
-      {
-        id: 1, number: "6 февраля 2021", author: "Екатерина К.", src: "/slide-two-image-star.svg", text: "Отличная" +
-          " автомастерская. Благодарю мастера и по совместительству менеджера и&nbsp;владельца Андрея и его команду" +
-          " профессиональных автомехаников за помощь  и проделанную работу. Ребята отлично разбираются в вопросах" +
-          " АКПП, КПП, РКП    и&nbsp;связанных с ними агрегатов. В моем случае замена сцепления и масла коробки передач," +
-          " также прочистили дроссельную заслонку и поменяли свечи. В общем отличная&nbsp;мастерская, очень рекомендую\n"
-      },
-      {
-        id: 2, number: "17 августа 2022", author: "Александр Е.", src: "/slide-two-image-star.svg", text: "Честный и" +
-          " грамотный мастер. Рекомендую."
-      },
-      {
-        id: 3, number: "22 марта 2021", author: "DG", src: "/slide-two-image-star.svg", text: "Менял сцепление и" +
-          " маховик на DSG ! Быстро ! Качественно ! Бесплатный эвакуатор !! Рекомендую !!"
-      },
-      {
-        id: 4, number: "1 декабря 2021", author: "Головко Максим", src: "/slide-two-image-star.svg", text: "Ребята" +
-          " молодцы произошёл гарантийный случай отреагировали сразу,всё переделали"
-      },
-      {
-        id: 5,
-        number: "15 сентября 2021",
-        author: "Константин Волков",
-        src: "/slide-two-image-star.svg",
-        text: "Хороший" +
-          " сервис, одно из немногих мест где не разводят"
-      },
-      {
-        id: 6, number: "20 мая 2021", author: "Constantin L.", src: "/slide-two-image-star.svg", text: "Отличный" +
-          " сервис и грамотный мастер"
-      },
-      {
-        id: 7, number: "9 мая 2021", author: "Алексей У.", src: "/slide-two-image-star.svg", text: "Приезжал на" +
-          " диагностику 0B5\n" +
-          "Быстро, профессионально + сделали бесплатно адаптацию."
-      },
-      {
-        id: 8,
-        number: "29 апреля 2021",
-        author: "Тролеф Иван",
-        src: "/slide-two-image-star.svg",
-        text: "Хорошие специ" +
-          " без обмана"
-      },
-    ]
-  })
-}
 </script>
 
 <style scoped lang="scss">
@@ -118,6 +123,11 @@ export default {
       margin-top: 116px;
     }
 
+    @media (max-width: 1280px) {
+      margin-bottom: 15px;
+      margin-top: 98px;
+    }
+
     @media (max-width: 1024px) {
       max-width: 429px;
       font-size: 38px;
@@ -142,6 +152,12 @@ export default {
       margin-bottom: 18px;
     }
 
+    @media (max-width: 1280px) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+
     @media (max-width: 1024px) {
       font-size: 16px;
       line-height: 19px;
@@ -150,14 +166,22 @@ export default {
   }
 
   &__gallery {
-    width: 1136px;
-    height: 345px;
+   /* width: 1136px;*/
+    width: 900px;
+    height: 100%;
+    /*height: 345px;*/
     margin-bottom: 144px;
 
     @media (max-width: 1440px) {
       width: 730px;
       height: 280px;
       margin-bottom: 116px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 655px;
+      height: 264px;
+      margin-bottom: 98px;
     }
 
     @media (max-width: 1024px) {

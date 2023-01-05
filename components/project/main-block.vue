@@ -50,6 +50,14 @@ export default {
     min-height: 584px;
   }
 
+  @media (max-width: 695px) {
+    min-height: 460px;
+  }
+
+  @media (max-width: 320px) {
+    min-height: 482px;
+  }
+
   @keyframes animate {
     0% {
       transform: scale(0.5);
@@ -123,7 +131,14 @@ export default {
     @media (max-width: 768px) {
       margin: 0 auto;
       max-width: 674px;
+    }
 
+    @media (max-width: 695px) {
+      max-width: 608px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 272px;
     }
 
   }
@@ -161,6 +176,22 @@ export default {
       margin-bottom: 31px;
     }
 
+    @media (max-width: 695px) {
+      max-width: 608px;
+      font-size: 35px;
+      line-height: 39px;
+      margin-top: 52px;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 272px;
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+    }
+
   }
 
   &__subtitle {
@@ -194,10 +225,28 @@ export default {
       margin-bottom: 51px;
     }
 
+    @media (max-width: 695px) {
+      max-width: 523.13px;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 41px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 271px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 7px;
+    }
+
   }
 
   &__wrapper-button {
     display: flex;
+
+    @media (max-width: 320px) {
+     flex-direction: column;
+    }
   }
 
   &__button-contact {
@@ -237,6 +286,12 @@ export default {
       line-height: 19px;
     }
 
+    @media (max-width: 320px) {
+      width: 271px;
+      margin-right: 0;
+      margin-bottom: 7px;
+    }
+
   }
 
   &__button-information {
@@ -271,6 +326,10 @@ export default {
       height: 46px;
       font-size: 16px;
       line-height: 19px;
+    }
+
+    @media (max-width: 320px) {
+      width: 271px;
     }
 
   }

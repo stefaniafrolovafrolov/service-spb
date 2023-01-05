@@ -1,5 +1,15 @@
 <template>
   <header class="v-header">
+
+
+   <!-- <div class="contain">
+      <div class="contain__mobile-menu">
+        <div class="contain__mobile-menu__logo"></div>
+        <div class="contain__mobile-menu__button"></div>
+      </div>
+    </div>-->
+
+
     <div class="container media-wrapper">
       <div class="v-header__header-logo"></div>
       <nav class="v-header__navigation">
@@ -36,10 +46,57 @@ export default {
   justify-content: space-between;
   background: #070A2A;
 
+  /*.contain {
+
+    padding-top: 12px;
+    max-width: 580px;
+    padding-bottom: 14px;
+
+
+  &__mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      width: 70px;
+      height: 50px;
+      background-image: url("/logo-header-320.svg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &__button {
+      width: 25px;
+      height: 25px;
+      background-image: url("/header-menu-320.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+    @media (max-width: 1920px) {
+      display: none;
+    }
+
+    @media (max-width: 630px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }*/
+
   .media-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 630px) {
+      /*display: none;*/
+    }
 
   }
 
@@ -76,17 +133,25 @@ export default {
       background-repeat: no-repeat;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 728px) {
       width: 70px;
-      height: 42px;
+      height: 50px;
       background-image: url("/logo-header-320.svg");
-      background-size: contain;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (max-width: 600px) {
+      /* width: 70px;
+       height: 50px;
+       background-image: url("/logo-header-320.svg");
+       background-size: contain;
+       background-repeat: no-repeat;*/
     }
   }
 
   &__navigation {
-
     align-items: center;
   }
 
@@ -97,6 +162,10 @@ export default {
 
     @media (max-width: 1024px) {
       width: 404px;
+    }
+
+    @media (max-width: 728px) {
+      width: 340px;
     }
 
 
@@ -152,6 +221,7 @@ export default {
     }
   }
 
+
   &__phone {
     text-decoration: none;
     max-width: 208px;
@@ -181,10 +251,6 @@ export default {
       line-height: 20px;
     }
 
-    @media (max-width: 600px) {
-      font-size: 14.2px;
-      line-height: 18px;
-    }
 
   }
 
@@ -218,10 +284,6 @@ export default {
       line-height: 16px;
     }
 
-    @media (max-width: 600px) {
-      font-size: 12.96px;
-      line-height: 16px;
-    }
 
   }
 

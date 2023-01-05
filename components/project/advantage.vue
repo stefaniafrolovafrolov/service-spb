@@ -96,7 +96,10 @@ export default {
 
   @media (max-width: 768px) {
     max-width: 768px;
+  }
 
+  @media (max-width: 320px) {
+    max-width: 100%;
   }
 
   &__image {
@@ -123,7 +126,6 @@ export default {
 
     @media (max-width: 768px) {
       max-width: 957px;
-
     }
 
   }
@@ -161,6 +163,11 @@ export default {
       right: 54px;
       width: 660px;
       min-height: 513px;
+    }
+
+    @media (max-width: 320px) {
+      width: 272px;
+      min-height: 412px;
     }
 
   }

@@ -68,6 +68,53 @@ export default {
         bottom: 85px;
       }
 
+      @media (max-width: 1280px) {
+          background-image: url("/slide-one-left-1280.svg");
+          width: 54px;
+          height: 54px;
+      }
+
+
+      @media (max-width: 1024px) {
+        background-image: url("/slide-one-left-1024.svg");
+        width: 48px;
+        height: 48px;
+        left: -15%;
+      }
+
+      @media (max-width: 855px) {
+        left: -10%;
+      }
+
+      @media (max-width: 768px) {
+        background-image: url("/slide-one-left-768.svg");
+        width: 40px;
+        height: 40px;
+        bottom: 75px;
+        left: -10%;
+      }
+
+      @media (max-width: 738px) {
+        bottom: 125px;
+        left: -12%;
+      }
+
+      @media (max-width: 725px) {
+        left: -17%;
+      }
+
+      @media (max-width: 635px) {
+        left: -23%;
+      }
+
+      @media (max-width: 320px) {
+        background-image: url("/slide-one-left-320.svg");
+        width: 34px;
+        height: 34px;
+        bottom: -45px;
+        left: 33%;
+      }
+
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);
       }
@@ -92,6 +139,52 @@ export default {
 
       @media (max-width: 1440px) {
         bottom: 85px;
+      }
+
+      @media (max-width: 1280px) {
+        background-image: url("/slide-one-right-1280.svg");
+        width: 54px;
+        height: 54px;
+      }
+
+      @media (max-width: 1024px) {
+        background-image: url("/slide-one-right-1024.svg");
+        width: 48px;
+        height: 48px;
+        right: -15%;
+      }
+
+      @media (max-width: 855px) {
+        right: -10%;
+      }
+
+      @media (max-width: 768px) {
+        background-image: url("/slide-one-right-768.svg");
+        width: 40px;
+        height: 40px;
+        bottom: 75px;
+        right: -10%;
+      }
+
+      @media (max-width: 738px) {
+        bottom: 125px;
+        right: -13%;
+      }
+
+      @media (max-width: 725px) {
+        right: -17%;
+      }
+
+      @media (max-width: 635px) {
+        right: -23%;
+      }
+
+      @media (max-width: 320px) {
+        background-image: url("/slide-one-right-320.svg");
+        width: 34px;
+        height: 34px;
+        bottom: -45px;
+        right: 33%;
       }
 
       &:hover {
