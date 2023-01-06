@@ -11,7 +11,9 @@
 
 
     <div class="container media-wrapper">
+      <div style="display: block">
       <div class="v-header__header-logo"></div>
+      </div>
       <nav class="v-header__navigation">
         <ul class="v-header__list">
           <li class="v-header__list-item" v-for="item in items" :key="item.id">{{ item.title }}</li>
@@ -101,6 +103,7 @@ export default {
   }
 
   &__header-logo {
+    display: block;
     background-image: url("/logo-header.svg");
     width: 146px;
     height: 104px;

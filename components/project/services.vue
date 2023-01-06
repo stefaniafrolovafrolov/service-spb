@@ -96,6 +96,60 @@ export default {
           "<strong>DSG 6</strong>"
       },
 
+
+      {
+        id: 5, src: "/slide-one-image5.jpg", title: "<strong>Переборка АКПП </strong>"
+      },
+      {
+        id: 6, src: "/slide-one-image6.jpg", title: "Замена сцепления\n" +
+          "<strong>Powershift DCT450</strong>"
+      },
+      {
+        id: 7, src: "/slide-one-image7.jpg", title: "Замена маховика\n" +
+          "<strong>АКПП DSG S-Tronic</strong>"
+      },
+      {
+        id: 8, src: "/slide-one-image8.jpg", title: "Ремонт АКПП DSG \n" +
+          "<strong>S-Tronic Powershift</strong>"
+      },
+
+
+      {
+        id: 9, src: "/slide-one-image9.jpg", title: "Ремонт мехатроника\n" +
+          "<strong>DQ200</strong>"
+      },
+      {
+        id: 10, src: "/slide-one-image10.jpg", title: "Ремонт мехатроника\n" +
+          "<strong>DQ500</strong>"
+      },
+      {
+        id: 11, src: "/slide-one-image11.jpg", title: "Ремонт мехатроника\n" +
+          "<strong>DL501 0B5</strong>"
+      },
+      {
+        id: 12, src: "/slide-one-image12.jpg", title: "Ремонт мехатроника\n" +
+          "<strong>DCT450</strong>"
+      },
+
+
+      {
+        id: 13, src: "/slide-one-image13.jpg", title: "Снятие/установка\n" +
+          "<strong>АКПП</strong>"
+      },
+      {
+        id: 14, src: "/slide-one-image14.jpg", title: "Снятие/установка\n" +
+          "<strong>мехатроника</strong>"
+      },
+      {
+        id: 15, src: "/slide-one-image15.jpg", title: "Переборка\n" +
+          "<strong>мехатроника</strong>"
+      },
+      {
+        id: 16, src: "/slide-one-image16.jpg", title: "Снятие/установка\n" +
+          "<strong>Гидроблока</strong>"
+      },
+
+
     ]
   })
 }

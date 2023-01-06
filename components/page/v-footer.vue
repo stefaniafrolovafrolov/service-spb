@@ -1,16 +1,18 @@
 <template>
   <footer class="v-footer">
-    <div class="v-footer__footer-logo"></div>
-    <div class="v-footer__container-text">
-      <p class="v-footer__text">Цены на сайте не являются публичной офертой и носят информативный характер.</p>
-      <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
+    <div class="v-footer__container">
+      <div style="display: block">
+        <div class="v-footer__footer-logo"></div>
+      </div>
+      <div class="v-footer__container-text">
+        <p class="v-footer__text">Цены на сайте не являются публичной офертой и носят информативный характер.</p>
+        <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
+      </div>
+      <div style="display: block">
+        <button class="v-footer__button-up">
+        </button>
+      </div>
     </div>
-    <button class="v-footer__button-up">
-      <p class="v-footer__button-text">Наверх</p>
-      <img class="v-footer__button-up-strelka" src="/footer-strelkaup.png"
-           alt="на изображении стрелочка указывающая вверх">
-    </button>
-
   </footer>
 </template>
 
@@ -23,18 +25,90 @@ export default {
 <style scoped lang="scss">
 
 .v-footer {
-  padding: 96px 100px;
+  padding: 96px 0 100px 0;
   background: #070A2A;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
 
   @media (max-width: 1440px) {
-    padding: 77px 96px;
+    padding: 77px 0 96px 0;
   }
 
   @media (max-width: 1280px) {
-    padding: 68px 88px;
+    padding: 68px 0 88px 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 70px 0 70px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 40px 0;
+  }
+
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1550px) {
+      max-width: 1350px;
+    }
+
+    @media (max-width: 1440px) {
+      max-width: 1230px;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 1110px;
+    }
+
+    @media (max-width: 1135px) {
+      max-width: 1000px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 945px;
+    }
+
+    @media (max-width: 950px) {
+      max-width: 850px;
+    }
+
+    @media (max-width: 860px) {
+      max-width: 760px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 710px;
+    }
+
+    @media (max-width: 716px) {
+      max-width: 610px;
+    }
+
+    @media (max-width: 616px) {
+      max-width: 510px;
+    }
+
+    @media (max-width: 520px) {
+      max-width: 430px;
+    }
+
+    @media (max-width: 435px) {
+      max-width: 380px;
+    }
+
+    @media (max-width: 385px) {
+      max-width: 360px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 272px;
+    }
+
   }
 
   &__footer-logo {
@@ -43,19 +117,38 @@ export default {
     height: 104px;
 
     @media (max-width: 1440px) {
-      width: 120px;
-      height: 69px;
       background-image: url("/logo-header-1420.svg");
+      width: 120px;
+      height: 86px;
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
 
     @media (max-width: 1280px) {
-      width: 106px;
-      height: 65px;
       background-image: url("/logo-header-1280.svg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
+      width: 106px;
+      height: 75px;
+
+    }
+
+    @media (max-width: 1024px) {
+      background-image: url("/logo-header-1024.svg");
+      width: 96px;
+      height: 68px;
+
+    }
+
+    @media (max-width: 616px) {
+      background-image: url("/logo-header-320.svg");
+      width: 60px;
+      height: 40px;
+
+    }
+
+    @media (max-width: 365px) {
+      width: 40px;
+      height: 20px;
+
     }
 
   }
@@ -64,8 +157,6 @@ export default {
     max-width: 978px;
     display: flex;
     flex-direction: column;
-
-
   }
 
   &__text {
@@ -94,44 +185,80 @@ export default {
       line-height: 19px;
     }
 
+    @media (max-width: 860px) {
+      max-width: 600px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 500px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @media (max-width: 716px) {
+      max-width: 400px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    @media (max-width: 616px) {
+      max-width: 420px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 6px;
+      line-height: 7px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 190px;
+      font-size: 6px;
+      line-height: 7px;
+    }
+
   }
 
   &__button-up {
+    background-image: url("/Group 86.svg");
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-
-  }
-
-  &__button-text {
-    max-width: 86px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    padding-right: 9px;
-    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 29px;
 
     @media (max-width: 1440px) {
-      max-width: 72px;
-      font-size: 20px;
-      line-height: 24px;
-      padding-right: 5px;
+      width: 77px;
+      height: 24px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 70px;
+      height: 22px;
     }
 
     @media (max-width: 1024px) {
-      max-width: 57.94px;
-      font-size: 16px;
-      line-height: 19px;
+      width: 61px;
+      height: 19px;
     }
-  }
 
-  &__button-up-strelka {
-    object-fit: cover;
-    background-size: cover;
+    @media (max-width: 550px) {
+      width: 50px;
+      height: 16px;
+    }
+
+    @media (max-width: 320px) {
+      width: 40px;
+      height: 13px;
+    }
+
   }
 
 }
+
 </style>
