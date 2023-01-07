@@ -2,17 +2,30 @@
   <header class="v-header">
 
 
-   <!-- <div class="contain">
-      <div class="contain__mobile-menu">
-        <div class="contain__mobile-menu__logo"></div>
-        <div class="contain__mobile-menu__button"></div>
+    <div class="container-2">
+      <img class="mobile" src="/logo-header-320.svg" alt="логотип сервиса">
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">О нас</a></li>
+          <li><a class="menu__item" href="#">Услуги</a></li>
+          <li><a class="menu__item" href="#">Цены</a></li>
+          <li><a class="menu__item" href="#">Отзывы</a></li>
+          <li><a class="menu__item" href="#">Контакты</a></li>
+        </ul>
       </div>
-    </div>-->
+
+    </div>
 
 
     <div class="container media-wrapper">
       <div style="display: block">
-      <div class="v-header__header-logo"></div>
+        <div class="v-header__header-logo"></div>
       </div>
       <nav class="v-header__navigation">
         <ul class="v-header__list">
@@ -48,56 +61,151 @@ export default {
   justify-content: space-between;
   background: #070A2A;
 
-  /*.contain {
+  @media (max-width: 575px) {
+    min-height: 86px;
+  }
 
-    padding-top: 12px;
-    max-width: 580px;
-    padding-bottom: 14px;
+  .container-2 {
+    display: none;
 
-
-  &__mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__logo {
-      width: 70px;
-      height: 50px;
-      background-image: url("/logo-header-320.svg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: center;
+    @media (max-width: 575px) {
+      display: flex;
+      align-items: center;
     }
 
-    &__button {
-      width: 25px;
-      height: 25px;
-      background-image: url("/header-menu-320.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
+    .mobile {
+      width: 70px;
+      height: 50px;
+      margin-left: 40px;
+      @media (max-width: 575px) {
+
+      }
+    }
+
+    .hamburger-menu {
+      @media (max-width: 575px) {
+
+      }
+    }
+
+    #menu__toggle {
+      opacity: 0;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0%;
+    }
+
+    .menu__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 35px;
+      left: 80%;
+      width: 20px;
+      height: 12px;
+      cursor: pointer;
+      z-index: 6;
+
+      @media (max-width: 530px) {
+        left: 75%;
+      }
+
+      @media (max-width: 475px) {
+        left: 65%;
+      }
+
+      @media (max-width: 390px) {
+        left: 57%;
+      }
+
+      @media (max-width: 320px) {
+        left: 52%;
+      }
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #FFFFFF;
+      transition-duration: .25s;
+    }
+
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+
+    .menu__box {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 329px;
+      z-index: 5;
+      margin: 0;
+      padding: 60px 0 60px 0;
+      list-style: none;
+      background: #000327;
+      transition-duration: .25s;
+
+      @media (max-width: 530px) {
+
+      }
+    }
+
+    .menu__item {
+      display: block;
+      padding: 8px 0 8px 0;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition-duration: .25s;
+    }
+
+    .menu__item:hover {
+      background: #FF0000;
     }
 
   }
 
-    @media (max-width: 1920px) {
-      display: none;
-    }
-
-    @media (max-width: 630px) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-  }*/
 
   .media-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 630px) {
-      /*display: none;*/
+    @media (max-width: 575px) {
+      display: none;
     }
 
   }

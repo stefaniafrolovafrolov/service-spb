@@ -1,5 +1,5 @@
 <template>
-  <section class="advantage">
+ <!-- <section class="advantage">
     <div class="container">
       <img class="advantage__image" src="/advantage.png" alt="на изображении автоматическая коробка передач">
       <div class="advantage__information-card">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 </template>
 
 <script>

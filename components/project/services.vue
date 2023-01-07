@@ -177,8 +177,15 @@ export default {
 
     @media (max-width: 1440px) {
       font-size: 48px;
-      line-height: 51px;
+      line-height: 58px;
       margin: 80px 0 38px 0;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 724px;
+      font-size: 43px;
+      line-height: 52px;
+      margin: 71px 0 34px 0;
     }
 
     @media (max-width: 1024px) {
@@ -188,7 +195,25 @@ export default {
       margin: 48px 0 16px 0;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 700px) {
+      max-width: 540px;
+      font-size: 32px;
+      line-height: 41px;
+    }
+
+    @media (max-width: 565px) {
+      max-width: 440px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    @media (max-width: 465px) {
+      max-width: 340px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 350px) {
       max-width: 272px;
       font-size: 20px;
       line-height: 24px;
@@ -220,7 +245,26 @@ export default {
       margin-bottom: 16px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 700px) {
+      max-width: 540px;
+      font-size: 16px;
+      line-height: 21px;
+
+    }
+
+    @media (max-width: 565px) {
+      max-width: 440px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    @media (max-width: 465px) {
+      max-width: 340px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 350px) {
       max-width: 252px;
       font-size: 10px;
       line-height: 12px;
@@ -253,7 +297,7 @@ export default {
       height: 280px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 350px) {
       max-width: 270px;
       height: 270px;
     }
@@ -286,7 +330,19 @@ export default {
       margin: 16px 0 110px 0;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 565px) {
+      max-width: 360px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    @media (max-width: 465px) {
+      max-width: 320px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 350px) {
       max-width: 252px;
       font-size: 10px;
       line-height: 12px;

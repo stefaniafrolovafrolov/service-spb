@@ -82,8 +82,12 @@ export default {
         left: -15%;
       }
 
-      @media (max-width: 855px) {
+      @media (max-width: 860px) {
         left: -10%;
+      }
+
+      @media (max-width: 795px) {
+        left: -9%;
       }
 
       @media (max-width: 768px) {
@@ -94,9 +98,14 @@ export default {
         left: -10%;
       }
 
+      @media (max-width: 767px) {
+        bottom: 130px;
+        left: -10%;
+      }
+
       @media (max-width: 738px) {
         bottom: 125px;
-        left: -12%;
+        left: -9%;
       }
 
       @media (max-width: 725px) {
@@ -107,7 +116,11 @@ export default {
         left: -23%;
       }
 
-      @media (max-width: 320px) {
+      @media (max-width: 465px) {
+        left: -18%;
+      }
+
+      @media (max-width: 350px) {
         background-image: url("/slide-one-left-320.svg");
         width: 34px;
         height: 34px;
@@ -154,9 +167,15 @@ export default {
         right: -15%;
       }
 
-      @media (max-width: 855px) {
+      @media (max-width: 860px) {
         right: -10%;
       }
+
+      @media (max-width: 795px) {
+        right: -9%;
+      }
+
+
 
       @media (max-width: 768px) {
         background-image: url("/slide-one-right-768.svg");
@@ -166,9 +185,14 @@ export default {
         right: -10%;
       }
 
+      @media (max-width: 767px) {
+        bottom: 125px;
+        right: -10%;
+      }
+
       @media (max-width: 738px) {
         bottom: 125px;
-        right: -13%;
+        right: -9%;
       }
 
       @media (max-width: 725px) {
@@ -179,7 +203,11 @@ export default {
         right: -23%;
       }
 
-      @media (max-width: 320px) {
+      @media (max-width: 465px) {
+        right: -18%;
+      }
+
+      @media (max-width: 350px) {
         background-image: url("/slide-one-right-320.svg");
         width: 34px;
         height: 34px;

@@ -85,14 +85,13 @@
 
 @media (max-width: 630px) {
   .container {
-   /* padding-top: 12px;
-    max-width: 580px;
-    padding-bottom: 14px;*/
-    display: none;
+   padding-top: 12px;
+    max-width: 570px;
+    padding-bottom: 14px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 575px) {
   .container {
 
   }

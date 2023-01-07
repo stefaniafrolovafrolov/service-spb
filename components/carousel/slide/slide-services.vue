@@ -48,7 +48,7 @@ export default {
     }
 
 
-    @media (max-width: 320px) {
+    @media (max-width: 350px) {
       max-width: 164px;
       font-size: 14px;
       line-height: 17px;
@@ -77,13 +77,14 @@ export default {
     }
 
     @media (max-width: 768px) {
-      width: 180px;
-      height: 180px;
+      width: 100%;
+      height: 100%;
     }
 
     @media (max-width: 738px) {
       width: 280px;
       height: 280px;
+
     }
 
     @media (max-width: 725px) {
@@ -91,7 +92,7 @@ export default {
       height: 280px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 350px) {
       width: 270px;
       height: 270px;
     }

@@ -40,13 +40,44 @@ export default {
     padding: 80px 0 80px 0;
   }
 
+  @media (max-width: 1280px) {
+    max-width: 961px;
+    padding: 72px 0 72px 0;
+  }
+
   @media (max-width: 1024px) {
     max-width: 854px;
     padding: 48px 0 48px 0;
   }
 
+  @media (max-width: 870px) {
+    max-width: 754px;
+    padding: 38px 0 38px 0;
+  }
+
   @media (max-width: 768px) {
     max-width: 708px;
+  }
+
+  @media (max-width: 720px) {
+    max-width: 620px;
+  }
+
+  @media (max-width: 630px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 510px) {
+    max-width: 400px;
+    padding: 36px 0 30px 0;
+  }
+
+  @media (max-width: 410px) {
+    max-width: 360px;
+  }
+
+  @media (max-width: 375px) {
+    max-width: 272px;
   }
 
   &__title {
@@ -66,12 +97,44 @@ export default {
       margin-bottom: 64px;
     }
 
+    @media (max-width: 1280px) {
+      max-width: 733px;
+      font-size: 43px;
+      line-height: 52px;
+      margin-bottom: 60px;
+    }
+
     @media (max-width: 1024px) {
       max-width: 652px;
       font-size: 40px;
       line-height: 48px;
       margin-bottom: 51px;
     }
+
+    @media (max-width: 870px) {
+      margin-bottom: 41px;
+    }
+
+    @media (max-width: 720px) {
+      max-width: 480px;
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 31px;
+    }
+
+    @media (max-width: 630px) {
+      max-width: 400px;
+      font-size: 27px;
+      line-height: 34px;
+    }
+
+    @media (max-width: 375px) {
+      max-width: 212px;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
+
   }
 
   &__maps-container {
@@ -94,13 +157,45 @@ export default {
       min-height: 486px;
     }
 
+    @media (max-width: 1280px) {
+      width: 554px;
+      min-height: 436px;
+    }
+
     @media (max-width: 1024px) {
       width: 492px;
       min-height: 388px;
     }
 
+    @media (max-width: 870px) {
+      width: 392px;
+      min-height: 320px;
+    }
+
     @media (max-width: 768px) {
       width: 708px;
+      height: 389px;
+    }
+
+    @media (max-width: 720px) {
+      max-width: 600px;
+    }
+
+    @media (max-width: 630px) {
+      max-width: 500px;
+    }
+
+    @media (max-width: 510px) {
+      max-width: 350px;
+    }
+
+    @media (max-width: 410px) {
+      max-width: 320px;
+    }
+
+    @media (max-width: 375px) {
+      max-width: 272px;
+      height: 191px;
     }
 
   }
@@ -111,6 +206,10 @@ export default {
     align-items: end;
     margin-left: 60px;
 
+    @media (max-width: 1280px) {
+      margin-left: 20px;
+    }
+
     @media (max-width: 1024px) {
       margin-left: 10px;
     }
@@ -118,6 +217,10 @@ export default {
     @media (max-width: 768px) {
       margin-top: 20px;
       margin-left: 0px;
+    }
+
+    @media (max-width: 510px) {
+      align-items: center;
     }
 
   }
@@ -138,12 +241,43 @@ export default {
       line-height: 41px;
     }
 
+    @media (max-width: 1280px) {
+      max-width: 386px;
+      font-size: 28px;
+      line-height: 37px;
+      padding-bottom: 14px;
+    }
+
     @media (max-width: 1024px) {
       max-width: 349px;
       font-size: 26px;
       line-height: 33px;
       padding-bottom: 10px;
     }
+
+    @media (max-width: 870px) {
+      max-width: 349px;
+      font-size: 22px;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
+
+    @media (max-width: 630px) {
+      max-width: 349px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @media (max-width: 510px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    @media (max-width: 375px) {
+      line-height: 33px;
+      padding-bottom: 4px;
+    }
+
   }
 
   &__address-link {
@@ -161,11 +295,41 @@ export default {
       line-height: 39px;
     }
 
+    @media (max-width: 1280px) {
+      max-width: 366px;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
     @media (max-width: 1024px) {
       max-width: 330px;
       font-size: 26px;
       line-height: 31px;
     }
+
+    @media (max-width: 870px) {
+      max-width: 300px;
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    @media (max-width: 630px) {
+      max-width: 349px;
+      font-size: 20px;
+      line-height: 28px;
+
+    }
+
+    @media (max-width: 510px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    @media (max-width: 375px) {
+      line-height: 22px;
+      padding-bottom: 4px;
+    }
+
   }
 
   &__phone {
@@ -183,10 +347,39 @@ export default {
       line-height: 39px;
     }
 
+    @media (max-width: 1280px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
     @media (max-width: 1024px) {
       font-size: 26px;
       line-height: 31px;
     }
+
+    @media (max-width: 870px) {
+      max-width: 300px;
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    @media (max-width: 630px) {
+      max-width: 349px;
+      font-size: 20px;
+      line-height: 28px;
+
+    }
+
+    @media (max-width: 510px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    @media (max-width: 375px) {
+      line-height: 22px;
+      padding-bottom: 4px;
+    }
+
   }
 
 }
