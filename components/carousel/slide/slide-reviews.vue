@@ -125,6 +125,13 @@ export default {
       margin-bottom: 36px;
     }
 
+    @media (max-width: 425px) {
+      max-width: 213px;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 16px;
+    }
+
   }
 
 }

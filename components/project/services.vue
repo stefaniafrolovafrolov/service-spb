@@ -148,9 +148,7 @@ export default {
         id: 16, src: "/slide-one-image16.jpg", title: "Снятие/установка\n" +
           "<strong>Гидроблока</strong>"
       },
-
-
-    ]
+    ],
   })
 }
 </script>
@@ -342,7 +340,7 @@ export default {
       line-height: 18px;
     }
 
-    @media (max-width: 350px) {
+    @media (max-width: 425px) {
       max-width: 252px;
       font-size: 10px;
       line-height: 12px;

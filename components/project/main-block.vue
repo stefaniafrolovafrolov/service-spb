@@ -137,6 +137,14 @@ export default {
       max-width: 608px;
     }
 
+    @media (max-width: 620px) {
+      max-width: 520px;
+    }
+
+    @media (max-width: 530px) {
+      max-width: 90%;
+    }
+
     @media (max-width: 320px) {
       max-width: 272px;
     }
@@ -176,12 +184,35 @@ export default {
       margin-bottom: 31px;
     }
 
+    @media (max-width: 768px) {
+      max-width: 674px;
+    }
+
     @media (max-width: 695px) {
       max-width: 608px;
       font-size: 35px;
       line-height: 39px;
       margin-top: 52px;
       margin-bottom: 26px;
+    }
+
+    @media (max-width: 620px) {
+      max-width: 472px;
+      font-size: 30px;
+      line-height: 37px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 530px) {
+      font-size: 27px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 460px) {
+      max-width: 360px;
+      font-size: 20px;
+      line-height: 25px;
     }
 
     @media (max-width: 320px) {
@@ -232,10 +263,26 @@ export default {
       margin-bottom: 41px;
     }
 
-    @media (max-width: 320px) {
-      max-width: 271px;
+    @media (max-width: 620px) {
+      max-width: 380px;
+      font-size: 17px;
+      line-height: 22px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 530px) {
+      font-size: 15px;
+      line-height: 19px;
+    }
+
+    @media (max-width: 460px) {
+      max-width: 360px;
       font-size: 14px;
       line-height: 17px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 271px;
       margin-bottom: 7px;
     }
 
@@ -244,8 +291,8 @@ export default {
   &__wrapper-button {
     display: flex;
 
-    @media (max-width: 320px) {
-     flex-direction: column;
+    @media (max-width: 460px) {
+      flex-direction: column;
     }
   }
 
@@ -286,11 +333,21 @@ export default {
       line-height: 19px;
     }
 
-    @media (max-width: 320px) {
-      width: 271px;
-      margin-right: 0;
-      margin-bottom: 7px;
+    @media (max-width: 620px) {
+      width: 150px;
+      height: 40px;
+      font-size: 13px;
+      line-height: 17px;
+      margin-right: 10px;
     }
+
+    @media (max-width: 460px) {
+      width: 271px;
+      height: 46px;
+      margin-bottom: 7px;
+
+    }
+
 
   }
 
@@ -328,8 +385,16 @@ export default {
       line-height: 19px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 620px) {
+      width: 220px;
+      height: 40px;
+      font-size: 13px;
+      line-height: 17px;
+    }
+
+    @media (max-width: 460px) {
       width: 271px;
+      height: 46px;
     }
 
   }

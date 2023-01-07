@@ -135,6 +135,23 @@ export default {
       margin-bottom: 17px;
       margin-top: 72px;
     }
+
+    @media (max-width: 525px) {
+      max-width: 350px;
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 13px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 272px;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 8px;
+      margin-top: 36px;
+    }
+
   }
 
   &__subtitle {
@@ -163,6 +180,21 @@ export default {
       line-height: 19px;
       margin-bottom: 16px;
     }
+
+    @media (max-width: 525px) {
+      max-width: 250px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 207px;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 18px;
+    }
+
   }
 
   &__gallery {
@@ -189,6 +221,25 @@ export default {
       height: 260px;
      margin-bottom: 72px;
     }
+
+    @media (max-width: 710px) {
+      max-width: 500px;
+      height: 100%;
+    }
+
+    @media (max-width: 610px) {
+      max-width: 400px;
+      height: 100%;
+    }
+
+    @media (max-width: 525px) {
+      margin-bottom: 92px;
+    }
+
+    @media (max-width: 410px) {
+      max-width: 80%;
+    }
+
   }
 
   &__sliders-container {

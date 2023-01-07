@@ -90,6 +90,22 @@ export default {
         left: -10%;
       }
 
+      @media (max-width: 610px) {
+        left: -15%;
+        bottom: 125px;
+      }
+
+      @media (max-width: 525px) {
+        bottom: -60px;
+        left: 36%;
+      }
+
+      @media (max-width: 410px) {
+        background-image: url("/slide-one-left-320.svg");
+        width: 24px;
+        height: 24px;
+      }
+
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);
@@ -137,6 +153,22 @@ export default {
         width: 40px;
         height: 40px;
         right: -10%;
+      }
+
+      @media (max-width: 610px) {
+        right: -15%;
+        bottom: 130px;
+      }
+
+      @media (max-width: 525px) {
+        bottom: -60px;
+        right: 36%;
+      }
+
+      @media (max-width: 410px) {
+        background-image: url("/slide-one-right-320.svg");
+        width: 24px;
+        height: 24px;
       }
 
       &:hover {

@@ -120,7 +120,7 @@ export default {
         left: -18%;
       }
 
-      @media (max-width: 350px) {
+      @media (max-width: 425px) {
         background-image: url("/slide-one-left-320.svg");
         width: 34px;
         height: 34px;
@@ -207,7 +207,7 @@ export default {
         right: -18%;
       }
 
-      @media (max-width: 350px) {
+      @media (max-width: 425px) {
         background-image: url("/slide-one-right-320.svg");
         width: 34px;
         height: 34px;
