@@ -344,7 +344,7 @@ export default {
       max-width: 252px;
       font-size: 10px;
       line-height: 12px;
-      margin: 53px 0 70px 0;
+      margin: 53px 0 130px 0;
     }
 
   }

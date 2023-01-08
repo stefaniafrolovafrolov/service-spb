@@ -97,13 +97,13 @@ export default {
 
       @media (max-width: 525px) {
         bottom: -60px;
-        left: 36%;
+        left: 32%;
       }
 
-      @media (max-width: 410px) {
+      @media (max-width: 425px) {
         background-image: url("/slide-one-left-320.svg");
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
       }
 
 
@@ -162,13 +162,13 @@ export default {
 
       @media (max-width: 525px) {
         bottom: -60px;
-        right: 36%;
+        right: 32%;
       }
 
-      @media (max-width: 410px) {
+      @media (max-width: 425px) {
         background-image: url("/slide-one-right-320.svg");
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
       }
 
       &:hover {

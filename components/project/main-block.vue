@@ -7,7 +7,9 @@
         диагностика, адаптация
       </p>
       <div class="main-block__wrapper-button">
+
         <button class="main-block__button-contact">Связаться с нами</button>
+
         <button class="main-block__button-information">Перейти к списку услуг</button>
       </div>
     </article>

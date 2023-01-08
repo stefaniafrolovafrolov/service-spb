@@ -37,10 +37,10 @@ export default {
       {id: 9, title: "Ремонт мехатроника <strong>DQ500</strong>", sum: "18 000"},
       {id: 10, title: "Ремонт мехатроника <strong>DL501 0B5</strong>", sum: "20 000"},
       {id: 11, title: "Ремонт мехатроника <strong>DCT450</strong>", sum: "35 000"},
-      {id: 12, title: "Снятие/установка АКПП", sum: "от 8000"},
-      {id: 13, title: "Снятие/установка мехатроника(гидроблока)", sum: "от 4000"},
-      {id: 14, title: "Переборка мехатроника", sum: "от 6000"},
-      {id: 15, title: "Переборка АКПП ", sum: "от 8000"},
+      {id: 12, title: "Снятие/установка <strong>АКПП</strong>", sum: "от 8000"},
+      {id: 13, title: "Снятие/установка <strong>мехатроника(гидроблока)</strong>", sum: "от 4000"},
+      {id: 14, title: "Переборка <strong>мехатроника</strong>", sum: "от 6000"},
+      {id: 15, title: "Переборка <strong>АКПП</strong>", sum: "от 8000"},
     ]
   })
 }
@@ -53,7 +53,6 @@ export default {
   background-image: url("/prices-fon.png");
   background-size: cover;
   min-height: 850px;
-  outline: 5px solid red;
 
   @media (max-width: 1440px) {
     min-height: 692px;
@@ -63,11 +62,22 @@ export default {
     min-height: 538px;
   }
 
+  @media (max-width: 768px) {
+    min-height: 846px;
+  }
+
+  @media (max-width: 525px) {
+    min-height: 100%;
+  }
+
+  @media (max-width: 320px) {
+    min-height: 420px;
+  }
+
 
   &__card {
-    outline: 5px solid red;
-    width: 1580px;
-    height: 850px;
+    max-width: 1580px;
+    height: 100%;
     margin-top: -96px;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -78,17 +88,48 @@ export default {
     align-items: center;
     flex-direction: column;
 
+    @media (max-width: 1580px) {
+      max-width: 1380px;
+    }
+
     @media (max-width: 1440px) {
-      width: 1280px;
-      height: 690px;
       margin-top: -80px;
     }
 
-    @media (max-width: 1024px) {
-      width: 944px;
-      height: 552px;
-      margin-top: -80px;
+    @media (max-width: 1330px) {
+      max-width: 1180px;
     }
+
+    @media (max-width: 1280px) {
+      margin-left: 65px;
+      margin-right: 65px;
+      margin-top: -72px;
+    }
+
+    @media (max-width: 1135px) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 95%;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    @media (max-width: 320px) {
+      margin-left: 24px;
+      margin-right: 24px;
+      max-width: 272px;
+      margin-bottom: 24px;
+    }
+
   }
 
   &__title {
@@ -114,22 +155,73 @@ export default {
       max-width: 424px;
       font-size: 42px;
       line-height: 51px;
+      margin-top: 32px;
+      margin-bottom: 25px;
     }
+
+    @media (max-width: 525px) {
+      max-width: 312px;
+      font-size: 30px;
+      line-height: 32px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 212px;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 26px;
+    }
+
   }
 
   &__container {
-    width: 1400px;
+    max-width: 1400px;
     align-items: center;
-    outline: 5px solid red;
+    margin-left: 90px;
+    margin-right: 90px;
+
+    @media (max-width: 1580px) {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 96%;
+    }
 
     @media (max-width: 1440px) {
-      width: 90%;
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-left: 58px;
+      margin-right: 58px;
+    }
+
+    @media (max-width: 1210px) {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 96%;
     }
 
     @media (max-width: 1024px) {
-      width: 96%;
-
+      margin-left: 15px;
+      margin-right: 15px;
     }
+
+    @media (max-width: 768px) {
+      margin-left: 86px;
+      margin-right: 86px;
+      width: 80%;
+    }
+
+    @media (max-width: 480px) {
+      width: 90%;
+    }
+
+    @media (max-width: 320px) {
+      width: 232px;
+    }
+
   }
 
   &__list {
@@ -140,8 +232,16 @@ export default {
       column-gap: 38px;
     }
 
+    @media (max-width: 1280px) {
+      column-gap: 34px;
+    }
+
     @media (max-width: 1024px) {
       column-gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      column-count: 1;
     }
 
     &-item {
@@ -160,12 +260,36 @@ export default {
         padding-bottom: 19px;
       }
 
-      @media (max-width: 1024px) {
+      @media (max-width: 1280px) {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 17px;
+      }
+
+      @media (max-width: 1055px) {
         max-width: 100%;
         font-size: 16px;
         line-height: 19px;
         padding-bottom: 15px;
       }
+
+      @media (max-width: 961px) {
+        font-size: 12px;
+        line-height: 17px;
+      }
+
+      @media (max-width: 433px) {
+        font-size: 9px;
+        line-height: 10px;
+        padding-bottom: 12px;
+      }
+
+      @media (max-width: 340px) {
+        font-size: 8px;
+        line-height: 10px;
+        padding-bottom: 8px;
+      }
+
     }
   }
 
@@ -185,11 +309,35 @@ export default {
       line-height: 39px;
     }
 
+    @media (max-width: 1280px) {
+      margin: 36px 0 15px 0;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
     @media (max-width: 1024px) {
       margin: 32px 0 10px 0;
       font-size: 24px;
       line-height: 29px;
     }
+
+    @media (max-width: 768px) {
+      margin: 30px 0 8px 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 525px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 320px) {
+      margin: 16px 0 4px 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
   }
 
   &__button {
@@ -212,16 +360,38 @@ export default {
       line-height: 24px;
     }
 
+    @media (max-width: 1280px) {
+      width: 262px;
+      height: 52px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
     @media (max-width: 1024px) {
       width: 233px;
       height: 46px;
       font-size: 16px;
       line-height: 19px;
     }
+
+    @media (max-width: 424px) {
+      width: 166px;
+      height: 33px;
+      font-size: 14px;
+      line-height: 10px;
+    }
+
+    @media (max-width: 375px) {
+      width: 116px;
+      height: 23px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+
   }
 
   &__paragraph {
-    width: 434px;
+    max-width: 434px;
     white-space: nowrap;
     font-weight: 900;
     font-size: 16px;
@@ -236,11 +406,41 @@ export default {
       margin: 0px 0 16px 60px;
     }
 
-    @media (max-width: 1024px) {
+
+    @media (max-width: 1280px) {
       font-size: 12px;
       line-height: 15px;
+      margin: 0px 0 14px 53px;
+    }
+
+    @media (max-width: 1024px) {
       margin: 0px 0 16px 9px;
     }
+
+    @media (max-width: 768px) {
+      margin: 25px 0 20px 87px;
+    }
+
+    @media (max-width: 525px) {
+      margin: 20px 0 17px 34px;
+    }
+
+    @media (max-width: 630px) {
+      margin: 20px 0 17px 18px;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 10px;
+      line-height: 15px;
+      margin: 13px 0 8px 20px;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 6px;
+      line-height: 7px;
+      margin: 13px 0 8px 20px;
+    }
+
   }
 
   span {
