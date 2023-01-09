@@ -98,6 +98,7 @@ export default {
   height: 100%;
   background-image: url("/reviews-fon.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -112,15 +113,15 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin-top: 144px;
-    margin-bottom: 48px;
+    margin-top: 134px;
+    margin-bottom: 36px;
 
     @media (max-width: 1440px) {
       max-width: 537px;
       font-size: 48px;
       line-height: 58px;
       margin-bottom: 18px;
-      margin-top: 116px;
+      margin-top: 108px;
     }
 
     @media (max-width: 1280px) {
@@ -198,11 +199,9 @@ export default {
   }
 
   &__gallery {
-   /* width: 1136px;*/
     width: 900px;
     height: 100%;
-    /*height: 345px;*/
-    margin-bottom: 144px;
+    margin-bottom: 124px;
 
     @media (max-width: 1440px) {
       width: 730px;

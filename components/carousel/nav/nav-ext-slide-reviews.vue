@@ -66,8 +66,8 @@ export default {
 
       @media (max-width: 1440px) {
         background-image: url("/slide-two-left-1440.svg");
-        bottom: 85px;
-        left: -15%;
+        bottom: 115px;
+        left: -13%;
       }
 
       @media (max-width: 1280px) {
@@ -131,8 +131,8 @@ export default {
 
       @media (max-width: 1440px) {
         background-image: url("/slide-two-right-1440.svg.svg");
-        bottom: 85px;
-        right: -15%;
+        bottom: 115px;
+        right: -13%;
       }
 
       @media (max-width: 1280px) {

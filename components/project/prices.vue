@@ -58,6 +58,10 @@ export default {
     min-height: 692px;
   }
 
+  @media (max-width: 1280px) {
+    min-height: 623px;
+  }
+
   @media (max-width: 1024px) {
     min-height: 538px;
   }
@@ -140,15 +144,20 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     color: #000000;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 42px;
 
     @media (max-width: 1440px) {
       max-width: 465px;
       font-size: 48px;
       line-height: 58px;
-      margin-top: 40px;
-      margin-bottom: 32px;
+      margin-top: 30px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-top: 38px;
+      margin-bottom: 10px;
     }
 
     @media (max-width: 1024px) {
@@ -301,16 +310,16 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     color: #000000;
-    margin: 48px 0 18px 0;
+    margin: 28px 0 18px 0;
 
     @media (max-width: 1440px) {
-      margin: 40px 0 10px 0;
+      margin: 20px 0 10px 0;
       font-size: 32px;
       line-height: 39px;
     }
 
     @media (max-width: 1280px) {
-      margin: 36px 0 15px 0;
+      margin: 16px 0 15px 0;
       font-size: 24px;
       line-height: 29px;
     }

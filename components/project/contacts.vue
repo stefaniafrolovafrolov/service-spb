@@ -94,7 +94,7 @@ export default {
       max-width: 815px;
       font-size: 48px;
       line-height: 58px;
-      margin-bottom: 64px;
+      margin-bottom: 54px;
     }
 
     @media (max-width: 1280px) {

@@ -57,7 +57,8 @@ export default {
   }
 
   @media (max-width: 320px) {
-    min-height: 482px;
+   min-height: 396px;
+
   }
 
   @keyframes animate {
@@ -149,6 +150,7 @@ export default {
 
     @media (max-width: 320px) {
       max-width: 272px;
+
     }
 
   }
@@ -165,6 +167,7 @@ export default {
     margin-top: 152px;
 
     @media (max-width: 1440px) {
+      max-width: 910px;
       margin-bottom: 25px;
       margin-top: 124px;
       font-size: 54px;
@@ -176,6 +179,7 @@ export default {
       font-size: 48px;
       line-height: 58px;
       margin-top: 111px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 1024px) {
@@ -212,7 +216,7 @@ export default {
     }
 
     @media (max-width: 460px) {
-      max-width: 360px;
+      max-width: 330px;
       font-size: 20px;
       line-height: 25px;
     }
@@ -239,13 +243,13 @@ export default {
     margin-bottom: 77px;
 
     @media (max-width: 1440px) {
-      margin-bottom: 67px;
+      margin-bottom: 55px;
       font-size: 32px;
       line-height: 39px;
     }
 
     @media (max-width: 1280px) {
-      margin-bottom: 58px;
+      margin-bottom: 50px;
       max-width: 625px;
       font-size: 28px;
       line-height: 34px;
@@ -296,6 +300,11 @@ export default {
     @media (max-width: 460px) {
       flex-direction: column;
     }
+
+    @media (max-width: 320px) {
+      margin-bottom: 140px;
+    }
+
   }
 
   &__button-contact {

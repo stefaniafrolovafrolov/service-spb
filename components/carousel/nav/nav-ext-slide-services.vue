@@ -1,7 +1,7 @@
 <template>
   <div class="nav-ext-slide-services-slider nav-ext-slide-services-slider__nav">
     <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')">
-     <!-- <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
+      <!-- <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
     </div>
     <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next" @click="$emit('nextClick')">
       <!--<img src="/slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">-->
@@ -45,6 +45,7 @@ export default {
   position: relative;
   right: 0;
   left: auto;
+
   &__nav {
     display: flex;
 
@@ -64,14 +65,16 @@ export default {
       bottom: 110px;
       left: -10%;
 
-       @media (max-width: 1440px) {
+      @media (max-width: 1440px) {
         bottom: 85px;
       }
 
       @media (max-width: 1280px) {
-          background-image: url("/slide-one-left-1280.svg");
-          width: 54px;
-          height: 54px;
+        background-image: url("/slide-one-left-1280.svg");
+        width: 54px;
+        height: 54px;
+        bottom: 70px;
+        left: -11%;
       }
 
 
@@ -158,6 +161,8 @@ export default {
         background-image: url("/slide-one-right-1280.svg");
         width: 54px;
         height: 54px;
+        bottom: 70px;
+        right: -11%;
       }
 
       @media (max-width: 1024px) {
@@ -174,7 +179,6 @@ export default {
       @media (max-width: 795px) {
         right: -9%;
       }
-
 
 
       @media (max-width: 768px) {

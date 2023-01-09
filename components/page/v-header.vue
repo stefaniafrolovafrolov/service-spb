@@ -57,6 +57,7 @@ export default {
 
 <style scoped lang="scss">
 .v-header {
+  max-width: 1920px;
   display: flex;
   justify-content: space-between;
   background: #070A2A;
@@ -122,11 +123,15 @@ export default {
       cursor: pointer;
       z-index: 6;
 
-      @media (max-width: 530px) {
-        left: 75%;
+      @media (max-width: 575px) {
+        left: 88%;
       }
 
-      @media (max-width: 475px) {
+      /*@media (max-width: 530px) {
+        left: 75%;
+      }*/
+
+     /* @media (max-width: 475px) {
         left: 65%;
       }
 
@@ -136,7 +141,7 @@ export default {
 
       @media (max-width: 320px) {
         left: 52%;
-      }
+      }*/
     }
 
     .menu__btn > span,
@@ -271,6 +276,14 @@ export default {
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1440px) {
+      width: 500px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 450px;
+    }
+
     @media (max-width: 1024px) {
       width: 404px;
     }
@@ -286,7 +299,7 @@ export default {
       font-size: 24px;
       line-height: 29px;
       color: #FFFFFF;
-      padding-left: 30px;
+
 
       @media (max-width: 1440px) {
         font-size: 20px;

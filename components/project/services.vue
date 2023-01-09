@@ -171,19 +171,19 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    margin: 116px 0 28px 0;
+    margin: 95px 0 28px 0;
 
     @media (max-width: 1440px) {
       font-size: 48px;
       line-height: 58px;
-      margin: 80px 0 38px 0;
+      margin: 70px 0 18px 0;
     }
 
     @media (max-width: 1280px) {
       max-width: 724px;
       font-size: 43px;
       line-height: 52px;
-      margin: 71px 0 34px 0;
+      margin: 95px 0 14px 0;
     }
 
     @media (max-width: 1024px) {
@@ -231,9 +231,14 @@ export default {
     margin-bottom: 64px;
 
     @media (max-width: 1440px) {
+      max-width: 767px;
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 52px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-bottom: 36px;
     }
 
     @media (max-width: 1024px) {
@@ -319,6 +324,11 @@ export default {
       font-size: 20px;
       line-height: 24px;
       margin: 50px 0 150px 0;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 480px;
+      margin: 40px 0 130px 0;
     }
 
     @media (max-width: 1024px) {
