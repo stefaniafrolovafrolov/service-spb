@@ -9,8 +9,7 @@
         <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
       </div>
       <div style="display: block">
-        <button class="v-footer__button-up">
-        </button>
+        <button class="v-footer__button-up" :class="{ 'active' : isActive }" @click="isActive = !isActive"></button>
       </div>
     </div>
   </footer>
@@ -18,15 +17,24 @@
 
 <script>
 export default {
-  name: "v-footer"
+  name: "v-footer",
+  data: () => ({
+    isActive: false,
+  }),
+
 }
 </script>
 
 <style scoped lang="scss">
 
 .v-footer {
+  max-width: 1920px;
   padding: 96px 0 100px 0;
   background: #070A2A;
+
+  .active {
+    background-image: url("/Property 1=Variant3.svg");
+  }
 
 
   @media (max-width: 1440px) {
@@ -231,6 +239,13 @@ export default {
     background-repeat: no-repeat;
     width: 95px;
     height: 29px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #FF0000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
 
     @media (max-width: 1440px) {
       width: 77px;

@@ -1,6 +1,6 @@
 <template>
   <div class="nav-ext-slide-services-slider nav-ext-slide-services-slider__nav">
-    <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')">
+    <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')" >
       <!-- <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
     </div>
     <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next" @click="$emit('nextClick')">
@@ -13,6 +13,7 @@
 <script>
 export default {
   name: 'nav-ext-slide-services',
+
   props: {
     sliderId: {
       type: String,
@@ -21,7 +22,9 @@ export default {
   },
   data: () => ({
     prefWhite: false,
-    nextWhite: false
+    nextWhite: false,
+
+
   }),
   mounted() {
     this.$emit('navigation', {
@@ -65,6 +68,12 @@ export default {
       bottom: 110px;
       left: -10%;
 
+      &:hover {
+        background-image: url("/Group 95.svg");
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
       @media (max-width: 1440px) {
         bottom: 85px;
       }
@@ -83,6 +92,7 @@ export default {
         width: 48px;
         height: 48px;
         left: -15%;
+        bottom: 82px;
       }
 
       @media (max-width: 860px) {
@@ -153,6 +163,12 @@ export default {
       bottom: 110px;
       right: -10%;
 
+      &:hover {
+        background-image: url("/Group 96.svg");
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
       @media (max-width: 1440px) {
         bottom: 85px;
       }
@@ -170,6 +186,7 @@ export default {
         width: 48px;
         height: 48px;
         right: -15%;
+        bottom: 82px;
       }
 
       @media (max-width: 860px) {

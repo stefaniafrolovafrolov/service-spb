@@ -42,7 +42,7 @@ export default {
 
   @media (max-width: 1280px) {
     max-width: 961px;
-    padding: 72px 0 72px 0;
+    padding: 68px 0 72px 0;
   }
 
   @media (max-width: 1024px) {
@@ -101,14 +101,14 @@ export default {
       max-width: 733px;
       font-size: 43px;
       line-height: 52px;
-      margin-bottom: 60px;
+      margin-bottom: 45px;
     }
 
     @media (max-width: 1024px) {
       max-width: 652px;
       font-size: 40px;
       line-height: 48px;
-      margin-bottom: 51px;
+      margin-bottom: 41px;
     }
 
     @media (max-width: 870px) {
@@ -290,6 +290,12 @@ export default {
     color: #000000;
     padding-bottom: 16px;
 
+    &:hover {
+      color: #C60000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
     @media (max-width: 1440px) {
       font-size: 32px;
       line-height: 39px;
@@ -341,6 +347,12 @@ export default {
     text-align: right;
     letter-spacing: -0.02em;
     color: #000000;
+
+    &:hover {
+      color: #C60000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
 
     @media (max-width: 1440px) {
       font-size: 32px;

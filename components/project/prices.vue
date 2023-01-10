@@ -63,7 +63,7 @@ export default {
   }
 
   @media (max-width: 1024px) {
-    min-height: 538px;
+    min-height: 528px;
   }
 
   @media (max-width: 768px) {
@@ -325,7 +325,7 @@ export default {
     }
 
     @media (max-width: 1024px) {
-      margin: 32px 0 10px 0;
+      margin: 5px 0 10px 0;
       font-size: 24px;
       line-height: 29px;
     }
@@ -361,6 +361,12 @@ export default {
     height: 71px;
     background: #FF0000;
     border-radius: 10px;
+
+    &:hover {
+      background: #C60000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
 
     @media (max-width: 1440px) {
       width: 292px;

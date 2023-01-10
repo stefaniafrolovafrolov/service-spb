@@ -134,7 +134,7 @@ export default {
       font-size: 38px;
       line-height: 46px;
       margin-bottom: 17px;
-      margin-top: 72px;
+      margin-top: 65px;
     }
 
     @media (max-width: 525px) {

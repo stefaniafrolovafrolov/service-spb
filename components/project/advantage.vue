@@ -124,7 +124,7 @@ export default {
   @media (max-width: 1024px) {
     max-width: 975px;
     min-height: 485px;
-    margin-top: -130px;
+    margin-top: -150px;
     margin-left: 8px;
     margin-bottom: 48px;
   }
@@ -211,17 +211,21 @@ export default {
     }
 
     @media (max-width: 410px) {
-      display: block;
-      position: absolute;
       width: 272px;
       height: 412px;
       top: 350px;
-
+      left: 0;
     }
   }
 
   &__image {
     flex: 1;
+    object-fit: cover;
+
+    @media (max-width: 1024px) {
+
+    }
+
     @media (max-width: 820px) {
       display: none;
     }
@@ -251,8 +255,10 @@ export default {
     }
 
     @media (max-width: 1024px) {
+      margin-top: 16px;
       width: 600px;
       min-height: 466px;
+      margin-bottom: 1px;
     }
 
     @media (max-width: 820px) {

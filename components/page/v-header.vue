@@ -1,10 +1,7 @@
 <template>
   <header class="v-header">
-
-
     <div class="container-2">
       <img class="mobile" src="/logo-header-320.svg" alt="логотип сервиса">
-
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox"/>
         <label class="menu__btn" for="menu__toggle">
@@ -22,21 +19,31 @@
 
     </div>
 
-
     <div class="container media-wrapper">
       <div style="display: block">
         <div class="v-header__header-logo"></div>
       </div>
       <nav class="v-header__navigation">
         <ul class="v-header__list">
-          <li class="v-header__list-item" v-for="item in items" :key="item.id">{{ item.title }}</li>
+          <li class="v-header__list-item" v-for="item in items" :key="item.id" @click="changeBtnTwo = item.id" :class="{ 'v-header__list-item' : item.id === 1,
+      'v-header__list-item' : item.id === 2,
+      'v-header__list-item' : item.id === 3,
+      'v-header__list-item' : item.id === 4,
+      'v-header__list-item' : item.id === 5,
+      'active-two' : changeBtnTwo === item.id }">{{ item.title }}</li>
         </ul>
       </nav>
+
       <div class="v-header__contacts">
-        <a class="v-header__phone" href="tel:+79539979283">+7 (953) 997 92 83</a>
-        <p class="v-header__paragraph">Заказать звонок</p>
+        <div v-for="phone in phones" :key="phone.id" @click="changeBtn = phone.id" :class="{ 'v-header__phone' : phone.id === 1,
+     'v-header__paragraph' : phone.id === 2, 'active' : changeBtn === phone.id }">
+          <a class="v-header__phone" href="tel:+79539979283">{{ phone.number }}</a>
+        </div>
       </div>
+
+
     </div>
+
   </header>
 </template>
 
@@ -44,6 +51,7 @@
 export default {
   name: "v-header",
   data: () => ({
+    changeBtnTwo: "", //отсутствует активная кнопка при создании экземпляра, либо установить начальную
     items: [
       {id: 1, title: "О нас"},
       {id: 2, title: "Услуги"},
@@ -51,6 +59,11 @@ export default {
       {id: 4, title: "Отзывы"},
       {id: 5, title: "Контакты"},
     ],
+    phones: [
+      {id: 1, number: "+7 (953) 997 92 83"},
+      {id: 2, number: "Заказать звонок"},
+    ],
+    changeBtn: "",//отсутствует активная кнопка при создании экземпляра, либо установить начальную
   })
 }
 </script>
@@ -66,6 +79,20 @@ export default {
     min-height: 86px;
   }
 
+  .active {
+    box-shadow: 0px 0px 25px #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(0.9px);
+    border-radius: 50%;
+    width: fit-content;
+    color:red !important;
+  }
+
+  .active-two {
+    color: #FF0000;
+    border-bottom: 1px solid #FF0000;
+  }
+
   .container-2 {
     display: none;
 
@@ -78,15 +105,16 @@ export default {
       width: 70px;
       height: 50px;
       margin-left: 40px;
-      @media (max-width: 575px) {
 
+      @media (max-width: 320px) {
+        margin-left: 20px;
+        height: 45px;
       }
+
     }
 
     .hamburger-menu {
-      @media (max-width: 575px) {
 
-      }
     }
 
     #menu__toggle {
@@ -109,7 +137,7 @@ export default {
 
     #menu__toggle:checked ~ .menu__box {
       visibility: visible;
-      left: 0%;
+      left: 0;
     }
 
     .menu__btn {
@@ -127,21 +155,11 @@ export default {
         left: 88%;
       }
 
-      /*@media (max-width: 530px) {
-        left: 75%;
-      }*/
-
-     /* @media (max-width: 475px) {
-        left: 65%;
-      }
-
-      @media (max-width: 390px) {
-        left: 57%;
-      }
-
       @media (max-width: 320px) {
-        left: 52%;
-      }*/
+        top: 32px;
+        left: 84%;
+      }
+
     }
 
     .menu__btn > span,
@@ -180,9 +198,6 @@ export default {
       background: #000327;
       transition-duration: .25s;
 
-      @media (max-width: 530px) {
-
-      }
     }
 
     .menu__item {
@@ -199,10 +214,10 @@ export default {
 
     .menu__item:hover {
       background: #FF0000;
+
     }
 
   }
-
 
   .media-wrapper {
     display: flex;
@@ -258,13 +273,6 @@ export default {
       background-position: center;
     }
 
-    @media (max-width: 600px) {
-      /* width: 70px;
-       height: 50px;
-       background-image: url("/logo-header-320.svg");
-       background-size: contain;
-       background-repeat: no-repeat;*/
-    }
   }
 
   &__navigation {
@@ -285,7 +293,8 @@ export default {
     }
 
     @media (max-width: 1024px) {
-      width: 404px;
+      padding-left: 18px;
+      width: 407px;
     }
 
     @media (max-width: 728px) {
@@ -299,7 +308,13 @@ export default {
       font-size: 24px;
       line-height: 29px;
       color: #FFFFFF;
+      border: 1px solid transparent;
 
+      &:hover {
+        border-bottom: 1px solid #FF0000;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
 
       @media (max-width: 1440px) {
         font-size: 20px;
@@ -355,6 +370,12 @@ export default {
     color: #FFFFFF;
     align-self: end;
 
+    &:hover {
+      color: #FF0000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
     @media (max-width: 1440px) {
       font-size: 20px;
       line-height: 24px;
@@ -407,7 +428,6 @@ export default {
       font-size: 12.96px;
       line-height: 16px;
     }
-
 
   }
 

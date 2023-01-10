@@ -64,6 +64,12 @@ export default {
       bottom: 140px;
       left: -13%;
 
+      &:hover {
+        background-image: url("/Group 95.svg");
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
       @media (max-width: 1440px) {
         background-image: url("/slide-two-left-1440.svg");
         bottom: 115px;
@@ -81,6 +87,7 @@ export default {
         background-image: url("/slide-one-left-1024.svg");
         width: 48px;
         height: 48px;
+        bottom: 100px;
       }
 
       @media (max-width: 768px) {
@@ -129,6 +136,12 @@ export default {
       bottom: 140px;
       right: -13%;
 
+      &:hover {
+        background-image: url("/Group 96.svg");
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+
       @media (max-width: 1440px) {
         background-image: url("/slide-two-right-1440.svg.svg");
         bottom: 115px;
@@ -146,6 +159,7 @@ export default {
         background-image: url("/slide-one-right-1024.svg");
         width: 48px;
         height: 48px;
+        bottom: 100px;
       }
 
       @media (max-width: 768px) {

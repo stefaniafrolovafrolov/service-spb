@@ -53,6 +53,10 @@ export default {
       margin-bottom: 30px;
     }
 
+    @media (max-width: 1280px) {
+      margin-bottom: 20px;
+    }
+
     @media (max-width: 1024px) {
       max-width: 160px;
       margin-bottom: 25px;
@@ -116,6 +120,11 @@ export default {
       font-size: 16px;
       line-height: 19px;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 600px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 1024px) {

@@ -6,14 +6,15 @@
       <p class="main-block__subtitle">Бесплатные бонусы при ремонте DSG: эвакуатор,
         диагностика, адаптация
       </p>
+
       <div class="main-block__wrapper-button">
-
-        <button class="main-block__button-contact">Связаться с нами</button>
-
-        <button class="main-block__button-information">Перейти к списку услуг</button>
+        <div class="main-block__style-button" v-for="item in items" :key="item.id" @click="changeBtn = item.id" :class="{ 'main-block__button-contact' : item.id === 1,
+      'main-block__button-information' : item.id === 2,
+      'active' : changeBtn === item.id }">{{ item.title }}
+        </div>
       </div>
+
     </article>
-    <!-- <img class="whatsapp-button" src="/whatsapp%20(2)%201.svg" alt="кнопка ватсапа">-->
     <a href="https://api.whatsapp.com/send?phone=79539979283" target="_blank"
        rel="noopener noreferrer">
       <div class="whatsapp-button"><i class="fa fa-whatsapp"></i></div>
@@ -25,7 +26,16 @@
 
 <script>
 export default {
-  name: "main-block"
+  name: "main-block",
+  data: () => ({
+    changeBtn: "", //отсутствует активная кнопка при создании экземпляра, либо установить начальную
+    items: [
+      {id: 1, title: "Связаться с нами"},
+      {id: 2, title: "Перейти к списку услуг"},
+    ]
+  }),
+
+
 }
 </script>
 
@@ -35,6 +45,19 @@ export default {
   background-image: url("static/main-block.png");
   background-size: cover;
   background-position: center;
+
+
+  .active {
+    background: #FF0000;
+    box-shadow: 0px 0px 25px #FFFFFF;
+  }
+
+  &__style-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   @media (max-width: 1440px) {
     min-height: 730px;
@@ -57,7 +80,7 @@ export default {
   }
 
   @media (max-width: 320px) {
-   min-height: 396px;
+    min-height: 396px;
 
   }
 
@@ -131,6 +154,10 @@ export default {
       margin-left: 90px;
     }
 
+    @media (max-width: 1024px) {
+      margin-left: 40px;
+    }
+
     @media (max-width: 768px) {
       margin: 0 auto;
       max-width: 674px;
@@ -186,8 +213,8 @@ export default {
       max-width: 728px;
       font-size: 43.2px;
       line-height: 52px;
-      margin-top: 72px;
-      margin-bottom: 31px;
+      margin-top: 77px;
+      margin-bottom: 17px;
     }
 
     @media (max-width: 768px) {
@@ -226,7 +253,7 @@ export default {
       font-size: 24px;
       line-height: 29px;
       margin-top: 4px;
-      margin-bottom: 0px;
+      margin-bottom: 5px;
     }
 
   }
@@ -259,14 +286,14 @@ export default {
       max-width: 563.13px;
       font-size: 25px;
       line-height: 31px;
-      margin-bottom: 51px;
+      margin-bottom: 41px;
     }
 
     @media (max-width: 695px) {
       max-width: 523.13px;
       font-size: 20px;
       line-height: 25px;
-      margin-bottom: 41px;
+      margin-bottom: 45px;
     }
 
     @media (max-width: 620px) {
@@ -289,7 +316,7 @@ export default {
 
     @media (max-width: 320px) {
       max-width: 271px;
-      margin-bottom: 7px;
+      margin-bottom: 10px;
     }
 
   }
@@ -320,6 +347,12 @@ export default {
     border-radius: 10px;
     align-self: start;
     margin-right: 24px;
+
+    &:hover {
+      background: #C60000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
 
     @media (max-width: 1440px) {
       width: 210px;
@@ -374,6 +407,12 @@ export default {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     align-self: start;
+
+    &:hover {
+      background: #C60000;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
 
     @media (max-width: 1440px) {
       width: 263px;
