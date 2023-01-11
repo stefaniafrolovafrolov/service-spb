@@ -8,12 +8,13 @@
       </p>
 
       <div class="main-block__wrapper-button">
-        <div class="main-block__style-button" v-for="item in items" :key="item.id" @click="changeBtn = item.id" :class="{ 'main-block__button-contact' : item.id === 1,
+       <div v-for="item in items" :key="item.id">
+         <a style="all: unset" :href="item.url"> <div class="main-block__style-button"  @mouseenter="changeBtn = item.id" :class="{ 'main-block__button-contact' : item.id === 1,
       'main-block__button-information' : item.id === 2,
-      'active' : changeBtn === item.id }">{{ item.title }}
-        </div>
+      'active' : changeBtn === item.id }" @mouseleave="changeBtn = ''" > {{ item.title }}
+        </div></a>
       </div>
-
+      </div>
     </article>
     <a href="https://api.whatsapp.com/send?phone=79539979283" target="_blank"
        rel="noopener noreferrer">
@@ -29,11 +30,13 @@ export default {
   name: "main-block",
   data: () => ({
     changeBtn: "", //отсутствует активная кнопка при создании экземпляра, либо установить начальную
+
     items: [
-      {id: 1, title: "Связаться с нами"},
-      {id: 2, title: "Перейти к списку услуг"},
+      {id: 1, title: "Связаться с нами", url: "tel:+79539979283" },
+      {id: 2, title: "Перейти к списку услуг", url: "#3" },
     ]
   }),
+
 
 
 }
@@ -108,7 +111,7 @@ export default {
   }
 
   .whatsapp-button {
-    background-image: url("/whatsapp (2) 1.svg");
+    background-image: url("/whatsapp-1920.svg");
     position: fixed;
     z-index: 999;
     top: 614px;
@@ -116,6 +119,28 @@ export default {
     width: 100px;
     height: 100px;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 1280px ) {
+      background-image: url("/whatsapp-1280.svg");
+      background-size: cover;
+      top: 445px;
+      right: 40px;
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (max-width: 1024px ) {
+      top: 376px;
+      right: 70px;
+    }
+
+    @media (max-width: 550px ) {
+      width: 100px;
+      height: 100px;
+      right: 30px;
+      top: 82%;
+    }
+
   }
 
   .whatsapp-button:before,
@@ -132,6 +157,15 @@ export default {
     animation: animate 1.5s linear infinite;
     opacity: 0;
     backface-visibility: hidden;
+
+    @media (max-width: 475px ) {
+      border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
+      left: -15px;
+      right: -15px;
+      top: -15px;
+      bottom: -15px;
+    }
+
   }
 
   .whatsapp-button:after {
@@ -175,9 +209,8 @@ export default {
       max-width: 90%;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 450px) {
       max-width: 272px;
-
     }
 
   }

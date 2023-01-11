@@ -65,6 +65,7 @@ export default {
       left: -13%;
 
       &:hover {
+        box-shadow: 0px 0px 25px #FFFFFF;
         background-image: url("/Group 95.svg");
         transition: 0.5s ease-in-out;
         cursor: pointer;
@@ -137,6 +138,7 @@ export default {
       right: -13%;
 
       &:hover {
+        box-shadow: 0px 0px 25px #FFFFFF;
         background-image: url("/Group 96.svg");
         transition: 0.5s ease-in-out;
         cursor: pointer;

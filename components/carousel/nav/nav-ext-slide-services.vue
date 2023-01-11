@@ -3,7 +3,7 @@
     <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')" >
       <!-- <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
     </div>
-    <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next" @click="$emit('nextClick')">
+    <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next"  @click="$emit('nextClick')">
       <!--<img src="/slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">-->
 
     </div>
@@ -24,7 +24,6 @@ export default {
     prefWhite: false,
     nextWhite: false,
 
-
   }),
   mounted() {
     this.$emit('navigation', {
@@ -35,6 +34,7 @@ export default {
   computed: {
     nextEl() {
       return this.sliderId + '_nav_next'
+
     },
     prevEl() {
       return this.sliderId + '_nav_prev'
@@ -69,6 +69,7 @@ export default {
       left: -10%;
 
       &:hover {
+        box-shadow: 0px 0px 25px #FFFFFF;
         background-image: url("/Group 95.svg");
         transition: 0.5s ease-in-out;
         cursor: pointer;
@@ -164,6 +165,7 @@ export default {
       right: -10%;
 
       &:hover {
+        box-shadow: 0px 0px 25px #FFFFFF;
         background-image: url("/Group 96.svg");
         transition: 0.5s ease-in-out;
         cursor: pointer;

@@ -9,7 +9,7 @@
         <p class="v-footer__text"> Определяется положениями Статьи 437 ГК РФ.</p>
       </div>
       <div style="display: block">
-        <button class="v-footer__button-up" :class="{ 'active' : isActive }" @click="isActive = !isActive"></button>
+        <button class="v-footer__button-up" @click="top" :class="{ 'active' : isActive }"></button>
       </div>
     </div>
   </footer>
@@ -21,7 +21,11 @@ export default {
   data: () => ({
     isActive: false,
   }),
-
+  methods: {
+    top() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  }
 }
 </script>
 
@@ -35,7 +39,6 @@ export default {
   .active {
     background-image: url("/Property 1=Variant3.svg");
   }
-
 
   @media (max-width: 1440px) {
     padding: 77px 0 96px 0;
@@ -52,7 +55,6 @@ export default {
   @media (max-width: 768px) {
     padding: 40px 0 40px 0;
   }
-
 
   &__container {
     margin: 0 auto;
@@ -136,27 +138,23 @@ export default {
       background-image: url("/logo-header-1280.svg");
       width: 106px;
       height: 75px;
-
     }
 
     @media (max-width: 1024px) {
       background-image: url("/logo-header-1024.svg");
       width: 96px;
       height: 68px;
-
     }
 
     @media (max-width: 616px) {
       background-image: url("/logo-header-320.svg");
       width: 60px;
       height: 40px;
-
     }
 
     @media (max-width: 365px) {
       width: 40px;
       height: 20px;
-
     }
 
   }
@@ -242,7 +240,7 @@ export default {
     border-bottom: 1px solid transparent;
 
     &:hover {
-      border-bottom: 1px solid #FF0000;
+      background-image: url("/Property 1=Variant3.svg");
       transition: 0.5s ease-in-out;
       cursor: pointer;
     }

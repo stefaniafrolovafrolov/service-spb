@@ -1,5 +1,5 @@
 <template>
-  <section class="contacts">
+  <section class="contacts" id="5">
     <h2 class="contacts__title">Мы всегда будем рады видеть вас в нашем сервисе!</h2>
     <div class="contacts__maps-container">
       <div class="contacts__maps">
@@ -153,7 +153,7 @@ export default {
     min-height: 600px;
 
     @media (max-width: 1440px) {
-     width: 616px;
+      width: 616px;
       min-height: 486px;
     }
 
@@ -216,7 +216,7 @@ export default {
 
     @media (max-width: 768px) {
       margin-top: 20px;
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     @media (max-width: 510px) {

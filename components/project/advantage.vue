@@ -1,6 +1,5 @@
 <template>
-  <section class="advantage">
-    <!-- <div class="container"> -->
+  <section class="advantage" id="2">
     <img class="advantage__image2222" src="/image%202.svg" alt="изображение коробки передач">
     <div class="advantage__image"></div>
     <div class="advantage__information-card">
@@ -15,10 +14,8 @@
             <p class="advantage__paragraph" v-html="item.title"/>
           </li>
         </ul>
-
       </div>
     </div>
-    <!-- </div> -->
   </section>
 </template>
 
@@ -173,8 +170,6 @@ export default {
     margin-top: -50px;
     margin-bottom: 31px;
     height: 630px;
-
-
   }
 
   &__image2222 {
@@ -267,17 +262,11 @@ export default {
     }
 
     @media (max-width: 768px) {
-      width: 660px;
       min-height: 513px;
     }
 
     @media (max-width: 765px) {
       height: 70%;
-
-    }
-
-    @media (max-width: 716px) {
-
     }
 
     @media (max-width: 692px) {
@@ -288,14 +277,11 @@ export default {
       margin-top: 0;
       max-width: 415px;
       height: 60%;
-
     }
 
     @media (max-width: 410px) {
-      margin-top: 0;
       max-width: 272px;
       height: 412px;
-
     }
 
   }
@@ -347,7 +333,6 @@ export default {
       line-height: 46px;
     }
 
-
     @media (max-width: 692px) {
       font-size: 36px;
       line-height: 46px;
@@ -363,7 +348,6 @@ export default {
       max-width: 244px;
       font-size: 25px;
       line-height: 29px;
-
     }
 
     @media (max-width: 410px) {
@@ -371,7 +355,6 @@ export default {
       max-width: 244px;
       font-size: 20px;
       line-height: 24px;
-
     }
 
   }
@@ -408,7 +391,6 @@ export default {
 
     @media (max-width: 410px) {
       width: 237px;
-
     }
 
   }
@@ -420,7 +402,6 @@ export default {
     @media (max-width: 765px) {
       grid-template-columns: repeat(1, 1fr);
       height: 100%;
-
     }
 
     &-item {
@@ -452,12 +433,10 @@ export default {
 
       @media (max-width: 765px) {
         max-width: 100%;
-
       }
 
       @media (max-width: 475px) {
         width: 100%;
-
       }
 
       @media (max-width: 410px) {
@@ -466,6 +445,7 @@ export default {
       }
 
     }
+
   }
 
   &__wrapper-logos {

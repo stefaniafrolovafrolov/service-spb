@@ -1,5 +1,5 @@
 <template>
-  <section class="prices">
+  <section class="prices" id="3">
     <div class="prices__card">
       <h2 class="prices__title">Вас порадуют цены на наши услуги</h2>
       <div class="prices__container">
@@ -7,17 +7,13 @@
           <li class="prices__list-item" v-for="item in items" :key="item.id">
             <p v-html="item.title"></p>
             <strong style="font-weight: 900">{{ item.sum }}</strong>
-
           </li>
         </ul>
-
       </div>
       <h3 class="prices__text">Если у вас остались вопросы вы всегда можете</h3>
-      <button class="prices__button">Связаться с нами</button>
+      <a class="prices__button-href" href="tel:+79539979283"><button class="prices__button">Связаться с нами</button></a>
       <p class="prices__paragraph"><span>*</span>Ремонт под ключ<strong> — запчасти + установка + адаптация</strong></p>
     </div>
-
-
   </section>
 </template>
 
@@ -405,6 +401,11 @@ export default {
 
   }
 
+  &__button-href {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
   &__paragraph {
     max-width: 434px;
     white-space: nowrap;
@@ -418,18 +419,18 @@ export default {
     @media (max-width: 1440px) {
       font-size: 14px;
       line-height: 17px;
-      margin: 0px 0 16px 60px;
+      margin: 0 0 16px 60px;
     }
 
 
     @media (max-width: 1280px) {
       font-size: 12px;
       line-height: 15px;
-      margin: 0px 0 14px 53px;
+      margin: 0 0 14px 53px;
     }
 
     @media (max-width: 1024px) {
-      margin: 0px 0 16px 9px;
+      margin: 0 0 16px 9px;
     }
 
     @media (max-width: 768px) {
@@ -453,7 +454,6 @@ export default {
     @media (max-width: 380px) {
       font-size: 6px;
       line-height: 7px;
-      margin: 13px 0 8px 20px;
     }
 
   }

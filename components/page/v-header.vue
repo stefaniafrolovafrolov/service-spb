@@ -9,11 +9,11 @@
         </label>
 
         <ul class="menu__box">
-          <li><a class="menu__item" href="#">О нас</a></li>
-          <li><a class="menu__item" href="#">Услуги</a></li>
-          <li><a class="menu__item" href="#">Цены</a></li>
-          <li><a class="menu__item" href="#">Отзывы</a></li>
-          <li><a class="menu__item" href="#">Контакты</a></li>
+          <li><a class="menu__item" href="#1">О нас</a></li>
+          <li><a class="menu__item" href="#2">Услуги</a></li>
+          <li><a class="menu__item" href="#3">Цены</a></li>
+          <li><a class="menu__item" href="#4">Отзывы</a></li>
+          <li><a class="menu__item" href="#5">Контакты</a></li>
         </ul>
       </div>
 
@@ -23,21 +23,28 @@
       <div style="display: block">
         <div class="v-header__header-logo"></div>
       </div>
+
+
       <nav class="v-header__navigation">
         <ul class="v-header__list">
           <li class="v-header__list-item" v-for="item in items" :key="item.id" @click="changeBtnTwo = item.id" :class="{ 'v-header__list-item' : item.id === 1,
+
       'v-header__list-item' : item.id === 2,
       'v-header__list-item' : item.id === 3,
       'v-header__list-item' : item.id === 4,
       'v-header__list-item' : item.id === 5,
-      'active-two' : changeBtnTwo === item.id }">{{ item.title }}</li>
+      'active-two' : changeBtnTwo === item.id }"><a style="all: unset" :href="item.url">{{ item.title }} </a></li>
+
         </ul>
       </nav>
 
+
       <div class="v-header__contacts">
         <div v-for="phone in phones" :key="phone.id" @click="changeBtn = phone.id" :class="{ 'v-header__phone' : phone.id === 1,
-     'v-header__paragraph' : phone.id === 2, 'active' : changeBtn === phone.id }">
-          <a class="v-header__phone" href="tel:+79539979283">{{ phone.number }}</a>
+        'v-header__paragraph' : phone.id === 2,
+      'v-header__active' : changeBtn === phone.id }">
+          <a href="tel:+79539979283">{{ phone.title }}</a>
+
         </div>
       </div>
 
@@ -53,15 +60,15 @@ export default {
   data: () => ({
     changeBtnTwo: "", //отсутствует активная кнопка при создании экземпляра, либо установить начальную
     items: [
-      {id: 1, title: "О нас"},
-      {id: 2, title: "Услуги"},
-      {id: 3, title: "Цены"},
-      {id: 4, title: "Отзывы"},
-      {id: 5, title: "Контакты"},
+      {id: 1, title: "О нас", url: "#1"},
+      {id: 2, title: "Услуги", url: "#2"},
+      {id: 3, title: "Цены", url: "#3"},
+      {id: 4, title: "Отзывы", url: "#4"},
+      {id: 5, title: "Контакты", url: "#5"},
     ],
     phones: [
-      {id: 1, number: "+7 (953) 997 92 83"},
-      {id: 2, number: "Заказать звонок"},
+      {id: 1, title: "+7 (953) 997 92 83"},
+      {id: 2, title: "Позвонить"},
     ],
     changeBtn: "",//отсутствует активная кнопка при создании экземпляра, либо установить начальную
   })
@@ -79,14 +86,6 @@ export default {
     min-height: 86px;
   }
 
-  .active {
-    box-shadow: 0px 0px 25px #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.5);
-    filter: blur(0.9px);
-    border-radius: 50%;
-    width: fit-content;
-    color:red !important;
-  }
 
   .active-two {
     color: #FF0000;
@@ -110,10 +109,6 @@ export default {
         margin-left: 20px;
         height: 45px;
       }
-
-    }
-
-    .hamburger-menu {
 
     }
 
@@ -197,7 +192,7 @@ export default {
       list-style: none;
       background: #000327;
       transition-duration: .25s;
-
+      opacity: 0.97;
     }
 
     .menu__item {
@@ -332,14 +327,7 @@ export default {
         padding-left: 0;
       }
 
-      @media (max-width: 768px) {
-        font-size: 16px;
-        line-height: 19px;
-      }
-
       @media (max-width: 600px) {
-        font-size: 16px;
-        line-height: 19px;
         padding-left: 10px;
       }
 
@@ -358,8 +346,12 @@ export default {
       font-size: 20px;
       line-height: 24px;
     }
+
   }
 
+  a {
+    all: unset;
+  }
 
   &__phone {
     text-decoration: none;
@@ -371,7 +363,11 @@ export default {
     align-self: end;
 
     &:hover {
-      color: #FF0000;
+      box-shadow: 0px 0px 25px #FFFFFF;
+      background-color: rgba(255, 255, 255, 0.5);
+      filter: blur(0.97px);
+      border-radius: 50%;
+      width: fit-content;
       transition: 0.5s ease-in-out;
       cursor: pointer;
     }
@@ -391,12 +387,6 @@ export default {
       line-height: 20px;
     }
 
-    @media (max-width: 768px) {
-      font-size: 16.2px;
-      line-height: 20px;
-    }
-
-
   }
 
   &__paragraph {
@@ -409,6 +399,16 @@ export default {
     text-decoration: underline;
     text-underline-offset: 2px;
 
+    &:hover {
+      box-shadow: 0px 0px 25px #FFFFFF;
+      background-color: rgba(255, 255, 255, 0.5);
+      filter: blur(0.9px);
+      border-radius: 50%;
+      width: fit-content;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
     @media (max-width: 1440px) {
       font-size: 16px;
       line-height: 19px;
@@ -420,11 +420,6 @@ export default {
     }
 
     @media (max-width: 1024px) {
-      font-size: 12.96px;
-      line-height: 16px;
-    }
-
-    @media (max-width: 768px) {
       font-size: 12.96px;
       line-height: 16px;
     }

@@ -6,12 +6,16 @@ export default {
   head: {
     title: 'service-spb',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'Бесплатные бонусы при ремонте DSG: эвакуатор, диагностика, адаптация\n' +
+          '\n', name: 'Бесплатные бонусы при ремонте DSG: эвакуатор, диагностика, адаптация\n' +
+          '\n', content: 'Автосервис по ремонту коробок передач DSG-6,' +
+          ' DSG-7,замена моховиков, Замена сцепления Powershift DCT250, Снятие/установка мехатроника,' +
+          'Снятие/установка Гидроблока, Снятие/установка АКПП' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

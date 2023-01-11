@@ -1,5 +1,5 @@
 <template>
-  <section class="reviews">
+  <section class="reviews" id="4">
     <h2 class="reviews__title">Почему нам доверяют
       наши&nbsp;клиенты?</h2>
     <p class="reviews__subtitle">Мы заботимся о каждом клиенте и не навязываем лишние услуги
@@ -179,14 +179,12 @@ export default {
     @media (max-width: 1024px) {
       font-size: 16px;
       line-height: 19px;
-      margin-bottom: 16px;
     }
 
     @media (max-width: 525px) {
       max-width: 250px;
       font-size: 14px;
       line-height: 17px;
-      margin-bottom: 16px;
     }
 
     @media (max-width: 425px) {
@@ -228,7 +226,6 @@ export default {
 
     @media (max-width: 610px) {
       max-width: 400px;
-      height: 100%;
     }
 
     @media (max-width: 525px) {
