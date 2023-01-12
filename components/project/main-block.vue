@@ -45,7 +45,7 @@ export default {
 <style scoped lang="scss">
 .main-block {
   min-height: 900px;
-  background-image: url("static/main-block.png");
+  background-image: url("static/main-block-min.png");
   background-size: cover;
   background-position: center;
 

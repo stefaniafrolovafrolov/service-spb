@@ -1,4 +1,12 @@
 export default {
+
+  generate: {
+    router: {
+      base: '/app/'
+    },
+  },
+
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -9,35 +17,33 @@ export default {
       lang: 'ru'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'Бесплатные бонусы при ремонте DSG: эвакуатор, диагностика, адаптация\n' +
-          '\n', name: 'Бесплатные бонусы при ремонте DSG: эвакуатор, диагностика, адаптация\n' +
-          '\n', content: 'Автосервис по ремонту коробок передач DSG-6,' +
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {
+        hid: 'description', name: 'description', content: 'Автосервис по ремонту коробок передач DSG-6,' +
           ' DSG-7,замена моховиков, Замена сцепления Powershift DCT250, Снятие/установка мехатроника,' +
-          'Снятие/установка Гидроблока, Снятие/установка АКПП' },
-      { name: 'format-detection', content: 'telephone=no' }
+          'Снятие/установка Гидроблока, Снятие/установка АКПП'
+      },
+      {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    { src: "~/assets/scss/main.scss", lang: "scss" },
+    {src: "~/assets/scss/main.scss", lang: "scss"},
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
