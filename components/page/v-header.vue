@@ -1,4 +1,5 @@
 <template>
+  <div class="overlay" style="background: #070A2A;">
   <header class="v-header">
     <div class="container-2">
       <img class="mobile" src="/logo-header-320.svg" alt="логотип сервиса">
@@ -16,8 +17,8 @@
           <li><a class="menu__item" href="#5">Контакты</a></li>
         </ul>
       </div>
-
     </div>
+
 
     <div class="container media-wrapper">
       <div style="display: block">
@@ -52,6 +53,7 @@
     </div>
 
   </header>
+  </div>
 </template>
 
 <script>
@@ -78,6 +80,7 @@ export default {
 <style scoped lang="scss">
 .v-header {
   max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   background: #070A2A;

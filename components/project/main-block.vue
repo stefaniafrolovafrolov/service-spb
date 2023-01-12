@@ -119,6 +119,12 @@ export default {
     width: 100px;
     height: 100px;
     transform: translate(-50%, -50%);
+    display: none;
+
+
+    @media (max-width: 1920px ) {
+      display: block;
+    }
 
     @media (max-width: 1280px ) {
       background-image: url("/whatsapp-1280.svg");

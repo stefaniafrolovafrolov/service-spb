@@ -1,4 +1,5 @@
 <template>
+  <div class="overlay" style="background: #070A2A;">
   <main class="content">
     <main-block/>
     <advantage/>
@@ -7,6 +8,7 @@
     <reviews/>
     <contacts/>
   </main>
+  </div>
 </template>
 
 <script>
@@ -49,6 +51,7 @@ export default {
 <style scoped lang="scss">
 .content {
   max-width: 1920px;
+  margin: 0 auto;
   background: #F4F7FF;
 }
 

@@ -1,4 +1,5 @@
 <template>
+  <div class="overlay" style="background: #070A2A;">
   <footer class="v-footer">
     <div class="v-footer__container">
       <div style="display: block">
@@ -13,6 +14,7 @@
       </div>
     </div>
   </footer>
+  </div>
 </template>
 
 <script>
@@ -33,6 +35,7 @@ export default {
 
 .v-footer {
   max-width: 1920px;
+  margin: 0 auto;
   padding: 96px 0 100px 0;
   background: #070A2A;
 
