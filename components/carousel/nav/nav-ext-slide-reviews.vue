@@ -105,15 +105,13 @@ export default {
 
       @media (max-width: 525px) {
         bottom: -60px;
-        left: 32%;
+        left: 33%;
       }
 
       @media (max-width: 425px) {
-        background-image: url("/slide-one-left-320.svg");
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
       }
-
 
       &:hover {
         background-color: hsla(0, 0%, 92%, 1);
@@ -178,13 +176,12 @@ export default {
 
       @media (max-width: 525px) {
         bottom: -60px;
-        right: 32%;
+        right: 33%;
       }
 
       @media (max-width: 425px) {
-        background-image: url("/slide-one-right-320.svg");
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
       }
 
       &:hover {

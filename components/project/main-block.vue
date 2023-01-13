@@ -8,12 +8,14 @@
       </p>
 
       <div class="main-block__wrapper-button">
-       <div v-for="item in items" :key="item.id">
-         <a style="all: unset" :href="item.url"> <div class="main-block__style-button"  @mouseenter="changeBtn = item.id" :class="{ 'main-block__button-contact' : item.id === 1,
+        <div v-for="item in items" :key="item.id">
+          <a style="all: unset" :href="item.url">
+            <div class="main-block__style-button" @mouseenter="changeBtn = item.id" :class="{ 'main-block__button-contact' : item.id === 1,
       'main-block__button-information' : item.id === 2,
-      'active' : changeBtn === item.id }" @mouseleave="changeBtn = ''" > {{ item.title }}
-        </div></a>
-      </div>
+      'active' : changeBtn === item.id }" @mouseleave="changeBtn = ''"> {{ item.title }}
+            </div>
+          </a>
+        </div>
       </div>
     </article>
     <a href="https://api.whatsapp.com/send?phone=79539979283" target="_blank"
@@ -32,11 +34,10 @@ export default {
     changeBtn: "", //отсутствует активная кнопка при создании экземпляра, либо установить начальную
 
     items: [
-      {id: 1, title: "Связаться с нами", url: "tel:+79539979283" },
-      {id: 2, title: "Перейти к списку услуг", url: "#3" },
+      {id: 1, title: "Связаться с нами", url: "tel:+79539979283"},
+      {id: 2, title: "Перейти к списку услуг", url: "#3"},
     ]
   }),
-
 
 
 }
@@ -89,14 +90,14 @@ export default {
 
   @keyframes animate {
     0% {
-      transform: scale(0.5);
+      transform: scale(0.3);
       opacity: 0;
     }
     50% {
       opacity: 1;
     }
     100% {
-      transform: scale(1.2);
+      transform: scale(1);
       opacity: 0;
     }
   }
@@ -122,11 +123,13 @@ export default {
     display: none;
 
 
-    @media (max-width: 1920px ) {
+    @media (max-width: 1920px) {
       display: block;
+      right: 133px;
+      top: 380px;
     }
 
-    @media (max-width: 1280px ) {
+    @media (max-width: 1280px) {
       background-image: url("/whatsapp-1280.svg");
       background-size: cover;
       top: 445px;
@@ -135,16 +138,21 @@ export default {
       height: 80px;
     }
 
-    @media (max-width: 1024px ) {
+    @media (max-width: 1024px) {
       top: 376px;
       right: 70px;
     }
 
-    @media (max-width: 550px ) {
+    @media (max-width: 550px) {
       width: 100px;
       height: 100px;
       right: 30px;
       top: 82%;
+    }
+
+    @media (max-width: 475px) {
+      right: 15px;
+      top: 76%;
     }
 
   }
@@ -164,12 +172,12 @@ export default {
     opacity: 0;
     backface-visibility: hidden;
 
-    @media (max-width: 475px ) {
+    @media (max-width: 475px) {
       border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
-      left: -15px;
-      right: -15px;
-      top: -15px;
-      bottom: -15px;
+      left: -1px;
+      right: -1px;
+      top: -1px;
+      bottom: -1px;
     }
 
   }

@@ -35,7 +35,7 @@ export default {
       loop: true,
       spaceBetween: 28,
       autoplay: {
-        delay: 2700,   // пауза между перелистыванием
+        delay: 1800,   // пауза между перелистыванием
         disableOnInteraction: false, // вмешательство, если ложь, то слайдер не будет останавливаться после вмешательства
       },
       breakpoints: {
@@ -299,6 +299,10 @@ export default {
       height: 280px;
     }
 
+    @media (max-width: 475px) {
+      max-width: 80%;
+    }
+
     @media (max-width: 350px) {
       max-width: 270px;
       height: 270px;
@@ -343,7 +347,8 @@ export default {
       line-height: 19px;
     }
 
-    @media (max-width: 465px) {
+    @media (max-width: 475px) {
+      margin-top: 70px;
       max-width: 320px;
       font-size: 13px;
       line-height: 18px;
@@ -353,7 +358,7 @@ export default {
       max-width: 252px;
       font-size: 10px;
       line-height: 12px;
-      margin: 53px 0 130px 0;
+      margin: 73px 0 110px 0;
     }
 
   }

@@ -5,6 +5,7 @@
       <img class="mobile" src="/logo-header-320.svg" alt="логотип сервиса">
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox"/>
+        <div class="wrapper-menu-btn"></div>
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
@@ -116,6 +117,7 @@ export default {
     }
 
     #menu__toggle {
+      display: none;
       opacity: 0;
     }
 
@@ -136,6 +138,18 @@ export default {
     #menu__toggle:checked ~ .menu__box {
       visibility: visible;
       left: 0;
+      transition: 0.6s ease-in-out;
+    }
+
+    .wrapper-menu-btn {
+      position: fixed;
+      top: 28px;
+      left: 87.6%;
+      z-index: 3;
+      background: #070A2A;
+      width: 24px;
+      height: 27px;
+      border-radius: 3px;
     }
 
     .menu__btn {
@@ -147,7 +161,7 @@ export default {
       width: 20px;
       height: 12px;
       cursor: pointer;
-      z-index: 6;
+      z-index: 9;
 
       @media (max-width: 575px) {
         left: 88%;
@@ -212,7 +226,6 @@ export default {
 
     .menu__item:hover {
       background: #FF0000;
-
     }
 
   }
