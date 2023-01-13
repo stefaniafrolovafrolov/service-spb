@@ -23,12 +23,12 @@ export default {
   data: () => ({
     items: [
       {id: 1, title: "Ремонт АКПП <strong>DSG S-Tronic Powershift</strong>", sum: "от 10 000"},
-      {id: 2, title: "Замена сцепления <strong>DSG 6</strong>*", sum: "42 000"},
-      {id: 3, title: "Замена сцепления <strong>DSG 7</strong>*", sum: "28 000"},
-      {id: 4, title: "Замена сцепления <strong>DSG S Tronic 0B5</strong>*", sum: "98 000"},
-      {id: 5, title: "Замена сцепления <strong>Powershift DCT250</strong>*", sum: "56 000"},
-      {id: 6, title: "Замена сцепления  <strong>Powershift DCT450</strong>*", sum: "70 000"},
-      {id: 7, title: "Замена маховика <strong>АКПП DSG S-Tronic Powershift</strong>*", sum: "12 000"},
+      {id: 2, title: "Замена сцепления <strong>DSG 6</strong><span style='color: red'>*</span>", sum: "42 000"},
+      {id: 3, title: "Замена сцепления <strong>DSG 7</strong><span style='color: red'>*</span>", sum: "28 000"},
+      {id: 4, title: "Замена сцепления <strong>DSG S Tronic 0B5</strong><span style='color: red'>*</span>", sum: "98 000"},
+      {id: 5, title: "Замена сцепления <strong>Powershift DCT250</strong><span style='color: red'>*</span>", sum: "56 000"},
+      {id: 6, title: "Замена сцепления  <strong>Powershift DCT450</strong><span style='color: red'>*</span>", sum: "70 000"},
+      {id: 7, title: "Замена маховика <strong>АКПП DSG S-Tronic Powershift</strong><span style='color: red'>*</span>", sum: "12 000"},
       {id: 8, title: "Ремонт мехатроника <strong>DQ200</strong>", sum: "18 000"},
       {id: 9, title: "Ремонт мехатроника <strong>DQ500</strong>", sum: "18 000"},
       {id: 10, title: "Ремонт мехатроника <strong>DL501 0B5</strong>", sum: "20 000"},
