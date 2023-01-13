@@ -50,7 +50,8 @@ export default {
   left: auto;
 
   &__nav {
-    display: flex;
+    /*display: flex;*/
+    display: block;
 
     &__prev {
       position: absolute;
@@ -123,17 +124,30 @@ export default {
       }
 
       @media (max-width: 725px) {
+        bottom: 195px;
         left: -17%;
       }
 
       @media (max-width: 635px) {
-        left: -23%;
+        bottom: 170px;
+        left: -15%;
       }
 
+      @media (max-width: 520px) {
+        bottom: 140px;
+        left: -19%;
+      }
 
       @media (max-width: 475px) {
         bottom: -55px;
         left: 33%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px #FFFFFF;
+          background-image: url("/Group 95.svg");
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
       }
 
       @media (max-width: 425px) {
@@ -143,9 +157,9 @@ export default {
         left: 33%;
       }
 
-      &:hover {
+    /*  &:hover {
         background-color: hsla(0, 0%, 92%, 1);
-      }
+      }*/
     }
 
     &__next {
@@ -220,16 +234,30 @@ export default {
       }
 
       @media (max-width: 725px) {
+        bottom: 195px;
         right: -17%;
       }
 
       @media (max-width: 635px) {
-        right: -23%;
+        bottom: 170px;
+        right: -15%;
+      }
+
+      @media (max-width: 520px) {
+        bottom: 140px;
+        right: -19%;
       }
 
       @media (max-width: 475px) {
         bottom: -55px;
         right: 33%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px #FFFFFF;
+          background-image: url("/Group 96.svg");
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
       }
 
       @media (max-width: 425px) {
@@ -239,9 +267,9 @@ export default {
         right: 33%;
       }
 
-      &:hover {
+     /* &:hover {
         background-color: hsla(0, 0%, 92%, 1);
-      }
+      }*/
     }
   }
 }

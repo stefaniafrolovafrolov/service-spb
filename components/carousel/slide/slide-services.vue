@@ -19,7 +19,6 @@ export default {
 .slide-one {
   position: relative;
 
-
   &__title {
     position: absolute;
     bottom: 12px;
@@ -59,7 +58,10 @@ export default {
   &__image {
     width: 260px;
     height: 260px;
-    border-radius: 10px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 8px;
 
     @media (max-width: 1440px) {
       width: 210px;
@@ -81,6 +83,10 @@ export default {
       height: 100%;
     }
 
+    @media (max-width: 767px) {
+     border-radius: 11px;
+    }
+
     @media (max-width: 738px) {
       width: 280px;
       height: 280px;
@@ -89,11 +95,29 @@ export default {
 
     @media (max-width: 725px) {
       width: 100%;
-      height: 280px;
+      height: 100%;
+      border-radius: 18px;
     }
 
+    @media (max-width: 610px) {
+      border-radius: 14px;
+    }
 
-   @media (max-width: 350px) {
+    @media (max-width: 515px) {
+      border-radius: 12px;
+    }
+
+    @media (max-width: 475px) {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 382px) {
+      border-radius: 12px;
+    }
+
+    @media (max-width: 350px) {
       width: 270px;
       height: 270px;
     }

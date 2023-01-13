@@ -106,6 +106,13 @@ export default {
       @media (max-width: 525px) {
         bottom: -60px;
         left: 33%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px #FFFFFF;
+          background-image: url("/Group 95.svg");
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
       }
 
       @media (max-width: 425px) {
@@ -113,10 +120,9 @@ export default {
         height: 35px;
       }
 
-      &:hover {
+     /* &:hover {
         background-color: hsla(0, 0%, 92%, 1);
-
-      }
+      }*/
     }
 
     &__next {
@@ -177,6 +183,13 @@ export default {
       @media (max-width: 525px) {
         bottom: -60px;
         right: 33%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px #FFFFFF;
+          background-image: url("/Group 96.svg");
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
       }
 
       @media (max-width: 425px) {
@@ -184,9 +197,9 @@ export default {
         height: 35px;
       }
 
-      &:hover {
+     /* &:hover {
         background-color: hsla(0, 0%, 92%, 1);
-      }
+      }*/
     }
   }
 }

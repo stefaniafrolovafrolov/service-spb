@@ -1,5 +1,5 @@
 <template>
-  <section class="services" id="1">
+  <section class="services" id="2">
     <h2 class="services__title">Виды ремонтных работ, которые предоставляет наш сервис</h2>
     <p class="services__subtitle">В нашем сервисе, вы всегда найдете выгодные цены на профессиональый
       ремонт коробок передач DSG6, DSG7, S-Tronic в Санкт - Петербурге.
@@ -296,7 +296,7 @@ export default {
 
     @media (max-width: 725px) {
       max-width: 60%;
-      height: 280px;
+      height: 100%;
     }
 
     @media (max-width: 475px) {
@@ -348,7 +348,7 @@ export default {
     }
 
     @media (max-width: 475px) {
-      margin-top: 70px;
+      margin-top: 80px;
       max-width: 320px;
       font-size: 13px;
       line-height: 18px;

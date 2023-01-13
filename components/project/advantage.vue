@@ -1,5 +1,5 @@
 <template>
-  <section class="advantage" id="2">
+  <section class="advantage" id="1">
     <img class="advantage__image2222" src="/image%202.svg" alt="изображение коробки передач">
     <div class="advantage__image"></div>
     <div class="advantage__information-card">

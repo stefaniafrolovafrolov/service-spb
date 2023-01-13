@@ -18,10 +18,7 @@
         </div>
       </div>
     </article>
-    <a href="https://api.whatsapp.com/send?phone=79539979283" target="_blank"
-       rel="noopener noreferrer">
-      <div class="whatsapp-button"><i class="fa fa-whatsapp"></i></div>
-    </a>
+
   </section>
 
 
@@ -85,107 +82,7 @@ export default {
 
   @media (max-width: 320px) {
     min-height: 396px;
-
   }
-
-  @keyframes animate {
-    0% {
-      transform: scale(0.3);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
-
-  @keyframes radial-pulse {
-    0% {
-      box-shadow: 0 0 0 0px rgba(241, 135, 69, 0.5);
-    }
-    100% {
-      box-shadow: 0 0 0 40px rgba(207, 241, 207, 0);
-    }
-  }
-
-  .whatsapp-button {
-    background-image: url("/whatsapp-1920.svg");
-    position: fixed;
-    z-index: 999;
-    top: 614px;
-    right: 103px;
-    width: 100px;
-    height: 100px;
-    transform: translate(-50%, -50%);
-    display: none;
-
-
-    @media (max-width: 1920px) {
-      display: block;
-      right: 133px;
-      top: 380px;
-    }
-
-    @media (max-width: 1280px) {
-      background-image: url("/whatsapp-1280.svg");
-      background-size: cover;
-      top: 445px;
-      right: 40px;
-      width: 80px;
-      height: 80px;
-    }
-
-    @media (max-width: 1024px) {
-      top: 376px;
-      right: 70px;
-    }
-
-    @media (max-width: 550px) {
-      width: 100px;
-      height: 100px;
-      right: 30px;
-      top: 82%;
-    }
-
-    @media (max-width: 475px) {
-      right: 15px;
-      top: 76%;
-    }
-
-  }
-
-  .whatsapp-button:before,
-  .whatsapp-button:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    border: 2px solid #25D366; /*цвет анимированных волн от кнопки*/
-    left: -30px;
-    right: -30px;
-    top: -30px;
-    bottom: -30px;
-    border-radius: 50%;
-    animation: animate 1.5s linear infinite;
-    opacity: 0;
-    backface-visibility: hidden;
-
-    @media (max-width: 475px) {
-      border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
-      left: -1px;
-      right: -1px;
-      top: -1px;
-      bottom: -1px;
-    }
-
-  }
-
-  .whatsapp-button:after {
-    animation-delay: .5s;
-  }
-
 
   &__container {
     padding: 0;
