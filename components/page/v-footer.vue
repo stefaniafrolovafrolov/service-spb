@@ -118,7 +118,7 @@ export default {
       max-width: 360px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 330px) {
       max-width: 272px;
     }
 
@@ -223,8 +223,8 @@ export default {
       line-height: 7px;
     }
 
-    @media (max-width: 320px) {
-      max-width: 190px;
+    @media (max-width: 330px) {
+      max-width: 210px;
       font-size: 6px;
       line-height: 7px;
     }

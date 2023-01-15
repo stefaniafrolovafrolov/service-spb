@@ -150,6 +150,11 @@ export default {
       width: 24px;
       height: 27px;
       border-radius: 3px;
+
+      @media (max-width: 320px) {
+        top: 25px;
+        left: 83.5%;
+      }
     }
 
     .menu__btn {

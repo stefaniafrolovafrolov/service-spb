@@ -181,7 +181,7 @@ export default {
       position: absolute;
       width: 80%;
       height: 80%;
-      top: 260px;
+      top: 290px;
       left: 10%;
       z-index: 3;
     }
@@ -189,13 +189,16 @@ export default {
     @media (max-width: 765px) {
       width: 85%;
       height: 85%;
-      top: 460px;
+      top: 440px;
     }
 
     @media (max-width: 692px) {
       top: 400px;
     }
 
+    @media (max-width: 610px) {
+      top: 385px;
+    }
 
     @media (max-width: 560px) {
       top: 355px;
@@ -208,7 +211,7 @@ export default {
     @media (max-width: 410px) {
       width: 272px;
       height: 412px;
-      top: 350px;
+      top: 370px;
       left: 0;
     }
   }

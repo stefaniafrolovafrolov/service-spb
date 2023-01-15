@@ -69,12 +69,16 @@ export default {
       bottom: 110px;
       left: -10%;
 
-      &:hover {
-        box-shadow: 0px 0px 25px #FFFFFF;
-        background-image: url("/Group 95.svg");
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
+
+      @media (min-width: 575px) {
+        &:hover {
+          box-shadow: 0px 0px 25px #FFFFFF;
+          background-image: url("/Group 95.svg");
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
       }
+
 
       @media (max-width: 1440px) {
         bottom: 85px;
@@ -141,13 +145,6 @@ export default {
       @media (max-width: 475px) {
         bottom: -55px;
         left: 33%;
-
-        &:focus {
-          box-shadow: 0px 0px 25px #FFFFFF;
-          background-image: url("/Group 95.svg");
-          transition: 0.5s ease-in-out;
-          cursor: pointer;
-        }
       }
 
       @media (max-width: 425px) {
@@ -179,11 +176,13 @@ export default {
       bottom: 110px;
       right: -10%;
 
-      &:hover {
-        box-shadow: 0px 0px 25px #FFFFFF;
-        background-image: url("/Group 96.svg");
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
+      @media (min-width: 575px) {
+        &:hover {
+          box-shadow: 0px 0px 25px #FFFFFF;
+          background-image: url("/Group 96.svg");
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+        }
       }
 
       @media (max-width: 1440px) {
@@ -251,13 +250,6 @@ export default {
       @media (max-width: 475px) {
         bottom: -55px;
         right: 33%;
-
-        &:focus {
-          box-shadow: 0px 0px 25px #FFFFFF;
-          background-image: url("/Group 96.svg");
-          transition: 0.5s ease-in-out;
-          cursor: pointer;
-        }
       }
 
       @media (max-width: 425px) {

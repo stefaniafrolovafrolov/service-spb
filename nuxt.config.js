@@ -6,7 +6,6 @@ export default {
     },
   },
 
-
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -20,7 +19,9 @@ export default {
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {
-        hid: 'description', name: 'description', content: 'Автосервис по ремонту коробок передач DSG-6,' +
+        hid: 'description',
+        name: 'description',
+        content: 'Автосервис по ремонту коробок передач DSG-6,' +
           ' DSG-7,замена моховиков, Замена сцепления Powershift DCT250, Снятие/установка мехатроника,' +
           'Снятие/установка Гидроблока, Снятие/установка АКПП'
       },

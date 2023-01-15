@@ -20,20 +20,6 @@ import reviews from "../components/project/reviews";
 import contacts from "../components/project/contacts";
 
 export default {
-  head: {
-    title: 'Профессиональный ремонт DSG\n' +
-      '        в&nbsp;Cанкт - Петербурге',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Автосервис по ремонту коробок передач, Замена сцепления Powershift DCT250,' +
-          'Переборка АКПП , Замена маховика\n' +
-          'АКПП DSG S-Tronic, Ремонт АКПП DSG \n' +
-          'S-Tronic Powershift , Ремонт мехатроника DQ200 , Снятие/установка АКПП, Снятие/установка Гидроблока',
-      }
-    ],
-  },
   name: 'IndexPage',
   components: {
     mainBlock,
@@ -43,7 +29,76 @@ export default {
     reviews,
     contacts
   },
+  async asyncData({ req }) {
+    if (process.server) {
+      const domain = req.headers.host
+      return { domain }
+    }
+  },
 
+  data() {
+
+    return {
+      title: 'Профессиональный ремонт DSG\n' +
+        '        в&nbsp;Cанкт - Петербурге', //Заголовок страницы
+      description: 'Автосервис по ремонту коробок передач DSG-6,' +
+        ' DSG-7,замена моховиков, Замена сцепления Powershift DCT250, Снятие/установка мехатроника,' +
+        'Снятие/установка Гидроблока, Снятие/установка АКПП, Ремонт Автоматических Коробок Передач в Санкт-Петербурге под ключ', //Описание страницы
+      keywords: 'Ремонт Автоматических Коробок Передач в Санкт-Петербурге, Замена сцепления Powershift DCT250, Автосервис по ремонту АКПП,' +
+        'Переборка АКПП, Ремонт мехатроника DL501 0B5, Снятие/установка мехатроника, Переборка мехатроника, ' +
+        'Снятие/установка Гидроблока, Снятие/установка АКПП, Ремонт АКПП DSG \n' +
+        'S-Tronic Powershift ', //Ключевые слова страницы
+      date: '2023-01-15', //Дата и время добавления страницы
+      domain: null,
+    }
+  },
+
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.keywords,
+        },
+        {
+          property: 'og:title',
+          content: this.title,
+        },
+        {
+          property: 'og:url',
+          content: '${this.domain}${this.$route.fullPath}',
+        },
+        {
+          property: 'og:description',
+          content: this.description,
+        },
+        { property: 'og:type', content: 'article' },
+        {
+          property: 'article:author',
+          content: this.domain,
+        },
+        {
+          property: 'article:publisher',
+          content: this.domain,
+        },
+        {
+          property: 'article:published_time',
+          content: this.date,
+        },
+        {
+          property: 'article:tag',
+          content: this.keywords,
+        },
+      ],
+    }
+  }
 
 }
 </script>
