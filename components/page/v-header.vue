@@ -248,34 +248,34 @@ export default {
 
   &__header-logo {
     display: block;
-    background-image: url("/logo-header.svg");
+    background-image: url("./logo-header.svg");
     width: 146px;
     height: 104px;
 
     @media (max-width: 1440px) {
       width: 120px;
       height: 70px;
-      background-image: url("/logo-header-1420.svg");
+      background-image: url("./logo-header-1420.svg");
       background-size: 100% 100%;
     }
 
     @media (max-width: 1280px) {
       width: 106px;
       height: 65px;
-      background-image: url("/logo-header-1280.svg");
+      background-image: url("./logo-header-1280.svg");
     }
 
     @media (max-width: 1024px) {
       width: 96px;
       height: 60px;
-      background-image: url("/logo-header-1024.svg");
+      background-image: url("./logo-header-1024.svg");
       background-size: 100% 100%;
     }
 
     @media (max-width: 768px) {
       width: 96px;
       height: 56px;
-      background-image: url("/logo-header-768.svg");
+      background-image: url("./logo-header-768.svg");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -283,7 +283,7 @@ export default {
     @media (max-width: 728px) {
       width: 70px;
       height: 50px;
-      background-image: url("/logo-header-320.svg");
+      background-image: url("./logo-header-320.svg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position: center;
