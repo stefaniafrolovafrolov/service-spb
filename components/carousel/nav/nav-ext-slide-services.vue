@@ -1,10 +1,10 @@
 <template>
   <div class="nav-ext-slide-services-slider nav-ext-slide-services-slider__nav">
     <div v-bind="{'id':prevEl}" class="nav-ext-slide-services-slider__nav__prev" @click="$emit('prevClick')">
-      <!-- <img src="/slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
+      <!-- <img src="slide-one-left-1920.svg" alt="левая кнопка для прокрутки слайдера">-->
     </div>
     <div v-bind="{'id':nextEl}" class="nav-ext-slide-services-slider__nav__next" @click="$emit('nextClick')">
-      <!--<img src="/slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">-->
+      <!--<img src="slide-one-right-1920.svg" alt="правая кнопка для прокрутки слайдера">-->
 
     </div>
   </div>
@@ -56,7 +56,7 @@ export default {
     &__prev {
       position: absolute;
       border: none;
-      background-image: url("/slide-one-left-1920.svg");
+      background-image: url("/service-spb/slide-one-left-1920.svg");
       background-size: cover;
       background-repeat: no-repeat;
       /*background: #FF0000;*/
@@ -73,7 +73,7 @@ export default {
       @media (min-width: 575px) {
         &:hover {
           box-shadow: 0px 0px 25px #FFFFFF;
-          background-image: url("/Group 95.svg");
+          background-image: url("/service-spb/Group95.svg");
           transition: 0.5s ease-in-out;
           cursor: pointer;
         }
@@ -85,7 +85,7 @@ export default {
       }
 
       @media (max-width: 1280px) {
-        background-image: url("/slide-one-left-1280.svg");
+        background-image: url("/service-spb/slide-one-left-1280.svg");
         width: 54px;
         height: 54px;
         bottom: 70px;
@@ -94,7 +94,7 @@ export default {
 
 
       @media (max-width: 1024px) {
-        background-image: url("/slide-one-left-1024.svg");
+        background-image: url("/service-spb/slide-one-left-1024.svg");
         width: 48px;
         height: 48px;
         left: -15%;
@@ -110,7 +110,7 @@ export default {
       }
 
       @media (max-width: 768px) {
-        background-image: url("/slide-one-left-768.svg");
+        background-image: url("/service-spb/slide-one-left-768.svg");
         width: 40px;
         height: 40px;
         bottom: 75px;
@@ -162,7 +162,7 @@ export default {
     &__next {
       border: none;
       position: absolute;
-      background-image: url("/slide-one-right-1920.svg");
+      background-image: url("/service-spb/slide-one-right-1920.svg");
       background-size: cover;
       background-repeat: no-repeat;
       /*background: #FF0000;*/
@@ -179,7 +179,7 @@ export default {
       @media (min-width: 575px) {
         &:hover {
           box-shadow: 0px 0px 25px #FFFFFF;
-          background-image: url("/Group 96.svg");
+          background-image: url("/service-spb/Group96.svg");
           transition: 0.5s ease-in-out;
           cursor: pointer;
         }
@@ -190,7 +190,7 @@ export default {
       }
 
       @media (max-width: 1280px) {
-        background-image: url("/slide-one-right-1280.svg");
+        background-image: url("/service-spb/slide-one-right-1280.svg");
         width: 54px;
         height: 54px;
         bottom: 70px;
@@ -198,7 +198,7 @@ export default {
       }
 
       @media (max-width: 1024px) {
-        background-image: url("/slide-one-right-1024.svg");
+        background-image: url("/service-spb/slide-one-right-1024.svg");
         width: 48px;
         height: 48px;
         right: -15%;
@@ -215,7 +215,7 @@ export default {
 
 
       @media (max-width: 768px) {
-        background-image: url("/slide-one-right-768.svg");
+        background-image: url("/service-spb/slide-one-right-768.svg");
         width: 40px;
         height: 40px;
         bottom: 75px;
