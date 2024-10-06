@@ -130,7 +130,7 @@ export default {
     height: 104px;
 
     @media (max-width: 1440px) {
-      background-image: url("logo-header-1420.svg");
+      background-image: url("/logo-header-1420.svg");
       width: 120px;
       height: 86px;
       background-size: 100% 100%;
