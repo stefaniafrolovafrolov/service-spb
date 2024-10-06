@@ -248,7 +248,7 @@ export default {
 
   &__header-logo {
     display: block;
-    background-image: url("../../../logo-header.svg");
+    background-image: url("logo-header.svg");
     width: 146px;
     height: 104px;
 
