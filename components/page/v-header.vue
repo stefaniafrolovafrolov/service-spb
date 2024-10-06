@@ -2,7 +2,7 @@
   <div class="overlay" style="background: #070A2A;">
   <header class="v-header">
     <div class="container-2">
-      <img class="mobile" src="/logo-header-320.svg" alt="логотип сервиса">
+      <img class="mobile" src="logo-header-320.svg" alt="логотип сервиса">
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox"/>
         <div class="wrapper-menu-btn"></div>
