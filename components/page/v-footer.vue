@@ -40,7 +40,7 @@ export default {
   background: #070A2A;
 
   .active {
-    background-image: url("/Property 1=Variant3.svg");
+    background-image: url("/service-spb/Property1=Variant3.svg");
   }
 
   @media (max-width: 1440px) {
@@ -232,7 +232,7 @@ export default {
   }
 
   &__button-up {
-    background-image: url("/Group 86.svg");
+    background-image: url("/service-spb/Group86.svg");
     background-color: transparent;
     border: none;
     box-sizing: border-box;
@@ -243,7 +243,7 @@ export default {
     border-bottom: 1px solid transparent;
 
     &:hover {
-      background-image: url("/Property 1=Variant3.svg");
+      background-image: url("/service-spb/Property1=Variant3.svg");
       transition: 0.5s ease-in-out;
       cursor: pointer;
     }
