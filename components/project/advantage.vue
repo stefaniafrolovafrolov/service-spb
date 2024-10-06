@@ -1,6 +1,6 @@
 <template>
   <section class="advantage" id="1">
-    <img class="advantage__image2222" src="/image%202.svg" alt="изображение коробки передач">
+    <img class="advantage__image2222" src="image%202.svg" alt="изображение коробки передач">
     <div class="advantage__image"></div>
     <div class="advantage__information-card">
       <h2 class="advantage__title">Клиенты выбирают нас,
