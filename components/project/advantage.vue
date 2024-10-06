@@ -67,7 +67,7 @@ export default {
   max-width: 1645px;
   min-height: 750px;
   margin-left: 76px;
-  background-image: url("/advantage.png");
+  background-image: url("/service-spb/advantage.png");
   background-repeat: no-repeat;
   display: flex;
   margin-top: -310px;
