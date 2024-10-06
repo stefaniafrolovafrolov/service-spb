@@ -1,9 +1,7 @@
 export default {
   target: "static",
-  generate: {
-    router: {
-      base: "/service-spb/",
-    },
+  router: {
+    base: "/service-spb/",
   },
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
