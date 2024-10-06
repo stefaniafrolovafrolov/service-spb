@@ -96,7 +96,7 @@ export default {
 .reviews {
   width: 100%;
   height: 100%;
-  background-image: url("/reviews-fon.png");
+  background-image: url("/service-spb/reviews-fon.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

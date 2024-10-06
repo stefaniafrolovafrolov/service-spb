@@ -46,7 +46,7 @@ export default {
 .prices {
   display: flex;
   justify-content: center;
-  background-image: url("/prices-fon.png");
+  background-image: url("/service-spb/prices-fon.png");
   background-size: cover;
   min-height: 850px;
 
