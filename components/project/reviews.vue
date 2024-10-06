@@ -39,7 +39,7 @@ export default {
     },
       items: [
         {
-          id: 1, number: "6 февраля 2021", author: "Екатерина К.", src: "/slide-two-image-star.svg", text: "Отличная" +
+          id: 1, number: "6 февраля 2021", author: "Екатерина К.", src: "slide-two-image-star.svg", text: "Отличная" +
             " автомастерская. Благодарю мастера и по совместительству менеджера и&nbsp;владельца Андрея и его команду" +
             " профессиональных автомехаников за помощь  и проделанную работу. Ребята отлично разбираются в вопросах" +
             " АКПП, КПП, РКП    и&nbsp;связанных с ними агрегатов. В моем случае замена сцепления и масла коробки передач," +
@@ -49,32 +49,32 @@ export default {
           id: 2,
           number: "17 августа 2022",
           author: "Александр Е.",
-          src: "/slide-two-image-star.svg",
+          src: "slide-two-image-star.svg",
           text: "Честный и" +
             " грамотный мастер. Рекомендую."
         },
         {
-          id: 3, number: "22 марта 2021", author: "DG", src: "/slide-two-image-star.svg", text: "Менял сцепление и" +
+          id: 3, number: "22 марта 2021", author: "DG", src: "slide-two-image-star.svg", text: "Менял сцепление и" +
             " маховик на DSG ! Быстро ! Качественно ! Бесплатный эвакуатор !! Рекомендую !!"
         },
         {
-          id: 4, number: "1 декабря 2021", author: "Головко Максим", src: "/slide-two-image-star.svg", text: "Ребята" +
+          id: 4, number: "1 декабря 2021", author: "Головко Максим", src: "slide-two-image-star.svg", text: "Ребята" +
             " молодцы произошёл гарантийный случай отреагировали сразу,всё переделали"
         },
         {
           id: 5,
           number: "15 сентября 2021",
           author: "Константин Волков",
-          src: "/slide-two-image-star.svg",
+          src: "slide-two-image-star.svg",
           text: "Хороший" +
             " сервис, одно из немногих мест где не разводят"
         },
         {
-          id: 6, number: "20 мая 2021", author: "Constantin L.", src: "/slide-two-image-star.svg", text: "Отличный" +
+          id: 6, number: "20 мая 2021", author: "Constantin L.", src: "slide-two-image-star.svg", text: "Отличный" +
             " сервис и грамотный мастер"
         },
         {
-          id: 7, number: "9 мая 2021", author: "Алексей У.", src: "/slide-two-image-star.svg", text: "Приезжал на" +
+          id: 7, number: "9 мая 2021", author: "Алексей У.", src: "slide-two-image-star.svg", text: "Приезжал на" +
             " диагностику 0B5\n" +
             "Быстро, профессионально + сделали бесплатно адаптацию."
         },
@@ -82,7 +82,7 @@ export default {
           id: 8,
           number: "29 апреля 2021",
           author: "Тролеф Иван",
-          src: "/slide-two-image-star.svg",
+          src: "slide-two-image-star.svg",
           text: "Хорошие специ" +
             " без обмана"
         },
