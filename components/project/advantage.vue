@@ -26,32 +26,32 @@ export default {
     items: [
       {
         id: 1,
-        src: "/advantage-logo1.svg",
+        src: "advantage-logo1.svg",
         title: "Диагностика DSG S-Tronic Powershift - <span style='font-weight: bold'>бесплатно</span>"
       },
       {
         id: 2,
-        src: "/advantage-logo4.svg",
+        src: "advantage-logo4.svg",
         title: "У нас работают только <span style='font-weight: bold'>опытные механики и слесаря</span>"
       },
       {
         id: 3,
-        src: "/advantage-logo2.svg",
+        src: "advantage-logo2.svg",
         title: "Мы производим <span style='font-weight: bold'>быстрый и качественный ремонт АКПП</span>"
       },
       {
         id: 4,
-        src: "/advantage-logo5.svg",
+        src: "advantage-logo5.svg",
         title: "Адаптация коробки передач <span style='font-weight: bold'>DSG S-Tronic Powershift - бесплатно</span>"
       },
       {
         id: 5,
-        src: "/advantage-logo3.svg",
+        src: "advantage-logo3.svg",
         title: "В нашем сервисе <span style='font-weight: bold'>адекватные цены на услуги</span>"
       },
       {
         id: 6,
-        src: "/advantage-logo6.svg",
+        src: "advantage-logo6.svg",
         title: "Мы работаем на рынке уже <span style='font-weight: bold'>более 10 лет</span>"
       },
     ],
@@ -67,7 +67,7 @@ export default {
   max-width: 1645px;
   min-height: 750px;
   margin-left: 76px;
-  background-image: url("/advantage.png");
+  background-image: url("advantage.png");
   background-repeat: no-repeat;
   display: flex;
   margin-top: -310px;

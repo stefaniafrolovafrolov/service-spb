@@ -94,7 +94,7 @@ export default {
       }
 
       @media (max-width: 768px) {
-        background-image: url("/slide-one-left-768.svg");
+        background-image: url("slide-one-left-768.svg");
         width: 40px;
         height: 40px;
         left: -10%;
@@ -161,14 +161,14 @@ export default {
       }
 
       @media (max-width: 1024px) {
-        background-image: url("/slide-one-right-1024.svg");
+        background-image: url("slide-one-right-1024.svg");
         width: 48px;
         height: 48px;
         bottom: 100px;
       }
 
       @media (max-width: 768px) {
-        background-image: url("/slide-one-right-768.svg");
+        background-image: url("slide-one-right-768.svg");
         width: 40px;
         height: 40px;
         right: -10%;

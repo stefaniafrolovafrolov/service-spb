@@ -138,19 +138,19 @@ export default {
     }
 
     @media (max-width: 1280px) {
-      background-image: url("/logo-header-1280.svg");
+      background-image: url("logo-header-1280.svg");
       width: 106px;
       height: 75px;
     }
 
     @media (max-width: 1024px) {
-      background-image: url("/logo-header-1024.svg");
+      background-image: url("logo-header-1024.svg");
       width: 96px;
       height: 68px;
     }
 
     @media (max-width: 616px) {
-      background-image: url("/logo-header-320.svg");
+      background-image: url("logo-header-320.svg");
       width: 60px;
       height: 40px;
     }

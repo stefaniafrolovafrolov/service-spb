@@ -110,7 +110,7 @@ export default {
       }
 
       @media (max-width: 768px) {
-        background-image: url("/slide-one-left-768.svg");
+        background-image: url("slide-one-left-768.svg");
         width: 40px;
         height: 40px;
         bottom: 75px;
@@ -215,7 +215,7 @@ export default {
 
 
       @media (max-width: 768px) {
-        background-image: url("/slide-one-right-768.svg");
+        background-image: url("slide-one-right-768.svg");
         width: 40px;
         height: 40px;
         bottom: 75px;
