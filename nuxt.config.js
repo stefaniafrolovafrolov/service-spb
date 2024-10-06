@@ -2,7 +2,7 @@ export default {
   target: "static",
   generate: {
     router: {
-      base: "/service-spb/",
+      base: "https://stefaniafrolovafrolov.github.io/service-spb/",
     },
   },
 
